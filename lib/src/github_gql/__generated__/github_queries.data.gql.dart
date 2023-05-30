@@ -1,12 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'package:github_app/src/github_gql_schema/__generated__/schema.docs.schema.gql.dart'
+import 'package:github_client/src/github_gql_schema/__generated__/schema.docs.schema.gql.dart'
     as _i2;
-import 'package:github_app/src/github_gql_schema/__generated__/serializers.gql.dart'
+import 'package:github_client/src/github_gql_schema/__generated__/serializers.gql.dart'
     as _i1;
 import 'package:gql_code_builder/src/serializers/inline_fragment_serializer.dart'
     as _i3;
@@ -27,11 +28,15 @@ abstract class GViewerDetailData
   GViewerDetailData_viewer get viewer;
   static Serializer<GViewerDetailData> get serializer =>
       _$gViewerDetailDataSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GViewerDetailData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GViewerDetailData.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GViewerDetailData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GViewerDetailData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GViewerDetailData.serializer,
+        json,
+      );
 }
 
 abstract class GViewerDetailData_viewer
@@ -52,12 +57,15 @@ abstract class GViewerDetailData_viewer
   String? get bio;
   static Serializer<GViewerDetailData_viewer> get serializer =>
       _$gViewerDetailDataViewerSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GViewerDetailData_viewer.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GViewerDetailData_viewer.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GViewerDetailData_viewer? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers
-          .deserializeWith(GViewerDetailData_viewer.serializer, json);
+      _i1.serializers.deserializeWith(
+        GViewerDetailData_viewer.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData
@@ -74,11 +82,15 @@ abstract class GPullRequestsData
   GPullRequestsData_viewer get viewer;
   static Serializer<GPullRequestsData> get serializer =>
       _$gPullRequestsDataSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GPullRequestsData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GPullRequestsData.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GPullRequestsData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GPullRequestsData.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer
@@ -97,12 +109,15 @@ abstract class GPullRequestsData_viewer
   GPullRequestsData_viewer_pullRequests get pullRequests;
   static Serializer<GPullRequestsData_viewer> get serializer =>
       _$gPullRequestsDataViewerSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GPullRequestsData_viewer.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GPullRequestsData_viewer.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers
-          .deserializeWith(GPullRequestsData_viewer.serializer, json);
+      _i1.serializers.deserializeWith(
+        GPullRequestsData_viewer.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests
@@ -120,16 +135,19 @@ abstract class GPullRequestsData_viewer_pullRequests
       b..G__typename = 'PullRequestConnection';
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
-  BuiltList<GPullRequestsData_viewer_pullRequests_edges>? get edges;
+  BuiltList<GPullRequestsData_viewer_pullRequests_edges?>? get edges;
   static Serializer<GPullRequestsData_viewer_pullRequests> get serializer =>
       _$gPullRequestsDataViewerPullRequestsSerializer;
-  Map<String, dynamic> toJson() => (_i1.serializers
-          .serializeWith(GPullRequestsData_viewer_pullRequests.serializer, this)
-      as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GPullRequestsData_viewer_pullRequests.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests.serializer, json);
+        GPullRequestsData_viewer_pullRequests.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges
@@ -151,12 +169,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges
   static Serializer<GPullRequestsData_viewer_pullRequests_edges>
       get serializer => _$gPullRequestsDataViewerPullRequestsEdgesSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GPullRequestsData_viewer_pullRequests_edges.serializer, this)
-      as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges.serializer, json);
+        GPullRequestsData_viewer_pullRequests_edges.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges_node
@@ -188,12 +209,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges_node
       get serializer =>
           _$gPullRequestsDataViewerPullRequestsEdgesNodeSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node.serializer, this)
-      as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges_node.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges_node? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node.serializer, json);
+        GPullRequestsData_viewer_pullRequests_edges_node.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges_node_repository
@@ -220,14 +244,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges_node_repository
       get serializer =>
           _$gPullRequestsDataViewerPullRequestsEdgesNodeRepositorySerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GPullRequestsData_viewer_pullRequests_edges_node_repository.serializer,
-      this) as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges_node_repository.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges_node_repository? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node_repository
-              .serializer,
-          json);
+        GPullRequestsData_viewer_pullRequests_edges_node_repository.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges_node_author
@@ -252,13 +277,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges_node_author
       get serializer =>
           _$gPullRequestsDataViewerPullRequestsEdgesNodeAuthorSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GPullRequestsData_viewer_pullRequests_edges_node_author.serializer,
-      this) as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges_node_author.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges_node_author? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node_author.serializer,
-          json);
+        GPullRequestsData_viewer_pullRequests_edges_node_author.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges_node_comments
@@ -283,13 +310,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges_node_comments
       get serializer =>
           _$gPullRequestsDataViewerPullRequestsEdgesNodeCommentsSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GPullRequestsData_viewer_pullRequests_edges_node_comments.serializer,
-      this) as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges_node_comments.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges_node_comments? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node_comments.serializer,
-          json);
+        GPullRequestsData_viewer_pullRequests_edges_node_comments.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsData_viewer_pullRequests_edges_node_files
@@ -312,13 +341,15 @@ abstract class GPullRequestsData_viewer_pullRequests_edges_node_files
       get serializer =>
           _$gPullRequestsDataViewerPullRequestsEdgesNodeFilesSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GPullRequestsData_viewer_pullRequests_edges_node_files.serializer,
-      this) as Map<String, dynamic>);
+        GPullRequestsData_viewer_pullRequests_edges_node_files.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsData_viewer_pullRequests_edges_node_files? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GPullRequestsData_viewer_pullRequests_edges_node_files.serializer,
-          json);
+        GPullRequestsData_viewer_pullRequests_edges_node_files.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData
@@ -335,11 +366,15 @@ abstract class GAssignedIssuesData
   GAssignedIssuesData_search get search;
   static Serializer<GAssignedIssuesData> get serializer =>
       _$gAssignedIssuesDataSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GAssignedIssuesData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAssignedIssuesData.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GAssignedIssuesData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAssignedIssuesData.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search
@@ -355,14 +390,18 @@ abstract class GAssignedIssuesData_search
       b..G__typename = 'SearchResultItemConnection';
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
-  BuiltList<GAssignedIssuesData_search_edges>? get edges;
+  BuiltList<GAssignedIssuesData_search_edges?>? get edges;
   static Serializer<GAssignedIssuesData_search> get serializer =>
       _$gAssignedIssuesDataSearchSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search.serializer, this) as Map<String, dynamic>);
+        GAssignedIssuesData_search.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers
-          .deserializeWith(GAssignedIssuesData_search.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAssignedIssuesData_search.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges
@@ -382,13 +421,16 @@ abstract class GAssignedIssuesData_search_edges
   GAssignedIssuesData_search_edges_node? get node;
   static Serializer<GAssignedIssuesData_search_edges> get serializer =>
       _$gAssignedIssuesDataSearchEdgesSerializer;
-  Map<String, dynamic> toJson() => (_i1.serializers
-          .serializeWith(GAssignedIssuesData_search_edges.serializer, this)
-      as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAssignedIssuesData_search_edges.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges? fromJson(
           Map<String, dynamic> json) =>
-      _i1.serializers
-          .deserializeWith(GAssignedIssuesData_search_edges.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAssignedIssuesData_search_edges.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node {
@@ -396,16 +438,20 @@ abstract class GAssignedIssuesData_search_edges_node {
   String get G__typename;
   static Serializer<GAssignedIssuesData_search_edges_node> get serializer =>
       _i3.InlineFragmentSerializer<GAssignedIssuesData_search_edges_node>(
-          'GAssignedIssuesData_search_edges_node',
-          GAssignedIssuesData_search_edges_node__base,
-          {'Issue': GAssignedIssuesData_search_edges_node__asIssue});
-  Map<String, dynamic> toJson() => (_i1.serializers
-          .serializeWith(GAssignedIssuesData_search_edges_node.serializer, this)
-      as Map<String, dynamic>);
+        'GAssignedIssuesData_search_edges_node',
+        GAssignedIssuesData_search_edges_node__base,
+        {'Issue': GAssignedIssuesData_search_edges_node__asIssue},
+      );
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAssignedIssuesData_search_edges_node.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node.serializer, json);
+        GAssignedIssuesData_search_edges_node.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__base
@@ -429,12 +475,15 @@ abstract class GAssignedIssuesData_search_edges_node__base
       get serializer => _$gAssignedIssuesDataSearchEdgesNodeBaseSerializer;
   @override
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GAssignedIssuesData_search_edges_node__base.serializer, this)
-      as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__base.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__base? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__base.serializer, json);
+        GAssignedIssuesData_search_edges_node__base.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue
@@ -465,12 +514,15 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue
       get serializer => _$gAssignedIssuesDataSearchEdgesNodeAsIssueSerializer;
   @override
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue.serializer, this)
-      as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue.serializer, json);
+        GAssignedIssuesData_search_edges_node__asIssue.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue_repository
@@ -496,13 +548,15 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue_repository
       get serializer =>
           _$gAssignedIssuesDataSearchEdgesNodeAsIssueRepositorySerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search_edges_node__asIssue_repository.serializer,
-      this) as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue_repository.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue_repository? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue_repository.serializer,
-          json);
+        GAssignedIssuesData_search_edges_node__asIssue_repository.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue_author
@@ -526,13 +580,15 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue_author
       get serializer =>
           _$gAssignedIssuesDataSearchEdgesNodeAsIssueAuthorSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search_edges_node__asIssue_author.serializer,
-      this) as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue_author.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue_author? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue_author.serializer,
-          json);
+        GAssignedIssuesData_search_edges_node__asIssue_author.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue_labels
@@ -550,19 +606,21 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue_labels
       b..G__typename = 'LabelConnection';
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
-  BuiltList<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>?
+  BuiltList<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
       get nodes;
   static Serializer<GAssignedIssuesData_search_edges_node__asIssue_labels>
       get serializer =>
           _$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search_edges_node__asIssue_labels.serializer,
-      this) as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue_labels.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue_labels? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue_labels.serializer,
-          json);
+        GAssignedIssuesData_search_edges_node__asIssue_labels.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
@@ -589,14 +647,15 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
       get serializer =>
           _$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsNodesSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search_edges_node__asIssue_labels_nodes.serializer,
-      this) as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue_labels_nodes.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue_labels_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
-              .serializer,
-          json);
+        GAssignedIssuesData_search_edges_node__asIssue_labels_nodes.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesData_search_edges_node__asIssue_comments
@@ -620,13 +679,15 @@ abstract class GAssignedIssuesData_search_edges_node__asIssue_comments
       get serializer =>
           _$gAssignedIssuesDataSearchEdgesNodeAsIssueCommentsSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GAssignedIssuesData_search_edges_node__asIssue_comments.serializer,
-      this) as Map<String, dynamic>);
+        GAssignedIssuesData_search_edges_node__asIssue_comments.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesData_search_edges_node__asIssue_comments? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GAssignedIssuesData_search_edges_node__asIssue_comments.serializer,
-          json);
+        GAssignedIssuesData_search_edges_node__asIssue_comments.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData
@@ -643,11 +704,15 @@ abstract class GRepositoriesData
   GRepositoriesData_viewer get viewer;
   static Serializer<GRepositoriesData> get serializer =>
       _$gRepositoriesDataSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GRepositoriesData.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GRepositoriesData.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GRepositoriesData.serializer, json);
+      _i1.serializers.deserializeWith(
+        GRepositoriesData.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer
@@ -666,12 +731,15 @@ abstract class GRepositoriesData_viewer
   GRepositoriesData_viewer_repositories get repositories;
   static Serializer<GRepositoriesData_viewer> get serializer =>
       _$gRepositoriesDataViewerSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GRepositoriesData_viewer.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GRepositoriesData_viewer.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers
-          .deserializeWith(GRepositoriesData_viewer.serializer, json);
+      _i1.serializers.deserializeWith(
+        GRepositoriesData_viewer.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer_repositories
@@ -689,16 +757,19 @@ abstract class GRepositoriesData_viewer_repositories
       b..G__typename = 'RepositoryConnection';
   @BuiltValueField(wireName: '__typename')
   String get G__typename;
-  BuiltList<GRepositoriesData_viewer_repositories_nodes>? get nodes;
+  BuiltList<GRepositoriesData_viewer_repositories_nodes?>? get nodes;
   static Serializer<GRepositoriesData_viewer_repositories> get serializer =>
       _$gRepositoriesDataViewerRepositoriesSerializer;
-  Map<String, dynamic> toJson() => (_i1.serializers
-          .serializeWith(GRepositoriesData_viewer_repositories.serializer, this)
-      as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GRepositoriesData_viewer_repositories.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer_repositories? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GRepositoriesData_viewer_repositories.serializer, json);
+        GRepositoriesData_viewer_repositories.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer_repositories_nodes
@@ -727,12 +798,15 @@ abstract class GRepositoriesData_viewer_repositories_nodes
   static Serializer<GRepositoriesData_viewer_repositories_nodes>
       get serializer => _$gRepositoriesDataViewerRepositoriesNodesSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GRepositoriesData_viewer_repositories_nodes.serializer, this)
-      as Map<String, dynamic>);
+        GRepositoriesData_viewer_repositories_nodes.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer_repositories_nodes? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GRepositoriesData_viewer_repositories_nodes.serializer, json);
+        GRepositoriesData_viewer_repositories_nodes.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer_repositories_nodes_stargazers
@@ -755,13 +829,15 @@ abstract class GRepositoriesData_viewer_repositories_nodes_stargazers
       get serializer =>
           _$gRepositoriesDataViewerRepositoriesNodesStargazersSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-      GRepositoriesData_viewer_repositories_nodes_stargazers.serializer,
-      this) as Map<String, dynamic>);
+        GRepositoriesData_viewer_repositories_nodes_stargazers.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer_repositories_nodes_stargazers? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GRepositoriesData_viewer_repositories_nodes_stargazers.serializer,
-          json);
+        GRepositoriesData_viewer_repositories_nodes_stargazers.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer_repositories_nodes_issues
@@ -784,12 +860,15 @@ abstract class GRepositoriesData_viewer_repositories_nodes_issues
       get serializer =>
           _$gRepositoriesDataViewerRepositoriesNodesIssuesSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GRepositoriesData_viewer_repositories_nodes_issues.serializer, this)
-      as Map<String, dynamic>);
+        GRepositoriesData_viewer_repositories_nodes_issues.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer_repositories_nodes_issues? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GRepositoriesData_viewer_repositories_nodes_issues.serializer, json);
+        GRepositoriesData_viewer_repositories_nodes_issues.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesData_viewer_repositories_nodes_owner
@@ -813,10 +892,13 @@ abstract class GRepositoriesData_viewer_repositories_nodes_owner
       get serializer =>
           _$gRepositoriesDataViewerRepositoriesNodesOwnerSerializer;
   Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
-          GRepositoriesData_viewer_repositories_nodes_owner.serializer, this)
-      as Map<String, dynamic>);
+        GRepositoriesData_viewer_repositories_nodes_owner.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesData_viewer_repositories_nodes_owner? fromJson(
           Map<String, dynamic> json) =>
       _i1.serializers.deserializeWith(
-          GRepositoriesData_viewer_repositories_nodes_owner.serializer, json);
+        GRepositoriesData_viewer_repositories_nodes_owner.serializer,
+        json,
+      );
 }

@@ -1,7 +1,7 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart' show StandardJsonPlugin;
-import 'package:github_app/src/github_gql/__generated__/github_queries.data.gql.dart'
+import 'package:github_client/src/github_gql/__generated__/github_queries.data.gql.dart'
     show
         GAssignedIssuesData_search_edges_node,
         GAssignedIssuesData,
@@ -32,15 +32,15 @@ import 'package:github_app/src/github_gql/__generated__/github_queries.data.gql.
         GRepositoriesData_viewer_repositories_nodes_stargazers,
         GViewerDetailData,
         GViewerDetailData_viewer;
-import 'package:github_app/src/github_gql/__generated__/github_queries.req.gql.dart'
+import 'package:github_client/src/github_gql/__generated__/github_queries.req.gql.dart'
     show GAssignedIssues, GPullRequests, GRepositories, GViewerDetail;
-import 'package:github_app/src/github_gql/__generated__/github_queries.var.gql.dart'
+import 'package:github_client/src/github_gql/__generated__/github_queries.var.gql.dart'
     show
         GAssignedIssuesVars,
         GPullRequestsVars,
         GRepositoriesVars,
         GViewerDetailVars;
-import 'package:github_app/src/github_gql_schema/__generated__/schema.docs.schema.gql.dart'
+import 'package:github_client/src/github_gql_schema/__generated__/schema.docs.schema.gql.dart'
     show
         GAcceptEnterpriseAdministratorInvitationInput,
         GAcceptTopicSuggestionInput,
@@ -863,6 +863,6 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GViewerDetailData,
   GViewerDetailData_viewer,
   GViewerDetailVars,
-  GX509Certificate
+  GX509Certificate,
 ])
 final Serializers serializers = _serializersBuilder.build();

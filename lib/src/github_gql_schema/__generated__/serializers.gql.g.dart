@@ -446,17 +446,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(GViewerDetailVars.serializer)
       ..add(GX509Certificate.serializer)
       ..addBuilderFactory(
-          const FullType(BuiltList,
-              const [const FullType(GAssignedIssuesData_search_edges)]),
-          () => new ListBuilder<GAssignedIssuesData_search_edges>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType(
-                GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
-          ]),
-          () => new ListBuilder<
-              GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>())
-      ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType(GCheckAnnotationData)]),
           () => new ListBuilder<GCheckAnnotationData>())
@@ -475,14 +464,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
               const [const FullType(GCheckSuiteAutoTriggerPreference)]),
           () => new ListBuilder<GCheckSuiteAutoTriggerPreference>())
       ..addBuilderFactory(
-          const FullType(BuiltList,
-              const [const FullType(GDraftPullRequestReviewComment)]),
-          () => new ListBuilder<GDraftPullRequestReviewComment>())
-      ..addBuilderFactory(
-          const FullType(
-              BuiltList, const [const FullType(GDraftPullRequestReviewThread)]),
-          () => new ListBuilder<GDraftPullRequestReviewThread>())
-      ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(GProjectCardImport)]),
           () => new ListBuilder<GProjectCardImport>())
       ..addBuilderFactory(
@@ -490,18 +471,8 @@ Serializers _$serializers = (new Serializers().toBuilder()
               BuiltList, const [const FullType(GProjectColumnImport)]),
           () => new ListBuilder<GProjectColumnImport>())
       ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType(GPullRequestsData_viewer_pullRequests_edges)
-          ]),
-          () => new ListBuilder<GPullRequestsData_viewer_pullRequests_edges>())
-      ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(GRefUpdate)]),
           () => new ListBuilder<GRefUpdate>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [
-            const FullType(GRepositoriesData_viewer_repositories_nodes)
-          ]),
-          () => new ListBuilder<GRepositoriesData_viewer_repositories_nodes>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(String)]),
           () => new ListBuilder<String>())
@@ -597,7 +568,38 @@ Serializers _$serializers = (new Serializers().toBuilder()
           () => new ListBuilder<String>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(String)]),
-          () => new ListBuilder<String>()))
+          () => new ListBuilder<String>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GAssignedIssuesData_search_edges)
+          ]),
+          () => new ListBuilder<GAssignedIssuesData_search_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(
+                GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
+          ]),
+          () => new ListBuilder<
+              GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType.nullable(GDraftPullRequestReviewComment)]),
+          () => new ListBuilder<GDraftPullRequestReviewComment?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList,
+              const [const FullType.nullable(GDraftPullRequestReviewThread)]),
+          () => new ListBuilder<GDraftPullRequestReviewThread?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GPullRequestsData_viewer_pullRequests_edges)
+          ]),
+          () => new ListBuilder<GPullRequestsData_viewer_pullRequests_edges?>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [
+            const FullType.nullable(GRepositoriesData_viewer_repositories_nodes)
+          ]),
+          () =>
+              new ListBuilder<GRepositoriesData_viewer_repositories_nodes?>()))
     .build();
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,deprecated_member_use_from_same_package,lines_longer_than_80_chars,no_leading_underscores_for_local_identifiers,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new,unnecessary_lambdas
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

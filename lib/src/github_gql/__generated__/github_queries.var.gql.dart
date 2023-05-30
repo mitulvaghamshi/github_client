@@ -1,9 +1,10 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
-import 'package:github_app/src/github_gql_schema/__generated__/serializers.gql.dart'
+import 'package:github_client/src/github_gql_schema/__generated__/serializers.gql.dart'
     as _i1;
 
 part 'github_queries.var.gql.g.dart';
@@ -17,11 +18,15 @@ abstract class GViewerDetailVars
 
   static Serializer<GViewerDetailVars> get serializer =>
       _$gViewerDetailVarsSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GViewerDetailVars.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GViewerDetailVars.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GViewerDetailVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GViewerDetailVars.serializer, json);
+      _i1.serializers.deserializeWith(
+        GViewerDetailVars.serializer,
+        json,
+      );
 }
 
 abstract class GPullRequestsVars
@@ -34,11 +39,15 @@ abstract class GPullRequestsVars
   int get count;
   static Serializer<GPullRequestsVars> get serializer =>
       _$gPullRequestsVarsSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GPullRequestsVars.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GPullRequestsVars.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GPullRequestsVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GPullRequestsVars.serializer, json);
+      _i1.serializers.deserializeWith(
+        GPullRequestsVars.serializer,
+        json,
+      );
 }
 
 abstract class GAssignedIssuesVars
@@ -52,11 +61,15 @@ abstract class GAssignedIssuesVars
   int get count;
   static Serializer<GAssignedIssuesVars> get serializer =>
       _$gAssignedIssuesVarsSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GAssignedIssuesVars.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GAssignedIssuesVars.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GAssignedIssuesVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GAssignedIssuesVars.serializer, json);
+      _i1.serializers.deserializeWith(
+        GAssignedIssuesVars.serializer,
+        json,
+      );
 }
 
 abstract class GRepositoriesVars
@@ -69,9 +82,13 @@ abstract class GRepositoriesVars
   int get count;
   static Serializer<GRepositoriesVars> get serializer =>
       _$gRepositoriesVarsSerializer;
-  Map<String, dynamic> toJson() =>
-      (_i1.serializers.serializeWith(GRepositoriesVars.serializer, this)
-          as Map<String, dynamic>);
+  Map<String, dynamic> toJson() => (_i1.serializers.serializeWith(
+        GRepositoriesVars.serializer,
+        this,
+      ) as Map<String, dynamic>);
   static GRepositoriesVars? fromJson(Map<String, dynamic> json) =>
-      _i1.serializers.deserializeWith(GRepositoriesVars.serializer, json);
+      _i1.serializers.deserializeWith(
+        GRepositoriesVars.serializer,
+        json,
+      );
 }

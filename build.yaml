@@ -3,21 +3,21 @@ targets:
     builders:
       gql_build|ast_builder:
         enabled: true
+      gql_build|schema_builder:
+        enabled: true
       gql_build|req_builder:
         enabled: true
         options:
-          schema: github_app|lib/src/github_gql_schema/schema.docs.graphql
+          schema: github_client|lib/src/github_gql_schema/schema.docs.graphql
       gql_build|serializer_builder:
         enabled: true
         options:
-          schema: github_app|lib/src/github_gql_schema/schema.docs.graphql
-      gql_build|schema_builder:
-        enabled: true
+          schema: github_client|lib/src/github_gql_schema/schema.docs.graphql
       gql_build|data_builder:
         enabled: true
         options:
-          schema: github_app|lib/src/github_gql_schema/schema.docs.graphql
+          schema: github_client|lib/src/github_gql_schema/schema.docs.graphql
       gql_build|var_builder:
         enabled: true
         options:
-          schema: github_app|lib/src/github_gql_schema/schema.docs.graphql
+          schema: github_client|lib/src/github_gql_schema/schema.docs.graphql

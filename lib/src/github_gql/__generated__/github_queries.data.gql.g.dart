@@ -339,7 +339,8 @@ class _$GPullRequestsData_viewer_pullRequestsSerializer
         ..add('edges')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType(GPullRequestsData_viewer_pullRequests_edges)
+              const FullType.nullable(
+                  GPullRequestsData_viewer_pullRequests_edges)
             ])));
     }
     return result;
@@ -364,7 +365,8 @@ class _$GPullRequestsData_viewer_pullRequestsSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType(GPullRequestsData_viewer_pullRequests_edges)
+                const FullType.nullable(
+                    GPullRequestsData_viewer_pullRequests_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -894,8 +896,9 @@ class _$GAssignedIssuesData_searchSerializer
       result
         ..add('edges')
         ..add(serializers.serialize(value,
-            specifiedType: const FullType(BuiltList,
-                const [const FullType(GAssignedIssuesData_search_edges)])));
+            specifiedType: const FullType(BuiltList, const [
+              const FullType.nullable(GAssignedIssuesData_search_edges)
+            ])));
     }
     return result;
   }
@@ -919,7 +922,7 @@ class _$GAssignedIssuesData_searchSerializer
         case 'edges':
           result.edges.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType(GAssignedIssuesData_search_edges)
+                const FullType.nullable(GAssignedIssuesData_search_edges)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1308,7 +1311,7 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer
         ..add('nodes')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType(
+              const FullType.nullable(
                   GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
             ])));
     }
@@ -1335,7 +1338,7 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer
         case 'nodes':
           result.nodes.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType(
+                const FullType.nullable(
                     GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
               ]))! as BuiltList<Object?>);
           break;
@@ -1597,7 +1600,8 @@ class _$GRepositoriesData_viewer_repositoriesSerializer
         ..add('nodes')
         ..add(serializers.serialize(value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType(GRepositoriesData_viewer_repositories_nodes)
+              const FullType.nullable(
+                  GRepositoriesData_viewer_repositories_nodes)
             ])));
     }
     return result;
@@ -1622,7 +1626,8 @@ class _$GRepositoriesData_viewer_repositoriesSerializer
         case 'nodes':
           result.nodes.replace(serializers.deserialize(value,
               specifiedType: const FullType(BuiltList, const [
-                const FullType(GRepositoriesData_viewer_repositories_nodes)
+                const FullType.nullable(
+                    GRepositoriesData_viewer_repositories_nodes)
               ]))! as BuiltList<Object?>);
           break;
       }
@@ -1958,7 +1963,11 @@ class _$GViewerDetailData extends GViewerDetailData {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), viewer.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, viewer.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2080,9 +2089,13 @@ class _$GViewerDetailData_viewer extends GViewerDetailData_viewer {
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc($jc($jc(0, G__typename.hashCode), login.hashCode), name.hashCode),
-        bio.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, login.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, bio.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2197,7 +2210,11 @@ class _$GPullRequestsData extends GPullRequestsData {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), viewer.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, viewer.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2313,7 +2330,11 @@ class _$GPullRequestsData_viewer extends GPullRequestsData_viewer {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), pullRequests.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, pullRequests.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2399,7 +2420,7 @@ class _$GPullRequestsData_viewer_pullRequests
   @override
   final String G__typename;
   @override
-  final BuiltList<GPullRequestsData_viewer_pullRequests_edges>? edges;
+  final BuiltList<GPullRequestsData_viewer_pullRequests_edges?>? edges;
 
   factory _$GPullRequestsData_viewer_pullRequests(
           [void Function(GPullRequestsData_viewer_pullRequestsBuilder)?
@@ -2434,7 +2455,11 @@ class _$GPullRequestsData_viewer_pullRequests
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), edges.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, edges.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2457,11 +2482,11 @@ class GPullRequestsData_viewer_pullRequestsBuilder
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GPullRequestsData_viewer_pullRequests_edges>? _edges;
-  ListBuilder<GPullRequestsData_viewer_pullRequests_edges> get edges =>
+  ListBuilder<GPullRequestsData_viewer_pullRequests_edges?>? _edges;
+  ListBuilder<GPullRequestsData_viewer_pullRequests_edges?> get edges =>
       _$this._edges ??=
-          new ListBuilder<GPullRequestsData_viewer_pullRequests_edges>();
-  set edges(ListBuilder<GPullRequestsData_viewer_pullRequests_edges>? edges) =>
+          new ListBuilder<GPullRequestsData_viewer_pullRequests_edges?>();
+  set edges(ListBuilder<GPullRequestsData_viewer_pullRequests_edges?>? edges) =>
       _$this._edges = edges;
 
   GPullRequestsData_viewer_pullRequestsBuilder() {
@@ -2560,7 +2585,11 @@ class _$GPullRequestsData_viewer_pullRequests_edges
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), node.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, node.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -2744,26 +2773,20 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc(
-                                    $jc(
-                                        $jc($jc(0, G__typename.hashCode),
-                                            repository.hashCode),
-                                        author.hashCode),
-                                    number.hashCode),
-                                url.hashCode),
-                            title.hashCode),
-                        updatedAt.hashCode),
-                    state.hashCode),
-                isDraft.hashCode),
-            comments.hashCode),
-        files.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, repository.hashCode);
+    _$hash = $jc(_$hash, author.hashCode);
+    _$hash = $jc(_$hash, number.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jc(_$hash, title.hashCode);
+    _$hash = $jc(_$hash, updatedAt.hashCode);
+    _$hash = $jc(_$hash, state.hashCode);
+    _$hash = $jc(_$hash, isDraft.hashCode);
+    _$hash = $jc(_$hash, comments.hashCode);
+    _$hash = $jc(_$hash, files.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3017,8 +3040,12 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repository
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, G__typename.hashCode), nameWithOwner.hashCode),
-        url.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, nameWithOwner.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3173,8 +3200,12 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_author
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc(0, G__typename.hashCode), login.hashCode), url.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, login.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3322,7 +3353,11 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_comments
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), totalCount.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, totalCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3448,7 +3483,11 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_files
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), totalCount.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, totalCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3560,7 +3599,11 @@ class _$GAssignedIssuesData extends GAssignedIssuesData {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), search.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, search.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3642,7 +3685,7 @@ class _$GAssignedIssuesData_search extends GAssignedIssuesData_search {
   @override
   final String G__typename;
   @override
-  final BuiltList<GAssignedIssuesData_search_edges>? edges;
+  final BuiltList<GAssignedIssuesData_search_edges?>? edges;
 
   factory _$GAssignedIssuesData_search(
           [void Function(GAssignedIssuesData_searchBuilder)? updates]) =>
@@ -3673,7 +3716,11 @@ class _$GAssignedIssuesData_search extends GAssignedIssuesData_search {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), edges.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, edges.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3694,10 +3741,10 @@ class GAssignedIssuesData_searchBuilder
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GAssignedIssuesData_search_edges>? _edges;
-  ListBuilder<GAssignedIssuesData_search_edges> get edges =>
-      _$this._edges ??= new ListBuilder<GAssignedIssuesData_search_edges>();
-  set edges(ListBuilder<GAssignedIssuesData_search_edges>? edges) =>
+  ListBuilder<GAssignedIssuesData_search_edges?>? _edges;
+  ListBuilder<GAssignedIssuesData_search_edges?> get edges =>
+      _$this._edges ??= new ListBuilder<GAssignedIssuesData_search_edges?>();
+  set edges(ListBuilder<GAssignedIssuesData_search_edges?>? edges) =>
       _$this._edges = edges;
 
   GAssignedIssuesData_searchBuilder() {
@@ -3788,7 +3835,11 @@ class _$GAssignedIssuesData_search_edges
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), node.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, node.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -3890,7 +3941,10 @@ class _$GAssignedIssuesData_search_edges_node__base
 
   @override
   int get hashCode {
-    return $jf($jc(0, G__typename.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4028,20 +4082,17 @@ class _$GAssignedIssuesData_search_edges_node__asIssue
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc($jc(0, G__typename.hashCode),
-                                repository.hashCode),
-                            number.hashCode),
-                        url.hashCode),
-                    title.hashCode),
-                author.hashCode),
-            labels.hashCode),
-        comments.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, repository.hashCode);
+    _$hash = $jc(_$hash, number.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jc(_$hash, title.hashCode);
+    _$hash = $jc(_$hash, author.hashCode);
+    _$hash = $jc(_$hash, labels.hashCode);
+    _$hash = $jc(_$hash, comments.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4258,8 +4309,12 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repository
 
   @override
   int get hashCode {
-    return $jf($jc($jc($jc(0, G__typename.hashCode), nameWithOwner.hashCode),
-        url.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, nameWithOwner.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4411,8 +4466,12 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_author
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc(0, G__typename.hashCode), login.hashCode), url.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, login.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4514,7 +4573,7 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels
   @override
   final String G__typename;
   @override
-  final BuiltList<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>?
+  final BuiltList<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
       nodes;
 
   factory _$GAssignedIssuesData_search_edges_node__asIssue_labels(
@@ -4556,7 +4615,11 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), nodes.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, nodes.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4579,14 +4642,14 @@ class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>?
+  ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
       _nodes;
-  ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>
+  ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>
       get nodes => _$this._nodes ??= new ListBuilder<
-          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>();
+          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>();
   set nodes(
           ListBuilder<
-                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>?
+                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
               nodes) =>
       _$this._nodes = nodes;
 
@@ -4707,8 +4770,12 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
 
   @override
   int get hashCode {
-    return $jf(
-        $jc($jc($jc(0, G__typename.hashCode), name.hashCode), color.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, color.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4847,7 +4914,11 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_comments
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), totalCount.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, totalCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -4958,7 +5029,11 @@ class _$GRepositoriesData extends GRepositoriesData {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), viewer.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, viewer.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5074,7 +5149,11 @@ class _$GRepositoriesData_viewer extends GRepositoriesData_viewer {
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), repositories.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, repositories.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5160,7 +5239,7 @@ class _$GRepositoriesData_viewer_repositories
   @override
   final String G__typename;
   @override
-  final BuiltList<GRepositoriesData_viewer_repositories_nodes>? nodes;
+  final BuiltList<GRepositoriesData_viewer_repositories_nodes?>? nodes;
 
   factory _$GRepositoriesData_viewer_repositories(
           [void Function(GRepositoriesData_viewer_repositoriesBuilder)?
@@ -5195,7 +5274,11 @@ class _$GRepositoriesData_viewer_repositories
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), nodes.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, nodes.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5218,11 +5301,11 @@ class GRepositoriesData_viewer_repositoriesBuilder
   String? get G__typename => _$this._G__typename;
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
-  ListBuilder<GRepositoriesData_viewer_repositories_nodes>? _nodes;
-  ListBuilder<GRepositoriesData_viewer_repositories_nodes> get nodes =>
+  ListBuilder<GRepositoriesData_viewer_repositories_nodes?>? _nodes;
+  ListBuilder<GRepositoriesData_viewer_repositories_nodes?> get nodes =>
       _$this._nodes ??=
-          new ListBuilder<GRepositoriesData_viewer_repositories_nodes>();
-  set nodes(ListBuilder<GRepositoriesData_viewer_repositories_nodes>? nodes) =>
+          new ListBuilder<GRepositoriesData_viewer_repositories_nodes?>();
+  set nodes(ListBuilder<GRepositoriesData_viewer_repositories_nodes?>? nodes) =>
       _$this._nodes = nodes;
 
   GRepositoriesData_viewer_repositoriesBuilder() {
@@ -5364,22 +5447,18 @@ class _$GRepositoriesData_viewer_repositories_nodes
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc(
-            $jc(
-                $jc(
-                    $jc(
-                        $jc(
-                            $jc(
-                                $jc($jc(0, G__typename.hashCode),
-                                    name.hashCode),
-                                description.hashCode),
-                            isFork.hashCode),
-                        isPrivate.hashCode),
-                    stargazers.hashCode),
-                url.hashCode),
-            issues.hashCode),
-        owner.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, name.hashCode);
+    _$hash = $jc(_$hash, description.hashCode);
+    _$hash = $jc(_$hash, isFork.hashCode);
+    _$hash = $jc(_$hash, isPrivate.hashCode);
+    _$hash = $jc(_$hash, stargazers.hashCode);
+    _$hash = $jc(_$hash, url.hashCode);
+    _$hash = $jc(_$hash, issues.hashCode);
+    _$hash = $jc(_$hash, owner.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5584,7 +5663,11 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazers
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), totalCount.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, totalCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5705,7 +5788,11 @@ class _$GRepositoriesData_viewer_repositories_nodes_issues
 
   @override
   int get hashCode {
-    return $jf($jc($jc(0, G__typename.hashCode), totalCount.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, totalCount.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5829,8 +5916,12 @@ class _$GRepositoriesData_viewer_repositories_nodes_owner
 
   @override
   int get hashCode {
-    return $jf($jc(
-        $jc($jc(0, G__typename.hashCode), login.hashCode), avatarUrl.hashCode));
+    var _$hash = 0;
+    _$hash = $jc(_$hash, G__typename.hashCode);
+    _$hash = $jc(_$hash, login.hashCode);
+    _$hash = $jc(_$hash, avatarUrl.hashCode);
+    _$hash = $jf(_$hash);
+    return _$hash;
   }
 
   @override
@@ -5925,4 +6016,4 @@ class GRepositoriesData_viewer_repositories_nodes_ownerBuilder
   }
 }
 
-// ignore_for_file: always_put_control_body_on_new_line,always_specify_types,annotate_overrides,avoid_annotating_with_dynamic,avoid_as,avoid_catches_without_on_clauses,avoid_returning_this,deprecated_member_use_from_same_package,lines_longer_than_80_chars,no_leading_underscores_for_local_identifiers,omit_local_variable_types,prefer_expression_function_bodies,sort_constructors_first,test_types_in_equals,unnecessary_const,unnecessary_new,unnecessary_lambdas
+// ignore_for_file: deprecated_member_use_from_same_package,type=lint

@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:github_app/main.dart';
+import 'package:github_client/main.dart';
 
 void main() {
-  testWidgets('Github login button present', (WidgetTester tester) async {
+  testWidgets('test github login button present', (tester) async {
     // Build our app and trigger a frame.
     await tester.pumpWidget(const MainApp());
     expect(find.text('Login to GitHub'), findsOneWidget);

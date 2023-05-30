@@ -12,8 +12,8 @@ Checkout original google codelab
 ## Preview
 
 ![](previews/preview_login.webp)
-![](previews/preview_repos_dark.webp)
-![](previews/preview_pull_requests.webp)
+![](previews/preview_repos.webp)
+![](previews/preview_pull_req.webp)
 ![](previews/preview_repos_light.webp)
 
 ## How to run the app
@@ -28,8 +28,8 @@ Checkout original google codelab
 github_client/config.json
 ```
 
-- Obtain your **Client ID** and **Client Secret** from above registered app, and add it
-  to the `config.json` file as:
+- Obtain your **Client ID** and **Client Secret** from above registered app,
+and add it to the `config.json` file as:
 
 ```json
 {

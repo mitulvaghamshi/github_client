@@ -17,6 +17,7 @@ final class MainApp extends StatelessWidget {
       clientSecret: const String.fromEnvironment('CLIENT_SECRET'),
     );
     return CupertinoApp(
+      debugShowCheckedModeBanner: false,
       title: 'GitHub GraphQL API Client',
       home: GithubApp(config: config),
     );

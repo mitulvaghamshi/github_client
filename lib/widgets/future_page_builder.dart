@@ -29,10 +29,8 @@ final class FuturePageBuilder<T> extends StatelessWidget {
         return ListView.builder(
           itemExtent: 60,
           itemCount: items.length,
-          itemBuilder: (context, int index) => builder(
-            context,
-            items.elementAt(index),
-          ),
+          itemBuilder: (context, index) =>
+              builder(context, items.elementAt(index)),
         );
       },
     );

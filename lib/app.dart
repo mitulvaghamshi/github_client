@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:fluttericon/octicons_icons.dart';
 import 'package:github_client/screen/assigned_issue_widget.dart';
 import 'package:github_client/screen/pull_request_widget.dart';
@@ -7,6 +8,7 @@ import 'package:github_client/screen/repository_widget.dart';
 import 'package:github_client/utils/client_config.dart';
 import 'package:github_client/utils/request_handler.dart';
 import 'package:github_client/widgets/login_page_builder.dart';
+import 'package:url_launcher/link.dart';
 
 @immutable
 final class GithubApp extends StatelessWidget {
@@ -18,13 +20,13 @@ final class GithubApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return LoginPageBuilder(
       config: config,
-      builder: (_, handler) => FutureBuilder<Viewer>(
+      builder: (context, handler) => FutureBuilder<Viewer>(
         future: handler.getViewer(),
-        builder: (_, snapshot) {
-          if (!snapshot.hasData) {
-            return const Center(child: CupertinoActivityIndicator());
-          } else if (snapshot.hasError && kDebugMode) {
+        builder: (context, snapshot) {
+          if (snapshot.hasError && kDebugMode) {
             return Text(snapshot.error.toString());
+          } else if (!snapshot.hasData) {
+            return const Center(child: CupertinoActivityIndicator());
           }
           return CupertinoTabScaffold(
             tabBar: CupertinoTabBar(items: const [
@@ -41,24 +43,52 @@ final class GithubApp extends StatelessWidget {
                 icon: Icon(Octicons.git_pull_request),
               ),
             ]),
-            tabBuilder: (_, index) => CupertinoTabView(builder: (_) {
-              return CupertinoPageScaffold(
-                navigationBar: CupertinoNavigationBar(
-                  middle: Text(snapshot.data!.login),
-                ),
-                child: SafeArea(
-                  top: true,
-                  child: switch (index) {
-                    0 => RepositoryWidget(handler: handler),
-                    1 => PullRequestWidget(handler: handler),
-                    2 => AssignedIssueWidget(handler: handler),
-                    _ => throw 'Invalid tab index: $index',
-                  },
-                ),
-              );
-            }),
+            tabBuilder: (context, index) => _TabPageView(
+              user: snapshot.requireData,
+              handler: handler,
+              seletedIndex: index,
+            ),
           );
         },
+      ),
+    );
+  }
+}
+
+class _TabPageView extends StatelessWidget {
+  const _TabPageView({
+    required this.user,
+    required this.handler,
+    required this.seletedIndex,
+  });
+
+  final Viewer user;
+  final RequestHandler handler;
+  final int seletedIndex;
+
+  @override
+  Widget build(BuildContext context) {
+    return CupertinoTabView(
+      builder: (context) => CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          middle: Text(user.login.toUpperCase()),
+          trailing: Link(
+            uri: Uri.https('github.com', 'logout'),
+            builder: (context, followLink) => TextButton(
+              onPressed: followLink,
+              child: const Text('Sign out'),
+            ),
+          ),
+        ),
+        child: SafeArea(
+          top: true,
+          child: switch (seletedIndex) {
+            0 => RepositoryWidget(handler: handler),
+            1 => PullRequestWidget(handler: handler),
+            2 => AssignedIssueWidget(handler: handler),
+            _ => throw 'Invalid tab index: $seletedIndex',
+          },
+        ),
       ),
     );
   }

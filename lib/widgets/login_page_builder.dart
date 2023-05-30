@@ -75,7 +75,7 @@ extension on LoginPageBuilderState {
       widget.config.authorizationEndpoint,
       widget.config.tokenEndpoint,
       secret: widget.config.clientSecret,
-      httpClient: JsonHttpClient(),
+      httpClient: _JsonHttpClient(),
     );
     final authorizationUrl = grant.getAuthorizationUrl(
       redirectUrl,
@@ -106,7 +106,8 @@ extension on LoginPageBuilderState {
   }
 }
 
-class JsonHttpClient extends http.BaseClient {
+@immutable
+final class _JsonHttpClient extends http.BaseClient {
   late final http.Client _httpClient = http.Client();
 
   @override
@@ -116,7 +117,8 @@ class JsonHttpClient extends http.BaseClient {
   }
 }
 
-class _ConfigException implements Exception {
+@immutable
+final class _ConfigException implements Exception {
   const _ConfigException(this.message);
 
   final String message;

@@ -9,13 +9,6 @@ code generation to build type safe client libraries for GitHub's APIs.
 Checkout original google codelab
 [Write a Flutter desktop application][codelab] written by brettmorgan.
 
-## Preview
-
-![](previews/preview_login.webp)
-![](previews/preview_repos.webp)
-![](previews/preview_pull_req.webp)
-![](previews/preview_repos_light.webp)
-
 ## How to run the app
 
 - To run the app, you need a **OAuth2** app registered with GitHub.
@@ -47,6 +40,13 @@ flutter run --dart-define-from-file=<path-to-config-file>
 ## Example
 flutter run --dart-define-from-file=config.json
 ```
+
+## Preview
+
+![](previews/preview_login.webp)
+![](previews/preview_repos.webp)
+![](previews/preview_pull_req.webp)
+![](previews/preview_repos_light.webp)
 
 [source]: https://codelabs.developers.google.com/codelabs/flutter-github-client#0:~:text=Flutter%20desktop%20app,for%20GitHub%27s%20APIs.
 [codelab]: https://codelabs.developers.google.com/codelabs/flutter-github-client

@@ -1,0 +1,8 @@
+include: package:extra_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - lib/src/github_gql/__generated__/*.g.dart
+    - lib/src/github_gql/__generated__/*.gql.dart
+    - lib/src/github_gql_schema/__generated__/*.g.dart
+    - lib/src/github_gql_schema/__generated__/*.gql.dart

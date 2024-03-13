@@ -1,0 +1,16 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "lib/src/github_gql/__generated__/*.g.dart"
+    - "lib/src/github_gql/__generated__/*.gql.dart"
+    - "lib/src/github_gql_schema/__generated__/*.g.dart"
+    - "lib/src/github_gql_schema/__generated__/*.gql.dart"
+
+linter:
+  rules:
+    avoid_print: false
+    prefer_single_quotes: true
+    prefer_const_declarations: true
+    prefer_const_constructors: true
+    avoid_redundant_argument_values: true

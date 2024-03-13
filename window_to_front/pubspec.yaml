@@ -1,0 +1,27 @@
+name: window_to_front
+description: A new flutter plugin project.
+version: 0.0.1
+
+environment:
+  sdk: ^3.5.1
+  flutter: ^3.3.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      linux:
+        pluginClass: WindowToFrontPlugin
+      macos:
+        pluginClass: WindowToFrontPlugin
+      windows:
+        pluginClass: WindowToFrontPlugin

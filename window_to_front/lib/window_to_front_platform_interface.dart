@@ -1,6 +1,5 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
-
-import 'window_to_front_method_channel.dart';
+import 'package:window_to_front/window_to_front_method_channel.dart';
 
 abstract class WindowToFrontPlatform extends PlatformInterface {
   /// Constructs a WindowToFrontPlatform.

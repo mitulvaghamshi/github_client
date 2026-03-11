@@ -1,5 +1,5 @@
-import 'window_to_front_platform_interface.dart';
+import 'package:window_to_front/window_to_front_platform_interface.dart';
 
-class WindowToFront {
+mixin WindowToFront {
   static Future<void> activate() => WindowToFrontPlatform.instance.activate();
 }

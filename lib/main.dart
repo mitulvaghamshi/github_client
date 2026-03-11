@@ -13,37 +13,33 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) => const CupertinoApp(
     debugShowCheckedModeBanner: false,
-    title: 'GitHub API Client',
-    home: GitHubApp(),
+    title: 'GitHub Client',
+    home: GitHubApp(config: ClientConfig.fromEnv()),
   );
 }
 
 @immutable
 class GitHubApp extends StatelessWidget {
-  const GitHubApp({super.key});
+  const GitHubApp({super.key, required this.config});
+
+  final ClientConfig config;
 
   @override
   Widget build(BuildContext context) => LoginPageBuilder(
-    config: ClientConfig.fromEnv(),
-    builder: (context, logout, handler) => CupertinoTabScaffold(
+    config: config,
+    builder: (context, onLogout, handler) => CupertinoTabScaffold(
       tabBar: CupertinoTabBar(
         items: const [
-          BottomNavigationBarItem(
-            label: 'Repositories',
-            icon: Icon(Octicons.repo),
-          ),
-          BottomNavigationBarItem(
-            label: 'Pull Requests',
-            icon: Icon(Octicons.issue_opened),
-          ),
-          BottomNavigationBarItem(
-            label: 'Assigned Issues',
-            icon: Icon(Octicons.git_pull_request),
-          ),
+          .new(label: 'Repositories', icon: Icon(Octicons.repo)),
+          .new(label: 'Pull Requests', icon: Icon(Octicons.issue_opened)),
+          .new(label: 'Assigned Issues', icon: Icon(Octicons.git_pull_request)),
         ],
       ),
-      tabBuilder: (context, index) =>
-          TabPageBuilder(seletedIndex: index, logout: logout, handler: handler),
+      tabBuilder: (context, index) => TabPageBuilder(
+        seletedIndex: index,
+        onLogout: onLogout,
+        handler: handler,
+      ),
     ),
   );
 }

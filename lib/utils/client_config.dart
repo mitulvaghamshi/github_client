@@ -15,12 +15,11 @@ class ClientConfig {
        assert(clientId.isNotEmpty, '$_keyClientID cannot be empty.'),
        assert(clientSecret.isNotEmpty, '$_keyClientSecret cannot be empty.');
 
-  factory ClientConfig.fromEnv() => ClientConfig(
-    limit: 100,
-    scopes: const ['repo', 'read:org'],
-    clientId: const .fromEnvironment(_keyClientID),
-    clientSecret: const .fromEnvironment(_keyClientSecret),
-  );
+  const ClientConfig.fromEnv()
+    : limit = 100,
+      scopes = const ['repo', 'read:org'],
+      clientId = const .fromEnvironment(_keyClientID),
+      clientSecret = const .fromEnvironment(_keyClientSecret);
 
   final int limit;
   final List<String> scopes;

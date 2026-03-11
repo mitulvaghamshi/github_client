@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-
-import 'window_to_front_platform_interface.dart';
+import 'package:window_to_front/window_to_front_platform_interface.dart';
 
 /// An implementation of [WindowToFrontPlatform] that uses method channels.
 class MethodChannelWindowToFront extends WindowToFrontPlatform {

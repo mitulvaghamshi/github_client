@@ -13,14 +13,14 @@
 namespace {
 
 class WindowToFrontPlugin : public flutter::Plugin {
- public:
+public:
   static void RegisterWithRegistrar(flutter::PluginRegistrarWindows *registrar);
 
   WindowToFrontPlugin(flutter::PluginRegistrarWindows *registrar);
 
   virtual ~WindowToFrontPlugin();
 
- private:
+private:
   // Called when a method is called on this plugin's channel from Dart.
   void HandleMethodCall(
       const flutter::MethodCall<flutter::EncodableValue> &method_call,
@@ -33,10 +33,9 @@ class WindowToFrontPlugin : public flutter::Plugin {
 // static
 void WindowToFrontPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows *registrar) {
-  auto channel =
-      std::make_unique<flutter::MethodChannel<>>(
-          registrar->messenger(), "window_to_front",
-          &flutter::StandardMethodCodec::GetInstance());
+  auto channel = std::make_unique<flutter::MethodChannel<>>(
+      registrar->messenger(), "window_to_front",
+      &flutter::StandardMethodCodec::GetInstance());
 
   auto plugin = std::make_unique<WindowToFrontPlugin>(registrar);
 
@@ -48,8 +47,9 @@ void WindowToFrontPlugin::RegisterWithRegistrar(
   registrar->AddPlugin(std::move(plugin));
 }
 
-WindowToFrontPlugin::WindowToFrontPlugin(flutter::PluginRegistrarWindows *registrar)
-  : registrar_(registrar) {}
+WindowToFrontPlugin::WindowToFrontPlugin(
+    flutter::PluginRegistrarWindows *registrar)
+    : registrar_(registrar) {}
 
 WindowToFrontPlugin::~WindowToFrontPlugin() {}
 
@@ -57,15 +57,16 @@ void WindowToFrontPlugin::HandleMethodCall(
     const flutter::MethodCall<> &method_call,
     std::unique_ptr<flutter::MethodResult<>> result) {
   if (method_call.method_name().compare("activate") == 0) {
-    // See https://stackoverflow.com/a/34414846/2142626 for an explanation of how
-    // this raises a window to the foreground.
+    // See https://stackoverflow.com/a/34414846/2142626 for an explanation of
+    // how this raises a window to the foreground.
     HWND m_hWnd = registrar_->GetView()->GetNativeWindow();
     HWND hCurWnd = ::GetForegroundWindow();
     DWORD dwMyID = ::GetCurrentThreadId();
     DWORD dwCurID = ::GetWindowThreadProcessId(hCurWnd, NULL);
     ::AttachThreadInput(dwCurID, dwMyID, TRUE);
     ::SetWindowPos(m_hWnd, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOSIZE | SWP_NOMOVE);
-    ::SetWindowPos(m_hWnd, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_SHOWWINDOW | SWP_NOSIZE | SWP_NOMOVE);
+    ::SetWindowPos(m_hWnd, HWND_NOTOPMOST, 0, 0, 0, 0,
+                   SWP_SHOWWINDOW | SWP_NOSIZE | SWP_NOMOVE);
     ::SetForegroundWindow(m_hWnd);
     ::SetFocus(m_hWnd);
     ::SetActiveWindow(m_hWnd);
@@ -76,7 +77,7 @@ void WindowToFrontPlugin::HandleMethodCall(
   }
 }
 
-}  // namespace
+} // namespace
 
 void WindowToFrontPluginRegisterWithRegistrar(
     FlutterDesktopPluginRegistrarRef registrar) {

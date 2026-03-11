@@ -23,15 +23,20 @@ class _$GViewerDetailVarsSerializer
   final String wireName = 'GViewerDetailVars';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GViewerDetailVars object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GViewerDetailVars object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     return <Object?>[];
   }
 
   @override
   GViewerDetailVars deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     return GViewerDetailVarsBuilder().build();
   }
 }
@@ -44,8 +49,11 @@ class _$GPullRequestsVarsSerializer
   final String wireName = 'GPullRequestsVars';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GPullRequestsVars object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsVars object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'count',
       serializers.serialize(object.count, specifiedType: const FullType(int)),
@@ -56,8 +64,10 @@ class _$GPullRequestsVarsSerializer
 
   @override
   GPullRequestsVars deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsVarsBuilder();
 
     final iterator = serialized.iterator;
@@ -67,8 +77,12 @@ class _$GPullRequestsVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'count':
-          result.count = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.count =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -82,19 +96,23 @@ class _$GAssignedIssuesVarsSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesVars,
-    _$GAssignedIssuesVars
+    _$GAssignedIssuesVars,
   ];
   @override
   final String wireName = 'GAssignedIssuesVars';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAssignedIssuesVars object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAssignedIssuesVars object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'query',
-      serializers.serialize(object.query,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.query,
+        specifiedType: const FullType(String),
+      ),
       'count',
       serializers.serialize(object.count, specifiedType: const FullType(int)),
     ];
@@ -104,8 +122,10 @@ class _$GAssignedIssuesVarsSerializer
 
   @override
   GAssignedIssuesVars deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesVarsBuilder();
 
     final iterator = serialized.iterator;
@@ -115,12 +135,20 @@ class _$GAssignedIssuesVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'query':
-          result.query = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.query =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'count':
-          result.count = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.count =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -137,8 +165,11 @@ class _$GRepositoriesVarsSerializer
   final String wireName = 'GRepositoriesVars';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GRepositoriesVars object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesVars object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'count',
       serializers.serialize(object.count, specifiedType: const FullType(int)),
@@ -149,8 +180,10 @@ class _$GRepositoriesVarsSerializer
 
   @override
   GRepositoriesVars deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesVarsBuilder();
 
     final iterator = serialized.iterator;
@@ -160,8 +193,12 @@ class _$GRepositoriesVarsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'count':
-          result.count = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.count =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -171,9 +208,9 @@ class _$GRepositoriesVarsSerializer
 }
 
 class _$GViewerDetailVars extends GViewerDetailVars {
-  factory _$GViewerDetailVars(
-          [void Function(GViewerDetailVarsBuilder)? updates]) =>
-      (GViewerDetailVarsBuilder()..update(updates))._build();
+  factory _$GViewerDetailVars([
+    void Function(GViewerDetailVarsBuilder)? updates,
+  ]) => (GViewerDetailVarsBuilder()..update(updates))._build();
 
   _$GViewerDetailVars._() : super._();
   @override
@@ -231,9 +268,9 @@ class _$GPullRequestsVars extends GPullRequestsVars {
   @override
   final int count;
 
-  factory _$GPullRequestsVars(
-          [void Function(GPullRequestsVarsBuilder)? updates]) =>
-      (GPullRequestsVarsBuilder()..update(updates))._build();
+  factory _$GPullRequestsVars([
+    void Function(GPullRequestsVarsBuilder)? updates,
+  ]) => (GPullRequestsVarsBuilder()..update(updates))._build();
 
   _$GPullRequestsVars._({required this.count}) : super._();
   @override
@@ -260,9 +297,9 @@ class _$GPullRequestsVars extends GPullRequestsVars {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GPullRequestsVars')
-          ..add('count', count))
-        .toString();
+    return (newBuiltValueToStringHelper(
+      r'GPullRequestsVars',
+    )..add('count', count)).toString();
   }
 }
 
@@ -299,10 +336,14 @@ class GPullRequestsVarsBuilder
   GPullRequestsVars build() => _build();
 
   _$GPullRequestsVars _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GPullRequestsVars._(
           count: BuiltValueNullFieldError.checkNotNull(
-              count, r'GPullRequestsVars', 'count'),
+            count,
+            r'GPullRequestsVars',
+            'count',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -315,16 +356,16 @@ class _$GAssignedIssuesVars extends GAssignedIssuesVars {
   @override
   final int count;
 
-  factory _$GAssignedIssuesVars(
-          [void Function(GAssignedIssuesVarsBuilder)? updates]) =>
-      (GAssignedIssuesVarsBuilder()..update(updates))._build();
+  factory _$GAssignedIssuesVars([
+    void Function(GAssignedIssuesVarsBuilder)? updates,
+  ]) => (GAssignedIssuesVarsBuilder()..update(updates))._build();
 
   _$GAssignedIssuesVars._({required this.query, required this.count})
-      : super._();
+    : super._();
   @override
   GAssignedIssuesVars rebuild(
-          void Function(GAssignedIssuesVarsBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesVarsBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesVarsBuilder toBuilder() =>
@@ -394,12 +435,19 @@ class GAssignedIssuesVarsBuilder
   GAssignedIssuesVars build() => _build();
 
   _$GAssignedIssuesVars _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GAssignedIssuesVars._(
           query: BuiltValueNullFieldError.checkNotNull(
-              query, r'GAssignedIssuesVars', 'query'),
+            query,
+            r'GAssignedIssuesVars',
+            'query',
+          ),
           count: BuiltValueNullFieldError.checkNotNull(
-              count, r'GAssignedIssuesVars', 'count'),
+            count,
+            r'GAssignedIssuesVars',
+            'count',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -410,9 +458,9 @@ class _$GRepositoriesVars extends GRepositoriesVars {
   @override
   final int count;
 
-  factory _$GRepositoriesVars(
-          [void Function(GRepositoriesVarsBuilder)? updates]) =>
-      (GRepositoriesVarsBuilder()..update(updates))._build();
+  factory _$GRepositoriesVars([
+    void Function(GRepositoriesVarsBuilder)? updates,
+  ]) => (GRepositoriesVarsBuilder()..update(updates))._build();
 
   _$GRepositoriesVars._({required this.count}) : super._();
   @override
@@ -439,9 +487,9 @@ class _$GRepositoriesVars extends GRepositoriesVars {
 
   @override
   String toString() {
-    return (newBuiltValueToStringHelper(r'GRepositoriesVars')
-          ..add('count', count))
-        .toString();
+    return (newBuiltValueToStringHelper(
+      r'GRepositoriesVars',
+    )..add('count', count)).toString();
   }
 }
 
@@ -478,10 +526,14 @@ class GRepositoriesVarsBuilder
   GRepositoriesVars build() => _build();
 
   _$GRepositoriesVars _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GRepositoriesVars._(
           count: BuiltValueNullFieldError.checkNotNull(
-              count, r'GRepositoriesVars', 'count'),
+            count,
+            r'GRepositoriesVars',
+            'count',
+          ),
         );
     replace(_$result);
     return _$result;

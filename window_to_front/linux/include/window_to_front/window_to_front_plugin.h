@@ -18,9 +18,9 @@ typedef struct {
 
 FLUTTER_PLUGIN_EXPORT GType window_to_front_plugin_get_type();
 
-FLUTTER_PLUGIN_EXPORT void window_to_front_plugin_register_with_registrar(
-    FlPluginRegistrar* registrar);
+FLUTTER_PLUGIN_EXPORT void
+window_to_front_plugin_register_with_registrar(FlPluginRegistrar *registrar);
 
 G_END_DECLS
 
-#endif  // FLUTTER_PLUGIN_WINDOW_TO_FRONT_PLUGIN_H_
+#endif // FLUTTER_PLUGIN_WINDOW_TO_FRONT_PLUGIN_H_

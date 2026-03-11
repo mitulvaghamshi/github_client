@@ -1,1 +1,13 @@
-include: package:extra_lints/flutter.yaml
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**
+include:
+  - package:flutter_lints/flutter.yaml
+  - ../analysis_extra.yaml
+

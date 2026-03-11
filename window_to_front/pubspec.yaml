@@ -3,8 +3,8 @@ description: A new flutter plugin project.
 version: 0.0.1
 
 environment:
-  sdk: ^3.10.8
-  flutter: ^3.38.9
+  sdk: ^3.13.0
+  flutter: ^3.47.0
 
 dependencies:
   flutter:
@@ -12,9 +12,7 @@ dependencies:
   plugin_platform_interface: ^2.1.8
 
 dev_dependencies:
-  extra_lints:
-    git:
-      url: https://github.com/mitulvaghamshi/extra_lints.git
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
 

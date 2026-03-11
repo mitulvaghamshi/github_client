@@ -4,28 +4,24 @@ const _keyClientID = 'CLIENT_ID';
 const _keyClientSecret = 'CLIENT_SECRET';
 
 @immutable
-class ClientConfig {
-  ClientConfig({
-    required this.limit,
-    required this.scopes,
-    required this.clientId,
-    required this.clientSecret,
-  }) : assert(limit > 0, 'Limit must be greater then zero.'),
-       assert(scopes.isNotEmpty, 'Scopes cannot be empty.'),
-       assert(clientId.isNotEmpty, '$_keyClientID cannot be empty.'),
-       assert(clientSecret.isNotEmpty, '$_keyClientSecret cannot be empty.');
+class ClientConfig({
+  required final int limit,
+  required final List<String> scopes,
+  required final String clientId,
+  required final String clientSecret,
+}) {
+  this
+    : assert(limit > 0, 'Limit must be greater then zero.'),
+      assert(scopes.isNotEmpty, 'Scopes cannot be empty.'),
+      assert(clientId.isNotEmpty, '$_keyClientID cannot be empty.'),
+      assert(clientSecret.isNotEmpty, '$_keyClientSecret cannot be empty.');
 
-  factory ClientConfig.fromEnv() => ClientConfig(
+  factory fromEnv() => ClientConfig(
     limit: 100,
     scopes: const ['repo', 'read:org'],
     clientId: const .fromEnvironment(_keyClientID),
     clientSecret: const .fromEnvironment(_keyClientSecret),
   );
-
-  final int limit;
-  final List<String> scopes;
-  final String clientId;
-  final String clientSecret;
 }
 
 extension Utils on ClientConfig {

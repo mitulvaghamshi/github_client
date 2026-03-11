@@ -1,4 +1,6 @@
-include: package:extra_lints/flutter.yaml
+include:
+  - package:flutter_lints/flutter.yaml
+  - ./analysis_extra.yaml
 
 analyzer:
   exclude:
@@ -6,3 +8,10 @@ analyzer:
     - lib/src/github_gql/__generated__/*.gql.dart
     - lib/src/github_gql_schema/__generated__/*.g.dart
     - lib/src/github_gql_schema/__generated__/*.gql.dart
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+    - macos/**
+    - linux/**

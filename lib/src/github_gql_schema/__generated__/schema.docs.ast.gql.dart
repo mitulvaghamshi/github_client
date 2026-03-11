@@ -692,6 +692,15 @@ const AddAssigneesToAssignableInput = _i1.InputObjectTypeDefinitionNode(
   directives: [],
   fields: [
     _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'agentAssignment'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AgentAssignmentInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
       name: _i1.NameNode(value: 'assignableId'),
       directives: [
         _i1.DirectiveNode(
@@ -2346,11 +2355,6 @@ const AddReactionInput = _i1.InputObjectTypeDefinitionNode(
                     isBlock: false,
                   ),
                   _i1.StringValueNode(value: 'Release', isBlock: false),
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
-                  _i1.StringValueNode(
-                    value: 'TeamDiscussionComment',
-                    isBlock: false,
-                  ),
                 ],
               ),
             ),
@@ -2969,6 +2973,62 @@ const AddedToProjectV2Event = _i1.ObjectTypeDefinitionNode(
     ),
   ],
 );
+const AgentAssignmentInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'AgentAssignmentInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'baseRef'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'customAgent'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'customInstructions'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'targetRepositoryId'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(value: 'Repository', isBlock: false),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'ID'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
 const Agentic = _i1.InterfaceTypeDefinitionNode(
   name: _i1.NameNode(value: 'Agentic'),
   directives: [],
@@ -2985,6 +3045,15 @@ const Agentic = _i1.InterfaceTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'viewerCopilotAgentLogUpdatesChannel'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'viewerCopilotAgentTaskUpdatesChannel'),
       directives: [],
       args: [],
       type: _i1.NamedTypeNode(
@@ -6828,10 +6897,33 @@ const CheckAnnotation = _i1.ObjectTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'databaseId'),
-      directives: [],
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'deprecated'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'reason'),
+              value: _i1.StringValueNode(
+                value:
+                    '`databaseId` will be removed because it does not support 64-bit signed integer identifiers. Use `fullDatabaseId` instead. Removal on 2027-01-01 UTC.',
+                isBlock: false,
+              ),
+            ),
+          ],
+        ),
+      ],
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Int'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'fullDatabaseId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'BigInt'),
         isNonNull: false,
       ),
     ),
@@ -15232,6 +15324,15 @@ const CreateIssueInput = _i1.InputObjectTypeDefinitionNode(
   directives: [],
   fields: [
     _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'agentAssignment'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AgentAssignmentInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
       name: _i1.NameNode(value: 'assigneeIds'),
       directives: [
         _i1.DirectiveNode(
@@ -16517,6 +16618,158 @@ const CreateRefPayload = _i1.ObjectTypeDefinitionNode(
     ),
   ],
 );
+const CreateRepositoryCustomPropertyInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CreateRepositoryCustomPropertyInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'allowedValues'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'defaultValue'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'propertyName'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'regex'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'requireExplicitValues'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'required'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'sourceId'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(value: 'Enterprise', isBlock: false),
+                  _i1.StringValueNode(value: 'Organization', isBlock: false),
+                ],
+              ),
+            ),
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'abstractType'),
+              value: _i1.StringValueNode(
+                value: 'CustomPropertySource',
+                isBlock: false,
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'valueType'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertyValueType'),
+        isNonNull: true,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'valuesEditableBy'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValuesEditableBy'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const CreateRepositoryCustomPropertyPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CreateRepositoryCustomPropertyPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
 const CreateRepositoryInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'CreateRepositoryInput'),
   directives: [],
@@ -17323,194 +17576,6 @@ const CreateSponsorshipsPayload = _i1.ObjectTypeDefinitionNode(
           name: _i1.NameNode(value: 'Sponsorable'),
           isNonNull: true,
         ),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const CreateTeamDiscussionCommentInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'CreateTeamDiscussionCommentInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'discussionId'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const CreateTeamDiscussionCommentPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'CreateTeamDiscussionCommentPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'teamDiscussionComment'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionComment'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const CreateTeamDiscussionInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'CreateTeamDiscussionInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'private'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'teamId'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [_i1.StringValueNode(value: 'Team', isBlock: false)],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ID'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'title'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const CreateTeamDiscussionPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'CreateTeamDiscussionPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'teamDiscussion'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussion'),
         isNonNull: false,
       ),
     ),
@@ -18463,6 +18528,74 @@ const CrossReferencedEvent = _i1.ObjectTypeDefinitionNode(
         name: _i1.NameNode(value: 'Boolean'),
         isNonNull: true,
       ),
+    ),
+  ],
+);
+const CustomPropertySource = _i1.UnionTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CustomPropertySource'),
+  directives: [],
+  types: [
+    _i1.NamedTypeNode(
+      name: _i1.NameNode(value: 'Enterprise'),
+      isNonNull: false,
+    ),
+    _i1.NamedTypeNode(
+      name: _i1.NameNode(value: 'Organization'),
+      isNonNull: false,
+    ),
+  ],
+);
+const CustomPropertyValue = _i1.ScalarTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CustomPropertyValue'),
+  directives: [],
+);
+const CustomPropertyValueInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CustomPropertyValueInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'propertyName'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'value'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertyValue'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const CustomPropertyValueType = _i1.EnumTypeDefinitionNode(
+  name: _i1.NameNode(value: 'CustomPropertyValueType'),
+  directives: [],
+  values: [
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'MULTI_SELECT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'SINGLE_SELECT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'STRING'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'TRUE_FALSE'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'URL'),
+      directives: [],
     ),
   ],
 );
@@ -20051,6 +20184,69 @@ const DeleteRefPayload = _i1.ObjectTypeDefinitionNode(
     ),
   ],
 );
+const DeleteRepositoryCustomPropertyInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'DeleteRepositoryCustomPropertyInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'id'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(
+                    value: 'RepositoryCustomProperty',
+                    isBlock: false,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+      defaultValue: null,
+    ),
+  ],
+);
+const DeleteRepositoryCustomPropertyPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'DeleteRepositoryCustomPropertyPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
 const DeleteRepositoryRulesetInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'DeleteRepositoryRulesetInput'),
   directives: [],
@@ -20091,111 +20287,6 @@ const DeleteRepositoryRulesetInput = _i1.InputObjectTypeDefinitionNode(
 );
 const DeleteRepositoryRulesetPayload = _i1.ObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'DeleteRepositoryRulesetPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const DeleteTeamDiscussionCommentInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'DeleteTeamDiscussionCommentInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [
-                  _i1.StringValueNode(
-                    value: 'TeamDiscussionComment',
-                    isBlock: false,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-      defaultValue: null,
-    ),
-  ],
-);
-const DeleteTeamDiscussionCommentPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'DeleteTeamDiscussionCommentPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const DeleteTeamDiscussionInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'DeleteTeamDiscussionInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-      defaultValue: null,
-    ),
-  ],
-);
-const DeleteTeamDiscussionPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'DeleteTeamDiscussionPayload'),
   directives: [],
   interfaces: [],
   fields: [
@@ -25396,6 +25487,71 @@ const Enterprise = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperties'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'after'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'before'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'first'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'last'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyConnection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'propertyName'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'resourcePath'),
       directives: [],
       args: [],
@@ -27716,6 +27872,19 @@ const EnterpriseOwnerInfo = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(
+        value: 'ipAllowListUserLevelEnforcementEnabledSetting',
+      ),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(
+          value: 'IpAllowListUserLevelEnforcementEnabledSettingValue',
+        ),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'isUpdatingDefaultRepositoryPermission'),
       directives: [],
       args: [],
@@ -29242,85 +29411,24 @@ const EnterpriseOwnerInfo = _i1.ObjectTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'teamDiscussionsSetting'),
-      directives: [],
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'deprecated'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'reason'),
+              value: _i1.StringValueNode(
+                value:
+                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
+                isBlock: false,
+              ),
+            ),
+          ],
+        ),
+      ],
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'EnterpriseEnabledDisabledSettingValue'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'teamDiscussionsSettingOrganizations'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'orderBy'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'OrganizationOrder'),
-            isNonNull: false,
-          ),
-          defaultValue: _i1.ObjectValueNode(
-            fields: [
-              _i1.ObjectFieldNode(
-                name: _i1.NameNode(value: 'field'),
-                value: _i1.EnumValueNode(name: _i1.NameNode(value: 'LOGIN')),
-              ),
-              _i1.ObjectFieldNode(
-                name: _i1.NameNode(value: 'direction'),
-                value: _i1.EnumValueNode(name: _i1.NameNode(value: 'ASC')),
-              ),
-            ],
-          ),
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'value'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Boolean'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'OrganizationConnection'),
         isNonNull: true,
       ),
     ),
@@ -34343,6 +34451,23 @@ const IpAllowListOwner = _i1.UnionTypeDefinitionNode(
     ),
   ],
 );
+const IpAllowListUserLevelEnforcementEnabledSettingValue =
+    _i1.EnumTypeDefinitionNode(
+      name: _i1.NameNode(
+        value: 'IpAllowListUserLevelEnforcementEnabledSettingValue',
+      ),
+      directives: [],
+      values: [
+        _i1.EnumValueDefinitionNode(
+          name: _i1.NameNode(value: 'DISABLED'),
+          directives: [],
+        ),
+        _i1.EnumValueDefinitionNode(
+          name: _i1.NameNode(value: 'ENABLED'),
+          directives: [],
+        ),
+      ],
+    );
 const Issue = _i1.ObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'Issue'),
   directives: [],
@@ -35289,7 +35414,7 @@ const Issue = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'ProjectV2ItemConnection'),
-        isNonNull: true,
+        isNonNull: false,
       ),
     ),
     _i1.FieldDefinitionNode(
@@ -37746,6 +37871,14 @@ const IssueTimelineItemsItemType = _i1.EnumTypeDefinitionNode(
     ),
     _i1.EnumValueDefinitionNode(
       name: _i1.NameNode(value: 'ISSUE_COMMENT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ISSUE_COMMENT_PINNED_EVENT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ISSUE_COMMENT_UNPINNED_EVENT'),
       directives: [],
     ),
     _i1.EnumValueDefinitionNode(
@@ -46181,6 +46314,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'createRepositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'CreateRepositoryCustomPropertyInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CreateRepositoryCustomPropertyPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'createRepositoryRuleset'),
       directives: [],
       args: [
@@ -46272,44 +46424,6 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'CreateSponsorshipsPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createTeamDiscussion'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'CreateTeamDiscussionInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'CreateTeamDiscussionPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createTeamDiscussionComment'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'CreateTeamDiscussionCommentInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'CreateTeamDiscussionCommentPayload'),
         isNonNull: false,
       ),
     ),
@@ -46831,6 +46945,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'deleteRepositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'DeleteRepositoryCustomPropertyInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'DeleteRepositoryCustomPropertyPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'deleteRepositoryRuleset'),
       directives: [],
       args: [
@@ -46846,44 +46979,6 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'DeleteRepositoryRulesetPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'deleteTeamDiscussion'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'DeleteTeamDiscussionInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DeleteTeamDiscussionPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'deleteTeamDiscussionComment'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'DeleteTeamDiscussionCommentInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DeleteTeamDiscussionCommentPayload'),
         isNonNull: false,
       ),
     ),
@@ -47520,6 +47615,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'promoteRepositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'PromoteRepositoryCustomPropertyInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PromoteRepositoryCustomPropertyPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'publishSponsorsTier'),
       directives: [],
       args: [
@@ -47984,6 +48098,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'requestReviewsByLogin'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'RequestReviewsByLoginInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RequestReviewsByLoginPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'rerequestCheckSuite'),
       directives: [],
       args: [
@@ -48136,6 +48269,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'SetOrganizationInteractionLimitPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'setRepositoryCustomPropertyValues'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'SetRepositoryCustomPropertyValuesInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'SetRepositoryCustomPropertyValuesPayload'),
         isNonNull: false,
       ),
     ),
@@ -49051,29 +49203,6 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateEnterpriseTeamDiscussionsSetting'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(
-              value: 'UpdateEnterpriseTeamDiscussionsSettingInput',
-            ),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(
-          value: 'UpdateEnterpriseTeamDiscussionsSettingPayload',
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
       name: _i1.NameNode(
         value:
             'updateEnterpriseTwoFactorAuthenticationDisallowedMethodsSetting',
@@ -49206,6 +49335,31 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(
           value: 'UpdateIpAllowListForInstalledAppsEnabledSettingPayload',
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(
+        value: 'updateIpAllowListUserLevelEnforcementEnabledSetting',
+      ),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(
+              value: 'UpdateIpAllowListUserLevelEnforcementEnabledSettingInput',
+            ),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(
+          value: 'UpdateIpAllowListUserLevelEnforcementEnabledSettingPayload',
         ),
         isNonNull: false,
       ),
@@ -49763,6 +49917,25 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'updateRepositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'input'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'UpdateRepositoryCustomPropertyInput'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'UpdateRepositoryCustomPropertyPayload'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'updateRepositoryRuleset'),
       directives: [],
       args: [
@@ -49839,44 +50012,6 @@ const Mutation = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'UpdateSubscriptionPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateTeamDiscussion'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'UpdateTeamDiscussionInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UpdateTeamDiscussionPayload'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updateTeamDiscussionComment'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'input'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'UpdateTeamDiscussionCommentInput'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UpdateTeamDiscussionCommentPayload'),
         isNonNull: false,
       ),
     ),
@@ -65718,6 +65853,71 @@ const Organization = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperties'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'after'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'before'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'first'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'last'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyConnection'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'propertyName'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'repositoryDiscussionComments'),
       directives: [],
       args: [
@@ -78969,6 +79169,69 @@ const ProjectV2WorkflowsOrderField = _i1.EnumTypeDefinitionNode(
     ),
   ],
 );
+const PromoteRepositoryCustomPropertyInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'PromoteRepositoryCustomPropertyInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomPropertyId'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(
+                    value: 'RepositoryCustomProperty',
+                    isBlock: false,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+      defaultValue: null,
+    ),
+  ],
+);
+const PromoteRepositoryCustomPropertyPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'PromoteRepositoryCustomPropertyPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
 const PropertyTargetDefinition = _i1.ObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'PropertyTargetDefinition'),
   directives: [],
@@ -80418,7 +80681,7 @@ const PullRequest = _i1.ObjectTypeDefinitionNode(
       ],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'ProjectV2ItemConnection'),
-        isNonNull: true,
+        isNonNull: false,
       ),
     ),
     _i1.FieldDefinitionNode(
@@ -80922,6 +81185,15 @@ const PullRequest = _i1.ObjectTypeDefinitionNode(
           directives: [],
           type: _i1.NamedTypeNode(
             name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'query'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
             isNonNull: false,
           ),
           defaultValue: null,
@@ -81906,6 +82178,20 @@ const PullRequestContributionsByRepository = _i1.ObjectTypeDefinitionNode(
         name: _i1.NameNode(value: 'Repository'),
         isNonNull: true,
       ),
+    ),
+  ],
+);
+const PullRequestCreationPolicy = _i1.EnumTypeDefinitionNode(
+  name: _i1.NameNode(value: 'PullRequestCreationPolicy'),
+  directives: [],
+  values: [
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ALL'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'COLLABORATORS_ONLY'),
+      directives: [],
     ),
   ],
 );
@@ -84919,6 +85205,14 @@ const PullRequestTimelineItemsItemType = _i1.EnumTypeDefinitionNode(
     ),
     _i1.EnumValueDefinitionNode(
       name: _i1.NameNode(value: 'ISSUE_COMMENT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ISSUE_COMMENT_PINNED_EVENT'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ISSUE_COMMENT_UNPINNED_EVENT'),
       directives: [],
     ),
     _i1.EnumValueDefinitionNode(
@@ -89536,11 +89830,6 @@ const RemoveReactionInput = _i1.InputObjectTypeDefinitionNode(
                     isBlock: false,
                   ),
                   _i1.StringValueNode(value: 'Release', isBlock: false),
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
-                  _i1.StringValueNode(
-                    value: 'TeamDiscussionComment',
-                    isBlock: false,
-                  ),
                 ],
               ),
             ),
@@ -90462,7 +90751,28 @@ const ReplaceActorsForAssignableInput = _i1.InputObjectTypeDefinitionNode(
           name: _i1.NameNode(value: 'ID'),
           isNonNull: true,
         ),
-        isNonNull: true,
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'actorLogins'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'agentAssignment'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AgentAssignmentInput'),
+        isNonNull: false,
       ),
       defaultValue: null,
     ),
@@ -100648,6 +100958,15 @@ const Repository = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'hasPullRequestsEnabled'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'hasSponsorshipsEnabled'),
       directives: [],
       args: [],
@@ -102025,6 +102344,15 @@ const Repository = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pullRequestCreationPolicy'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PullRequestCreationPolicy'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'pullRequestTemplates'),
       directives: [],
       args: [],
@@ -102370,6 +102698,71 @@ const Repository = _i1.ObjectTypeDefinitionNode(
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'ReleaseConnection'),
         isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomPropertyValue'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'propertyName'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValue'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomPropertyValues'),
+      directives: [],
+      args: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'after'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'before'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'first'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'last'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'Int'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+      ],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValueConnection'),
+        isNonNull: false,
       ),
     ),
     _i1.FieldDefinitionNode(
@@ -103476,6 +103869,301 @@ const RepositoryContributionType = _i1.EnumTypeDefinitionNode(
     ),
   ],
 );
+const RepositoryCustomProperty = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+  directives: [],
+  interfaces: [
+    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Node'), isNonNull: false),
+  ],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'allowedValues'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'defaultValue'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertyValue'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'id'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'propertyName'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'regex'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'requireExplicitValues'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'required'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'source'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertySource'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'valueType'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertyValueType'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'valuesEditableBy'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValuesEditableBy'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyConnection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyConnection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'edges'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'RepositoryCustomPropertyEdge'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pageInfo'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PageInfo'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'totalCount'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Int'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyEdge = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyEdge'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'cursor'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'node'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyValue = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyValue'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'propertyName'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'value'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'CustomPropertyValue'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyValueConnection = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyValueConnection'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'edges'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'RepositoryCustomPropertyValueEdge'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'nodes'),
+      directives: [],
+      args: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'RepositoryCustomPropertyValue'),
+          isNonNull: false,
+        ),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pageInfo'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PageInfo'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'totalCount'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Int'),
+        isNonNull: true,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyValueEdge = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyValueEdge'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'cursor'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'node'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValue'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const RepositoryCustomPropertyValuesEditableBy = _i1.EnumTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RepositoryCustomPropertyValuesEditableBy'),
+  directives: [],
+  values: [
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ORG_ACTORS'),
+      directives: [],
+    ),
+    _i1.EnumValueDefinitionNode(
+      name: _i1.NameNode(value: 'ORG_AND_REPO_ACTORS'),
+      directives: [],
+    ),
+  ],
+);
 const RepositoryDiscussionAuthor = _i1.InterfaceTypeDefinitionNode(
   name: _i1.NameNode(value: 'RepositoryDiscussionAuthor'),
   directives: [],
@@ -103792,6 +104480,15 @@ const RepositoryInfo = _i1.InterfaceTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'hasPullRequestsEnabled'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'hasSponsorshipsEnabled'),
       directives: [],
       args: [],
@@ -103942,6 +104639,15 @@ const RepositoryInfo = _i1.InterfaceTypeDefinitionNode(
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'RepositoryOwner'),
         isNonNull: true,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pullRequestCreationPolicy'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PullRequestCreationPolicy'),
+        isNonNull: false,
       ),
     ),
     _i1.FieldDefinitionNode(
@@ -107519,6 +108225,129 @@ const ReprioritizeSubIssuePayload = _i1.ObjectTypeDefinitionNode(
     ),
   ],
 );
+const RequestReviewsByLoginInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RequestReviewsByLoginInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'botLogins'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'pullRequestId'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(value: 'PullRequest', isBlock: false),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'teamSlugs'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'union'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: _i1.BooleanValueNode(value: false),
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'userLogins'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const RequestReviewsByLoginPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'RequestReviewsByLoginPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'actor'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Actor'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'pullRequest'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PullRequest'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'requestedReviewersEdge'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'UserEdge'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
 const RequestReviewsInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'RequestReviewsInput'),
   directives: [],
@@ -110804,6 +111633,82 @@ const SetOrganizationInteractionLimitPayload = _i1.ObjectTypeDefinitionNode(
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Organization'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
+const SetRepositoryCustomPropertyValuesInput =
+    _i1.InputObjectTypeDefinitionNode(
+      name: _i1.NameNode(value: 'SetRepositoryCustomPropertyValuesInput'),
+      directives: [],
+      fields: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'clientMutationId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'properties'),
+          directives: [],
+          type: _i1.ListTypeNode(
+            type: _i1.NamedTypeNode(
+              name: _i1.NameNode(value: 'CustomPropertyValueInput'),
+              isNonNull: true,
+            ),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'repositoryId'),
+          directives: [
+            _i1.DirectiveNode(
+              name: _i1.NameNode(value: 'possibleTypes'),
+              arguments: [
+                _i1.ArgumentNode(
+                  name: _i1.NameNode(value: 'concreteTypes'),
+                  value: _i1.ListValueNode(
+                    values: [
+                      _i1.StringValueNode(value: 'Repository', isBlock: false),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+    );
+const SetRepositoryCustomPropertyValuesPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'SetRepositoryCustomPropertyValuesPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repository'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Repository'),
         isNonNull: false,
       ),
     ),
@@ -117152,107 +118057,6 @@ const Team = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'discussion'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'number'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussion'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'discussions'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'isPinned'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Boolean'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'orderBy'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'TeamDiscussionOrder'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionConnection'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'discussionsResourcePath'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'discussionsUrl'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'editTeamResourcePath'),
       directives: [],
       args: [],
@@ -117848,7 +118652,21 @@ const Team = _i1.ObjectTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'viewerCanSubscribe'),
-      directives: [],
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'deprecated'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'reason'),
+              value: _i1.StringValueNode(
+                value:
+                    '`Team.viewerCanSubscribe` will be removed. Team notifications subscriptions are being deprecated. Removal on 2026-07-01 UTC.',
+                isBlock: false,
+              ),
+            ),
+          ],
+        ),
+      ],
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Boolean'),
@@ -117857,7 +118675,21 @@ const Team = _i1.ObjectTypeDefinitionNode(
     ),
     _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'viewerSubscription'),
-      directives: [],
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'deprecated'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'reason'),
+              value: _i1.StringValueNode(
+                value:
+                    '`Team.viewerSubscription` will be removed. Team notifications subscriptions are being deprecated. Removal on 2026-07-01 UTC.',
+                isBlock: false,
+              ),
+            ),
+          ],
+        ),
+      ],
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'SubscriptionState'),
@@ -119610,1346 +120442,6 @@ const TeamConnection = _i1.ObjectTypeDefinitionNode(
         name: _i1.NameNode(value: 'Int'),
         isNonNull: true,
       ),
-    ),
-  ],
-);
-const TeamDiscussion = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussion'),
-  directives: [],
-  interfaces: [
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Comment'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Deletable'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Node'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Reactable'), isNonNull: false),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'Subscribable'),
-      isNonNull: false,
-    ),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'UniformResourceLocatable'),
-      isNonNull: false,
-    ),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Updatable'), isNonNull: false),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'UpdatableComment'),
-      isNonNull: false,
-    ),
-  ],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'author'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Actor'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'authorAssociation'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'CommentAuthorAssociation'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyHTML'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'HTML'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyText'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyVersion'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'comments'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'fromComment'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'orderBy'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'TeamDiscussionCommentOrder'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionCommentConnection'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'commentsResourcePath'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'commentsUrl'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdViaEmail'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'databaseId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'editor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Actor'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'includesCreatedEdit'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'isPinned'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'isPrivate'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'lastEditedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'number'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'reactionGroups'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ReactionGroup'),
-          isNonNull: true,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'reactions'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'content'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ReactionContent'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'orderBy'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ReactionOrder'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ReactionConnection'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'resourcePath'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'team'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Team'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'title'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'url'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'userContentEdits'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UserContentEditConnection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanDelete'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanPin'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanReact'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanSubscribe'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanUpdate'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCannotUpdateReasons'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'CommentCannotUpdateReason'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerDidAuthor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerSubscription'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'SubscriptionState'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionComment = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionComment'),
-  directives: [],
-  interfaces: [
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Comment'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Deletable'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Node'), isNonNull: false),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Reactable'), isNonNull: false),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'UniformResourceLocatable'),
-      isNonNull: false,
-    ),
-    _i1.NamedTypeNode(name: _i1.NameNode(value: 'Updatable'), isNonNull: false),
-    _i1.NamedTypeNode(
-      name: _i1.NameNode(value: 'UpdatableComment'),
-      isNonNull: false,
-    ),
-  ],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'author'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Actor'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'authorAssociation'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'CommentAuthorAssociation'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyHTML'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'HTML'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyText'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'bodyVersion'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'createdViaEmail'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'databaseId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'discussion'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussion'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'editor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Actor'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'includesCreatedEdit'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'lastEditedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'number'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'publishedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'reactionGroups'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'ReactionGroup'),
-          isNonNull: true,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'reactions'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'content'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ReactionContent'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'orderBy'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ReactionOrder'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'ReactionConnection'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'resourcePath'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'updatedAt'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'DateTime'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'url'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'deprecated'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'reason'),
-              value: _i1.StringValueNode(
-                value:
-                    'The Team Discussions feature is deprecated in favor of Organization Discussions. Follow the guide at https://github.blog/changelog/2023-02-08-sunset-notice-team-discussions/ to find a suitable replacement. Removal on 2024-07-01 UTC.',
-                isBlock: false,
-              ),
-            ),
-          ],
-        ),
-      ],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'URI'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'userContentEdits'),
-      directives: [],
-      args: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'after'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'before'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'first'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'last'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Int'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-      ],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'UserContentEditConnection'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanDelete'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanReact'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCanUpdate'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerCannotUpdateReasons'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'CommentCannotUpdateReason'),
-          isNonNull: true,
-        ),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'viewerDidAuthor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: true,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionCommentConnection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionCommentConnection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'edges'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'TeamDiscussionCommentEdge'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'TeamDiscussionComment'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'pageInfo'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'PageInfo'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'totalCount'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: true,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionCommentEdge = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionCommentEdge'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'cursor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'node'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionComment'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionCommentOrder = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionCommentOrder'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'direction'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'OrderDirection'),
-        isNonNull: true,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'field'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionCommentOrderField'),
-        isNonNull: true,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const TeamDiscussionCommentOrderField = _i1.EnumTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionCommentOrderField'),
-  directives: [],
-  values: [
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'NUMBER'),
-      directives: [],
-    ),
-  ],
-);
-const TeamDiscussionConnection = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionConnection'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'edges'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'TeamDiscussionEdge'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'nodes'),
-      directives: [],
-      args: [],
-      type: _i1.ListTypeNode(
-        type: _i1.NamedTypeNode(
-          name: _i1.NameNode(value: 'TeamDiscussion'),
-          isNonNull: false,
-        ),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'pageInfo'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'PageInfo'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'totalCount'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Int'),
-        isNonNull: true,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionEdge = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionEdge'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'cursor'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'node'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussion'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const TeamDiscussionOrder = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionOrder'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'direction'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'OrderDirection'),
-        isNonNull: true,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'field'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionOrderField'),
-        isNonNull: true,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const TeamDiscussionOrderField = _i1.EnumTypeDefinitionNode(
-  name: _i1.NameNode(value: 'TeamDiscussionOrderField'),
-  directives: [],
-  values: [
-    _i1.EnumValueDefinitionNode(
-      name: _i1.NameNode(value: 'CREATED_AT'),
-      directives: [],
     ),
   ],
 );
@@ -127057,91 +126549,6 @@ const UpdateEnterpriseRepositoryProjectsSettingPayload =
         ),
       ],
     );
-const UpdateEnterpriseTeamDiscussionsSettingInput =
-    _i1.InputObjectTypeDefinitionNode(
-      name: _i1.NameNode(value: 'UpdateEnterpriseTeamDiscussionsSettingInput'),
-      directives: [],
-      fields: [
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'clientMutationId'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'enterpriseId'),
-          directives: [
-            _i1.DirectiveNode(
-              name: _i1.NameNode(value: 'possibleTypes'),
-              arguments: [
-                _i1.ArgumentNode(
-                  name: _i1.NameNode(value: 'concreteTypes'),
-                  value: _i1.ListValueNode(
-                    values: [
-                      _i1.StringValueNode(value: 'Enterprise', isBlock: false),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'ID'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-        _i1.InputValueDefinitionNode(
-          name: _i1.NameNode(value: 'settingValue'),
-          directives: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'EnterpriseEnabledDisabledSettingValue'),
-            isNonNull: true,
-          ),
-          defaultValue: null,
-        ),
-      ],
-    );
-const UpdateEnterpriseTeamDiscussionsSettingPayload =
-    _i1.ObjectTypeDefinitionNode(
-      name: _i1.NameNode(
-        value: 'UpdateEnterpriseTeamDiscussionsSettingPayload',
-      ),
-      directives: [],
-      interfaces: [],
-      fields: [
-        _i1.FieldDefinitionNode(
-          name: _i1.NameNode(value: 'clientMutationId'),
-          directives: [],
-          args: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-        ),
-        _i1.FieldDefinitionNode(
-          name: _i1.NameNode(value: 'enterprise'),
-          directives: [],
-          args: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'Enterprise'),
-            isNonNull: false,
-          ),
-        ),
-        _i1.FieldDefinitionNode(
-          name: _i1.NameNode(value: 'message'),
-          directives: [],
-          args: [],
-          type: _i1.NamedTypeNode(
-            name: _i1.NameNode(value: 'String'),
-            isNonNull: false,
-          ),
-        ),
-      ],
-    );
 const UpdateEnterpriseTwoFactorAuthenticationDisallowedMethodsSettingInput =
     _i1.InputObjectTypeDefinitionNode(
       name: _i1.NameNode(
@@ -127670,6 +127077,98 @@ const UpdateIpAllowListForInstalledAppsEnabledSettingPayload =
         ),
       ],
     );
+const UpdateIpAllowListUserLevelEnforcementEnabledSettingInput =
+    _i1.InputObjectTypeDefinitionNode(
+      name: _i1.NameNode(
+        value: 'UpdateIpAllowListUserLevelEnforcementEnabledSettingInput',
+      ),
+      directives: [],
+      fields: [
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'clientMutationId'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'ownerId'),
+          directives: [
+            _i1.DirectiveNode(
+              name: _i1.NameNode(value: 'possibleTypes'),
+              arguments: [
+                _i1.ArgumentNode(
+                  name: _i1.NameNode(value: 'concreteTypes'),
+                  value: _i1.ListValueNode(
+                    values: [
+                      _i1.StringValueNode(value: 'App', isBlock: false),
+                      _i1.StringValueNode(value: 'Enterprise', isBlock: false),
+                      _i1.StringValueNode(
+                        value: 'Organization',
+                        isBlock: false,
+                      ),
+                    ],
+                  ),
+                ),
+                _i1.ArgumentNode(
+                  name: _i1.NameNode(value: 'abstractType'),
+                  value: _i1.StringValueNode(
+                    value: 'IpAllowListOwner',
+                    isBlock: false,
+                  ),
+                ),
+              ],
+            ),
+          ],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'ID'),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+        _i1.InputValueDefinitionNode(
+          name: _i1.NameNode(value: 'settingValue'),
+          directives: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(
+              value: 'IpAllowListUserLevelEnforcementEnabledSettingValue',
+            ),
+            isNonNull: true,
+          ),
+          defaultValue: null,
+        ),
+      ],
+    );
+const UpdateIpAllowListUserLevelEnforcementEnabledSettingPayload =
+    _i1.ObjectTypeDefinitionNode(
+      name: _i1.NameNode(
+        value: 'UpdateIpAllowListUserLevelEnforcementEnabledSettingPayload',
+      ),
+      directives: [],
+      interfaces: [],
+      fields: [
+        _i1.FieldDefinitionNode(
+          name: _i1.NameNode(value: 'clientMutationId'),
+          directives: [],
+          args: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'String'),
+            isNonNull: false,
+          ),
+        ),
+        _i1.FieldDefinitionNode(
+          name: _i1.NameNode(value: 'owner'),
+          directives: [],
+          args: [],
+          type: _i1.NamedTypeNode(
+            name: _i1.NameNode(value: 'IpAllowListOwner'),
+            isNonNull: false,
+          ),
+        ),
+      ],
+    );
 const UpdateIssueCommentInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'UpdateIssueCommentInput'),
   directives: [],
@@ -127743,6 +127242,15 @@ const UpdateIssueInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'UpdateIssueInput'),
   directives: [],
   fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'agentAssignment'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'AgentAssignmentInput'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
     _i1.InputValueDefinitionNode(
       name: _i1.NameNode(value: 'assigneeIds'),
       directives: [
@@ -130123,6 +129631,135 @@ const UpdateRefsPayload = _i1.ObjectTypeDefinitionNode(
     ),
   ],
 );
+const UpdateRepositoryCustomPropertyInput = _i1.InputObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'UpdateRepositoryCustomPropertyInput'),
+  directives: [],
+  fields: [
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'allowedValues'),
+      directives: [],
+      type: _i1.ListTypeNode(
+        type: _i1.NamedTypeNode(
+          name: _i1.NameNode(value: 'String'),
+          isNonNull: true,
+        ),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'defaultValue'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'description'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'regex'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomPropertyId'),
+      directives: [
+        _i1.DirectiveNode(
+          name: _i1.NameNode(value: 'possibleTypes'),
+          arguments: [
+            _i1.ArgumentNode(
+              name: _i1.NameNode(value: 'concreteTypes'),
+              value: _i1.ListValueNode(
+                values: [
+                  _i1.StringValueNode(
+                    value: 'RepositoryCustomProperty',
+                    isBlock: false,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'requireExplicitValues'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'required'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'valuesEditableBy'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomPropertyValuesEditableBy'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+  ],
+);
+const UpdateRepositoryCustomPropertyPayload = _i1.ObjectTypeDefinitionNode(
+  name: _i1.NameNode(value: 'UpdateRepositoryCustomPropertyPayload'),
+  directives: [],
+  interfaces: [],
+  fields: [
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'clientMutationId'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'repositoryCustomProperty'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'RepositoryCustomProperty'),
+        isNonNull: false,
+      ),
+    ),
+  ],
+);
 const UpdateRepositoryInput = _i1.InputObjectTypeDefinitionNode(
   name: _i1.NameNode(value: 'UpdateRepositoryInput'),
   directives: [],
@@ -130173,6 +129810,15 @@ const UpdateRepositoryInput = _i1.InputObjectTypeDefinitionNode(
       defaultValue: null,
     ),
     _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'hasPullRequestsEnabled'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'Boolean'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
       name: _i1.NameNode(value: 'hasSponsorshipsEnabled'),
       directives: [],
       type: _i1.NamedTypeNode(
@@ -130204,6 +129850,15 @@ const UpdateRepositoryInput = _i1.InputObjectTypeDefinitionNode(
       directives: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+      defaultValue: null,
+    ),
+    _i1.InputValueDefinitionNode(
+      name: _i1.NameNode(value: 'pullRequestCreationPolicy'),
+      directives: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'PullRequestCreationPolicy'),
         isNonNull: false,
       ),
       defaultValue: null,
@@ -130642,7 +130297,6 @@ const UpdateSubscriptionInput = _i1.InputObjectTypeDefinitionNode(
                   _i1.StringValueNode(value: 'PullRequest', isBlock: false),
                   _i1.StringValueNode(value: 'Repository', isBlock: false),
                   _i1.StringValueNode(value: 'Team', isBlock: false),
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
                 ],
               ),
             ),
@@ -130678,183 +130332,6 @@ const UpdateSubscriptionPayload = _i1.ObjectTypeDefinitionNode(
       args: [],
       type: _i1.NamedTypeNode(
         name: _i1.NameNode(value: 'Subscribable'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const UpdateTeamDiscussionCommentInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'UpdateTeamDiscussionCommentInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: true,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'bodyVersion'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [
-                  _i1.StringValueNode(
-                    value: 'TeamDiscussionComment',
-                    isBlock: false,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-      defaultValue: null,
-    ),
-  ],
-);
-const UpdateTeamDiscussionCommentPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'UpdateTeamDiscussionCommentPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'teamDiscussionComment'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussionComment'),
-        isNonNull: false,
-      ),
-    ),
-  ],
-);
-const UpdateTeamDiscussionInput = _i1.InputObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'UpdateTeamDiscussionInput'),
-  directives: [],
-  fields: [
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'body'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'bodyVersion'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'id'),
-      directives: [
-        _i1.DirectiveNode(
-          name: _i1.NameNode(value: 'possibleTypes'),
-          arguments: [
-            _i1.ArgumentNode(
-              name: _i1.NameNode(value: 'concreteTypes'),
-              value: _i1.ListValueNode(
-                values: [
-                  _i1.StringValueNode(value: 'TeamDiscussion', isBlock: false),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ],
-      type: _i1.NamedTypeNode(name: _i1.NameNode(value: 'ID'), isNonNull: true),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'pinned'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'Boolean'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-    _i1.InputValueDefinitionNode(
-      name: _i1.NameNode(value: 'title'),
-      directives: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-      defaultValue: null,
-    ),
-  ],
-);
-const UpdateTeamDiscussionPayload = _i1.ObjectTypeDefinitionNode(
-  name: _i1.NameNode(value: 'UpdateTeamDiscussionPayload'),
-  directives: [],
-  interfaces: [],
-  fields: [
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'clientMutationId'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'String'),
-        isNonNull: false,
-      ),
-    ),
-    _i1.FieldDefinitionNode(
-      name: _i1.NameNode(value: 'teamDiscussion'),
-      directives: [],
-      args: [],
-      type: _i1.NamedTypeNode(
-        name: _i1.NameNode(value: 'TeamDiscussion'),
         isNonNull: false,
       ),
     ),
@@ -134589,6 +134066,15 @@ const User = _i1.ObjectTypeDefinitionNode(
       ),
     ),
     _i1.FieldDefinitionNode(
+      name: _i1.NameNode(value: 'viewerCopilotAgentTaskUpdatesChannel'),
+      directives: [],
+      args: [],
+      type: _i1.NamedTypeNode(
+        name: _i1.NameNode(value: 'String'),
+        isNonNull: false,
+      ),
+    ),
+    _i1.FieldDefinitionNode(
       name: _i1.NameNode(value: 'viewerCopilotAgentUpdatesChannel'),
       directives: [],
       args: [],
@@ -136922,6 +136408,7 @@ const document = _i1.DocumentNode(
     AddedToMergeQueueEvent,
     AddedToProjectEvent,
     AddedToProjectV2Event,
+    AgentAssignmentInput,
     Agentic,
     AnnouncementBanner,
     App,
@@ -137139,6 +136626,8 @@ const document = _i1.DocumentNode(
     CreatePullRequestPayload,
     CreateRefInput,
     CreateRefPayload,
+    CreateRepositoryCustomPropertyInput,
+    CreateRepositoryCustomPropertyPayload,
     CreateRepositoryInput,
     CreateRepositoryPayload,
     CreateRepositoryRulesetInput,
@@ -137151,10 +136640,6 @@ const document = _i1.DocumentNode(
     CreateSponsorshipPayload,
     CreateSponsorshipsInput,
     CreateSponsorshipsPayload,
-    CreateTeamDiscussionCommentInput,
-    CreateTeamDiscussionCommentPayload,
-    CreateTeamDiscussionInput,
-    CreateTeamDiscussionPayload,
     CreateUserListInput,
     CreateUserListPayload,
     CreatedCommitContribution,
@@ -137176,6 +136661,10 @@ const document = _i1.DocumentNode(
     CreatedRepositoryContributionEdge,
     CreatedRepositoryOrRestrictedContribution,
     CrossReferencedEvent,
+    CustomPropertySource,
+    CustomPropertyValue,
+    CustomPropertyValueInput,
+    CustomPropertyValueType,
     CvssSeverities,
     Date,
     DateTime,
@@ -137229,12 +136718,10 @@ const document = _i1.DocumentNode(
     DeletePullRequestReviewPayload,
     DeleteRefInput,
     DeleteRefPayload,
+    DeleteRepositoryCustomPropertyInput,
+    DeleteRepositoryCustomPropertyPayload,
     DeleteRepositoryRulesetInput,
     DeleteRepositoryRulesetPayload,
-    DeleteTeamDiscussionCommentInput,
-    DeleteTeamDiscussionCommentPayload,
-    DeleteTeamDiscussionInput,
-    DeleteTeamDiscussionPayload,
     DeleteUserListInput,
     DeleteUserListPayload,
     DeleteVerifiableDomainInput,
@@ -137465,6 +136952,7 @@ const document = _i1.DocumentNode(
     IpAllowListEntryOrderField,
     IpAllowListForInstalledAppsEnabledSettingValue,
     IpAllowListOwner,
+    IpAllowListUserLevelEnforcementEnabledSettingValue,
     Issue,
     IssueClosedStateReason,
     IssueComment,
@@ -137842,6 +137330,8 @@ const document = _i1.DocumentNode(
     ProjectV2WorkflowEdge,
     ProjectV2WorkflowOrder,
     ProjectV2WorkflowsOrderField,
+    PromoteRepositoryCustomPropertyInput,
+    PromoteRepositoryCustomPropertyPayload,
     PropertyTargetDefinition,
     PropertyTargetDefinitionInput,
     PublicKey,
@@ -137861,6 +137351,7 @@ const document = _i1.DocumentNode(
     PullRequestCommitEdge,
     PullRequestConnection,
     PullRequestContributionsByRepository,
+    PullRequestCreationPolicy,
     PullRequestEdge,
     PullRequestMergeMethod,
     PullRequestOrder,
@@ -138019,6 +137510,13 @@ const document = _i1.DocumentNode(
     RepositoryConnection,
     RepositoryContactLink,
     RepositoryContributionType,
+    RepositoryCustomProperty,
+    RepositoryCustomPropertyConnection,
+    RepositoryCustomPropertyEdge,
+    RepositoryCustomPropertyValue,
+    RepositoryCustomPropertyValueConnection,
+    RepositoryCustomPropertyValueEdge,
+    RepositoryCustomPropertyValuesEditableBy,
     RepositoryDiscussionAuthor,
     RepositoryDiscussionCommentAuthor,
     RepositoryEdge,
@@ -138085,6 +137583,8 @@ const document = _i1.DocumentNode(
     RepositoryVulnerabilityAlertState,
     ReprioritizeSubIssueInput,
     ReprioritizeSubIssuePayload,
+    RequestReviewsByLoginInput,
+    RequestReviewsByLoginPayload,
     RequestReviewsInput,
     RequestReviewsPayload,
     RequestableCheckStatusState,
@@ -138163,6 +137663,8 @@ const document = _i1.DocumentNode(
     SetEnterpriseIdentityProviderPayload,
     SetOrganizationInteractionLimitInput,
     SetOrganizationInteractionLimitPayload,
+    SetRepositoryCustomPropertyValuesInput,
+    SetRepositoryCustomPropertyValuesPayload,
     SetRepositoryInteractionLimitInput,
     SetRepositoryInteractionLimitPayload,
     SetUserInteractionLimitInput,
@@ -138270,16 +137772,6 @@ const document = _i1.DocumentNode(
     TeamAuditEntryData,
     TeamChangeParentTeamAuditEntry,
     TeamConnection,
-    TeamDiscussion,
-    TeamDiscussionComment,
-    TeamDiscussionCommentConnection,
-    TeamDiscussionCommentEdge,
-    TeamDiscussionCommentOrder,
-    TeamDiscussionCommentOrderField,
-    TeamDiscussionConnection,
-    TeamDiscussionEdge,
-    TeamDiscussionOrder,
-    TeamDiscussionOrderField,
     TeamEdge,
     TeamMemberConnection,
     TeamMemberEdge,
@@ -138398,8 +137890,6 @@ const document = _i1.DocumentNode(
     UpdateEnterpriseProfilePayload,
     UpdateEnterpriseRepositoryProjectsSettingInput,
     UpdateEnterpriseRepositoryProjectsSettingPayload,
-    UpdateEnterpriseTeamDiscussionsSettingInput,
-    UpdateEnterpriseTeamDiscussionsSettingPayload,
     UpdateEnterpriseTwoFactorAuthenticationDisallowedMethodsSettingInput,
     UpdateEnterpriseTwoFactorAuthenticationDisallowedMethodsSettingPayload,
     UpdateEnterpriseTwoFactorAuthenticationRequiredSettingInput,
@@ -138412,6 +137902,8 @@ const document = _i1.DocumentNode(
     UpdateIpAllowListEntryPayload,
     UpdateIpAllowListForInstalledAppsEnabledSettingInput,
     UpdateIpAllowListForInstalledAppsEnabledSettingPayload,
+    UpdateIpAllowListUserLevelEnforcementEnabledSettingInput,
+    UpdateIpAllowListUserLevelEnforcementEnabledSettingPayload,
     UpdateIssueCommentInput,
     UpdateIssueCommentPayload,
     UpdateIssueInput,
@@ -138464,6 +137956,8 @@ const document = _i1.DocumentNode(
     UpdateRefPayload,
     UpdateRefsInput,
     UpdateRefsPayload,
+    UpdateRepositoryCustomPropertyInput,
+    UpdateRepositoryCustomPropertyPayload,
     UpdateRepositoryInput,
     UpdateRepositoryPayload,
     UpdateRepositoryRulesetInput,
@@ -138474,10 +137968,6 @@ const document = _i1.DocumentNode(
     UpdateSponsorshipPreferencesPayload,
     UpdateSubscriptionInput,
     UpdateSubscriptionPayload,
-    UpdateTeamDiscussionCommentInput,
-    UpdateTeamDiscussionCommentPayload,
-    UpdateTeamDiscussionInput,
-    UpdateTeamDiscussionPayload,
     UpdateTeamReviewAssignmentInput,
     UpdateTeamReviewAssignmentPayload,
     UpdateTeamsRepositoryInput,

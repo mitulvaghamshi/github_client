@@ -22,15 +22,22 @@ class _$GViewerDetailSerializer implements StructuredSerializer<GViewerDetail> {
   final String wireName = 'GViewerDetail';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GViewerDetail object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GViewerDetail object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'vars',
-      serializers.serialize(object.vars,
-          specifiedType: const FullType(_i3.GViewerDetailVars)),
+      serializers.serialize(
+        object.vars,
+        specifiedType: const FullType(_i3.GViewerDetailVars),
+      ),
       'operation',
-      serializers.serialize(object.operation,
-          specifiedType: const FullType(_i1.Operation)),
+      serializers.serialize(
+        object.operation,
+        specifiedType: const FullType(_i1.Operation),
+      ),
     ];
 
     return result;
@@ -38,8 +45,10 @@ class _$GViewerDetailSerializer implements StructuredSerializer<GViewerDetail> {
 
   @override
   GViewerDetail deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GViewerDetailBuilder();
 
     final iterator = serialized.iterator;
@@ -49,13 +58,21 @@ class _$GViewerDetailSerializer implements StructuredSerializer<GViewerDetail> {
       final Object? value = iterator.current;
       switch (key) {
         case 'vars':
-          result.vars.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GViewerDetailVars))!
-              as _i3.GViewerDetailVars);
+          result.vars.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i3.GViewerDetailVars),
+                )!
+                as _i3.GViewerDetailVars,
+          );
           break;
         case 'operation':
-          result.operation = serializers.deserialize(value,
-              specifiedType: const FullType(_i1.Operation))! as _i1.Operation;
+          result.operation =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i1.Operation),
+                  )!
+                  as _i1.Operation;
           break;
       }
     }
@@ -71,15 +88,22 @@ class _$GPullRequestsSerializer implements StructuredSerializer<GPullRequests> {
   final String wireName = 'GPullRequests';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GPullRequests object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequests object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'vars',
-      serializers.serialize(object.vars,
-          specifiedType: const FullType(_i3.GPullRequestsVars)),
+      serializers.serialize(
+        object.vars,
+        specifiedType: const FullType(_i3.GPullRequestsVars),
+      ),
       'operation',
-      serializers.serialize(object.operation,
-          specifiedType: const FullType(_i1.Operation)),
+      serializers.serialize(
+        object.operation,
+        specifiedType: const FullType(_i1.Operation),
+      ),
     ];
 
     return result;
@@ -87,8 +111,10 @@ class _$GPullRequestsSerializer implements StructuredSerializer<GPullRequests> {
 
   @override
   GPullRequests deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsBuilder();
 
     final iterator = serialized.iterator;
@@ -98,13 +124,21 @@ class _$GPullRequestsSerializer implements StructuredSerializer<GPullRequests> {
       final Object? value = iterator.current;
       switch (key) {
         case 'vars':
-          result.vars.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GPullRequestsVars))!
-              as _i3.GPullRequestsVars);
+          result.vars.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i3.GPullRequestsVars),
+                )!
+                as _i3.GPullRequestsVars,
+          );
           break;
         case 'operation':
-          result.operation = serializers.deserialize(value,
-              specifiedType: const FullType(_i1.Operation))! as _i1.Operation;
+          result.operation =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i1.Operation),
+                  )!
+                  as _i1.Operation;
           break;
       }
     }
@@ -121,15 +155,22 @@ class _$GAssignedIssuesSerializer
   final String wireName = 'GAssignedIssues';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GAssignedIssues object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssues object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'vars',
-      serializers.serialize(object.vars,
-          specifiedType: const FullType(_i3.GAssignedIssuesVars)),
+      serializers.serialize(
+        object.vars,
+        specifiedType: const FullType(_i3.GAssignedIssuesVars),
+      ),
       'operation',
-      serializers.serialize(object.operation,
-          specifiedType: const FullType(_i1.Operation)),
+      serializers.serialize(
+        object.operation,
+        specifiedType: const FullType(_i1.Operation),
+      ),
     ];
 
     return result;
@@ -137,8 +178,10 @@ class _$GAssignedIssuesSerializer
 
   @override
   GAssignedIssues deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesBuilder();
 
     final iterator = serialized.iterator;
@@ -148,13 +191,21 @@ class _$GAssignedIssuesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case 'vars':
-          result.vars.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GAssignedIssuesVars))!
-              as _i3.GAssignedIssuesVars);
+          result.vars.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i3.GAssignedIssuesVars),
+                )!
+                as _i3.GAssignedIssuesVars,
+          );
           break;
         case 'operation':
-          result.operation = serializers.deserialize(value,
-              specifiedType: const FullType(_i1.Operation))! as _i1.Operation;
+          result.operation =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i1.Operation),
+                  )!
+                  as _i1.Operation;
           break;
       }
     }
@@ -170,15 +221,22 @@ class _$GRepositoriesSerializer implements StructuredSerializer<GRepositories> {
   final String wireName = 'GRepositories';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GRepositories object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositories object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       'vars',
-      serializers.serialize(object.vars,
-          specifiedType: const FullType(_i3.GRepositoriesVars)),
+      serializers.serialize(
+        object.vars,
+        specifiedType: const FullType(_i3.GRepositoriesVars),
+      ),
       'operation',
-      serializers.serialize(object.operation,
-          specifiedType: const FullType(_i1.Operation)),
+      serializers.serialize(
+        object.operation,
+        specifiedType: const FullType(_i1.Operation),
+      ),
     ];
 
     return result;
@@ -186,8 +244,10 @@ class _$GRepositoriesSerializer implements StructuredSerializer<GRepositories> {
 
   @override
   GRepositories deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesBuilder();
 
     final iterator = serialized.iterator;
@@ -197,13 +257,21 @@ class _$GRepositoriesSerializer implements StructuredSerializer<GRepositories> {
       final Object? value = iterator.current;
       switch (key) {
         case 'vars':
-          result.vars.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(_i3.GRepositoriesVars))!
-              as _i3.GRepositoriesVars);
+          result.vars.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i3.GRepositoriesVars),
+                )!
+                as _i3.GRepositoriesVars,
+          );
           break;
         case 'operation':
-          result.operation = serializers.deserialize(value,
-              specifiedType: const FullType(_i1.Operation))! as _i1.Operation;
+          result.operation =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i1.Operation),
+                  )!
+                  as _i1.Operation;
           break;
       }
     }
@@ -298,11 +366,15 @@ class GViewerDetailBuilder
   _$GViewerDetail _build() {
     _$GViewerDetail _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GViewerDetail._(
             vars: vars.build(),
             operation: BuiltValueNullFieldError.checkNotNull(
-                operation, r'GViewerDetail', 'operation'),
+              operation,
+              r'GViewerDetail',
+              'operation',
+            ),
           );
     } catch (_) {
       late String _$failedField;
@@ -311,7 +383,10 @@ class GViewerDetailBuilder
         vars.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GViewerDetail', _$failedField, e.toString());
+          r'GViewerDetail',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -406,11 +481,15 @@ class GPullRequestsBuilder
   _$GPullRequests _build() {
     _$GPullRequests _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequests._(
             vars: vars.build(),
             operation: BuiltValueNullFieldError.checkNotNull(
-                operation, r'GPullRequests', 'operation'),
+              operation,
+              r'GPullRequests',
+              'operation',
+            ),
           );
     } catch (_) {
       late String _$failedField;
@@ -419,7 +498,10 @@ class GPullRequestsBuilder
         vars.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequests', _$failedField, e.toString());
+          r'GPullRequests',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -438,7 +520,7 @@ class _$GAssignedIssues extends GAssignedIssues {
       (GAssignedIssuesBuilder()..update(updates))._build();
 
   _$GAssignedIssues._({required this.vars, required this.operation})
-      : super._();
+    : super._();
   @override
   GAssignedIssues rebuild(void Function(GAssignedIssuesBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -515,11 +597,15 @@ class GAssignedIssuesBuilder
   _$GAssignedIssues _build() {
     _$GAssignedIssues _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssues._(
             vars: vars.build(),
             operation: BuiltValueNullFieldError.checkNotNull(
-                operation, r'GAssignedIssues', 'operation'),
+              operation,
+              r'GAssignedIssues',
+              'operation',
+            ),
           );
     } catch (_) {
       late String _$failedField;
@@ -528,7 +614,10 @@ class GAssignedIssuesBuilder
         vars.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssues', _$failedField, e.toString());
+          r'GAssignedIssues',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -623,11 +712,15 @@ class GRepositoriesBuilder
   _$GRepositories _build() {
     _$GRepositories _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositories._(
             vars: vars.build(),
             operation: BuiltValueNullFieldError.checkNotNull(
-                operation, r'GRepositories', 'operation'),
+              operation,
+              r'GRepositories',
+              'operation',
+            ),
           );
     } catch (_) {
       late String _$failedField;
@@ -636,7 +729,10 @@ class GRepositoriesBuilder
         vars.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositories', _$failedField, e.toString());
+          r'GRepositories',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }

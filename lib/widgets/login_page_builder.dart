@@ -1,33 +1,20 @@
 import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:github_client/utils/client_config.dart';
 import 'package:github_client/utils/request_handler.dart';
-import 'package:gql_http_link/gql_http_link.dart';
+import 'package:github_client/utils/utils.dart';
 import 'package:http/http.dart' as http;
 import 'package:oauth2/oauth2.dart' as oauth2;
 import 'package:url_launcher/url_launcher.dart' as ul;
 import 'package:window_to_front/window_to_front.dart';
 
-typedef AuthBuilder =
-    Widget Function(
-      BuildContext context,
-      AsyncCallback onLogout,
-      RequestHandler handler,
-    );
-
 @immutable
-class LoginPageBuilder extends StatefulWidget {
-  const LoginPageBuilder({
-    super.key,
-    required this.config,
-    required this.builder,
-  });
-
-  final ClientConfig config;
-  final AuthBuilder builder;
-
+class const LoginPageBuilder({
+  required final ClientConfig config,
+  required final AuthBuilder builder,
+  super.key,
+}) extends StatefulWidget {
   @override
   State<LoginPageBuilder> createState() => _LoginPageBuilderState();
 }
@@ -39,22 +26,25 @@ class _LoginPageBuilderState extends State<LoginPageBuilder> {
   Future<void> _login() async {
     final client = await _authRequest();
     await WindowToFront.activate();
-    if (mounted) setState(() => _client = client);
+    if (mounted) {
+      setState(() => _client = client);
+    }
   }
 
   Future<void> logout() async {
     await ul.launchUrl(.https('github.com', 'logout'));
     await WindowToFront.activate();
-    if (mounted) setState(() => _client = null);
+    if (mounted) {
+      setState(() => _client = null);
+    }
   }
 
   @override
   Widget build(BuildContext context) {
-    final client = _client;
-    if (client != null) {
+    if (_client case final oauth2.Client client) {
       final handler = RequestHandler(
         limit: widget.config.limit,
-        link: HttpLink(widget.config.graphqlUrl, httpClient: client),
+        link: .new(widget.config.graphqlUrl, httpClient: client),
       );
       return widget.builder(context, logout, handler);
     }
@@ -94,11 +84,11 @@ extension on _LoginPageBuilderState {
   }
 
   Future<Map<String, String>> _listen() async {
-    var request = await _redirectServer!.first
+    final request = await _redirectServer!.first
       ..response.statusCode = 200
       ..response.headers.set(
         HttpHeaders.contentTypeHeader,
-        ContentType.text.mimeType,
+        ContentType.text.value,
       )
       ..response.writeln('Authenticated! You can close this window.');
     await request.response.close();
@@ -109,14 +99,12 @@ extension on _LoginPageBuilderState {
 }
 
 @immutable
-class _JsonHttpClient extends http.BaseClient {
-  _JsonHttpClient() : _client = http.Client();
-
-  final http.Client _client;
+class _JsonHttpClient() extends http.BaseClient {
+  final _client = http.Client();
 
   @override
   Future<http.StreamedResponse> send(http.BaseRequest request) {
-    request.headers[HttpHeaders.acceptHeader] = ContentType.json.mimeType;
+    request.headers[HttpHeaders.acceptHeader] = ContentType.json.value;
     return _client.send(request);
   }
 }

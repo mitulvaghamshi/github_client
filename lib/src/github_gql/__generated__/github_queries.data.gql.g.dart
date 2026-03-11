@@ -15,72 +15,72 @@ Serializer<GPullRequestsData> _$gPullRequestsDataSerializer =
 Serializer<GPullRequestsData_viewer> _$gPullRequestsDataViewerSerializer =
     _$GPullRequestsData_viewerSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests>
-    _$gPullRequestsDataViewerPullRequestsSerializer =
+_$gPullRequestsDataViewerPullRequestsSerializer =
     _$GPullRequestsData_viewer_pullRequestsSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges>
-    _$gPullRequestsDataViewerPullRequestsEdgesSerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesSerializer =
     _$GPullRequestsData_viewer_pullRequests_edgesSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges_node>
-    _$gPullRequestsDataViewerPullRequestsEdgesNodeSerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesNodeSerializer =
     _$GPullRequestsData_viewer_pullRequests_edges_nodeSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges_node_repository>
-    _$gPullRequestsDataViewerPullRequestsEdgesNodeRepositorySerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesNodeRepositorySerializer =
     _$GPullRequestsData_viewer_pullRequests_edges_node_repositorySerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges_node_author>
-    _$gPullRequestsDataViewerPullRequestsEdgesNodeAuthorSerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesNodeAuthorSerializer =
     _$GPullRequestsData_viewer_pullRequests_edges_node_authorSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges_node_comments>
-    _$gPullRequestsDataViewerPullRequestsEdgesNodeCommentsSerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesNodeCommentsSerializer =
     _$GPullRequestsData_viewer_pullRequests_edges_node_commentsSerializer();
 Serializer<GPullRequestsData_viewer_pullRequests_edges_node_files>
-    _$gPullRequestsDataViewerPullRequestsEdgesNodeFilesSerializer =
+_$gPullRequestsDataViewerPullRequestsEdgesNodeFilesSerializer =
     _$GPullRequestsData_viewer_pullRequests_edges_node_filesSerializer();
 Serializer<GAssignedIssuesData> _$gAssignedIssuesDataSerializer =
     _$GAssignedIssuesDataSerializer();
 Serializer<GAssignedIssuesData_search> _$gAssignedIssuesDataSearchSerializer =
     _$GAssignedIssuesData_searchSerializer();
 Serializer<GAssignedIssuesData_search_edges>
-    _$gAssignedIssuesDataSearchEdgesSerializer =
+_$gAssignedIssuesDataSearchEdgesSerializer =
     _$GAssignedIssuesData_search_edgesSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__base>
-    _$gAssignedIssuesDataSearchEdgesNodeBaseSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeBaseSerializer =
     _$GAssignedIssuesData_search_edges_node__baseSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueSerializer =
     _$GAssignedIssuesData_search_edges_node__asIssueSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue_repository>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueRepositorySerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueRepositorySerializer =
     _$GAssignedIssuesData_search_edges_node__asIssue_repositorySerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue_author>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueAuthorSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueAuthorSerializer =
     _$GAssignedIssuesData_search_edges_node__asIssue_authorSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue_labels>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsSerializer =
     _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsNodesSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueLabelsNodesSerializer =
     _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodesSerializer();
 Serializer<GAssignedIssuesData_search_edges_node__asIssue_comments>
-    _$gAssignedIssuesDataSearchEdgesNodeAsIssueCommentsSerializer =
+_$gAssignedIssuesDataSearchEdgesNodeAsIssueCommentsSerializer =
     _$GAssignedIssuesData_search_edges_node__asIssue_commentsSerializer();
 Serializer<GRepositoriesData> _$gRepositoriesDataSerializer =
     _$GRepositoriesDataSerializer();
 Serializer<GRepositoriesData_viewer> _$gRepositoriesDataViewerSerializer =
     _$GRepositoriesData_viewerSerializer();
 Serializer<GRepositoriesData_viewer_repositories>
-    _$gRepositoriesDataViewerRepositoriesSerializer =
+_$gRepositoriesDataViewerRepositoriesSerializer =
     _$GRepositoriesData_viewer_repositoriesSerializer();
 Serializer<GRepositoriesData_viewer_repositories_nodes>
-    _$gRepositoriesDataViewerRepositoriesNodesSerializer =
+_$gRepositoriesDataViewerRepositoriesNodesSerializer =
     _$GRepositoriesData_viewer_repositories_nodesSerializer();
 Serializer<GRepositoriesData_viewer_repositories_nodes_stargazers>
-    _$gRepositoriesDataViewerRepositoriesNodesStargazersSerializer =
+_$gRepositoriesDataViewerRepositoriesNodesStargazersSerializer =
     _$GRepositoriesData_viewer_repositories_nodes_stargazersSerializer();
 Serializer<GRepositoriesData_viewer_repositories_nodes_issues>
-    _$gRepositoriesDataViewerRepositoriesNodesIssuesSerializer =
+_$gRepositoriesDataViewerRepositoriesNodesIssuesSerializer =
     _$GRepositoriesData_viewer_repositories_nodes_issuesSerializer();
 Serializer<GRepositoriesData_viewer_repositories_nodes_owner>
-    _$gRepositoriesDataViewerRepositoriesNodesOwnerSerializer =
+_$gRepositoriesDataViewerRepositoriesNodesOwnerSerializer =
     _$GRepositoriesData_viewer_repositories_nodes_ownerSerializer();
 
 class _$GViewerDetailDataSerializer
@@ -91,15 +91,22 @@ class _$GViewerDetailDataSerializer
   final String wireName = 'GViewerDetailData';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GViewerDetailData object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GViewerDetailData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'viewer',
-      serializers.serialize(object.viewer,
-          specifiedType: const FullType(GViewerDetailData_viewer)),
+      serializers.serialize(
+        object.viewer,
+        specifiedType: const FullType(GViewerDetailData_viewer),
+      ),
     ];
 
     return result;
@@ -107,8 +114,10 @@ class _$GViewerDetailDataSerializer
 
   @override
   GViewerDetailData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GViewerDetailDataBuilder();
 
     final iterator = serialized.iterator;
@@ -118,13 +127,21 @@ class _$GViewerDetailDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'viewer':
-          result.viewer.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GViewerDetailData_viewer))!
-              as GViewerDetailData_viewer);
+          result.viewer.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GViewerDetailData_viewer),
+                )!
+                as GViewerDetailData_viewer,
+          );
           break;
       }
     }
@@ -138,45 +155,55 @@ class _$GViewerDetailData_viewerSerializer
   @override
   final Iterable<Type> types = const [
     GViewerDetailData_viewer,
-    _$GViewerDetailData_viewer
+    _$GViewerDetailData_viewer,
   ];
   @override
   final String wireName = 'GViewerDetailData_viewer';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GViewerDetailData_viewer object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GViewerDetailData_viewer object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'login',
-      serializers.serialize(object.login,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.login,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.name;
     if (value != null) {
       result
         ..add('name')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     value = object.bio;
     if (value != null) {
       result
         ..add('bio')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GViewerDetailData_viewer deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GViewerDetailData_viewerBuilder();
 
     final iterator = serialized.iterator;
@@ -186,20 +213,36 @@ class _$GViewerDetailData_viewerSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'login':
-          result.login = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.login =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'bio':
-          result.bio = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.bio =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
       }
     }
@@ -216,15 +259,22 @@ class _$GPullRequestsDataSerializer
   final String wireName = 'GPullRequestsData';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GPullRequestsData object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'viewer',
-      serializers.serialize(object.viewer,
-          specifiedType: const FullType(GPullRequestsData_viewer)),
+      serializers.serialize(
+        object.viewer,
+        specifiedType: const FullType(GPullRequestsData_viewer),
+      ),
     ];
 
     return result;
@@ -232,8 +282,10 @@ class _$GPullRequestsDataSerializer
 
   @override
   GPullRequestsData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsDataBuilder();
 
     final iterator = serialized.iterator;
@@ -243,13 +295,21 @@ class _$GPullRequestsDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'viewer':
-          result.viewer.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GPullRequestsData_viewer))!
-              as GPullRequestsData_viewer);
+          result.viewer.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GPullRequestsData_viewer),
+                )!
+                as GPullRequestsData_viewer,
+          );
           break;
       }
     }
@@ -263,22 +323,28 @@ class _$GPullRequestsData_viewerSerializer
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer,
-    _$GPullRequestsData_viewer
+    _$GPullRequestsData_viewer,
   ];
   @override
   final String wireName = 'GPullRequestsData_viewer';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GPullRequestsData_viewer object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GPullRequestsData_viewer object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'pullRequests',
-      serializers.serialize(object.pullRequests,
-          specifiedType: const FullType(GPullRequestsData_viewer_pullRequests)),
+      serializers.serialize(
+        object.pullRequests,
+        specifiedType: const FullType(GPullRequestsData_viewer_pullRequests),
+      ),
     ];
 
     return result;
@@ -286,8 +352,10 @@ class _$GPullRequestsData_viewerSerializer
 
   @override
   GPullRequestsData_viewer deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsData_viewerBuilder();
 
     final iterator = serialized.iterator;
@@ -297,14 +365,23 @@ class _$GPullRequestsData_viewerSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'pullRequests':
-          result.pullRequests.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GPullRequestsData_viewer_pullRequests))!
-              as GPullRequestsData_viewer_pullRequests);
+          result.pullRequests.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GPullRequestsData_viewer_pullRequests,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests,
+          );
           break;
       }
     }
@@ -318,38 +395,49 @@ class _$GPullRequestsData_viewer_pullRequestsSerializer
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests,
-    _$GPullRequestsData_viewer_pullRequests
+    _$GPullRequestsData_viewer_pullRequests,
   ];
   @override
   final String wireName = 'GPullRequestsData_viewer_pullRequests';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GPullRequestsData_viewer_pullRequests object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.edges;
     if (value != null) {
       result
         ..add('edges')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GPullRequestsData_viewer_pullRequests_edges)
-            ])));
+                GPullRequestsData_viewer_pullRequests_edges,
+              ),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GPullRequestsData_viewer_pullRequests deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsData_viewer_pullRequestsBuilder();
 
     final iterator = serialized.iterator;
@@ -359,15 +447,25 @@ class _$GPullRequestsData_viewer_pullRequestsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'edges':
-          result.edges.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(
-                    GPullRequestsData_viewer_pullRequests_edges)
-              ]))! as BuiltList<Object?>);
+          result.edges.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(
+                      GPullRequestsData_viewer_pullRequests_edges,
+                    ),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -382,36 +480,47 @@ class _$GPullRequestsData_viewer_pullRequests_edgesSerializer
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges,
-    _$GPullRequestsData_viewer_pullRequests_edges
+    _$GPullRequestsData_viewer_pullRequests_edges,
   ];
   @override
   final String wireName = 'GPullRequestsData_viewer_pullRequests_edges';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.node;
     if (value != null) {
       result
         ..add('node')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(
-                GPullRequestsData_viewer_pullRequests_edges_node)));
+              GPullRequestsData_viewer_pullRequests_edges_node,
+            ),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GPullRequestsData_viewer_pullRequests_edges deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsData_viewer_pullRequests_edgesBuilder();
 
     final iterator = serialized.iterator;
@@ -421,14 +530,23 @@ class _$GPullRequestsData_viewer_pullRequests_edgesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'node':
-          result.node.replace(serializers.deserialize(value,
+          result.node.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GPullRequestsData_viewer_pullRequests_edges_node))!
-              as GPullRequestsData_viewer_pullRequests_edges_node);
+                    GPullRequestsData_viewer_pullRequests_edges_node,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests_edges_node,
+          );
           break;
       }
     }
@@ -443,69 +561,101 @@ class _$GPullRequestsData_viewer_pullRequests_edges_nodeSerializer
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges_node,
-    _$GPullRequestsData_viewer_pullRequests_edges_node
+    _$GPullRequestsData_viewer_pullRequests_edges_node,
   ];
   @override
   final String wireName = 'GPullRequestsData_viewer_pullRequests_edges_node';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges_node object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges_node object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'repository',
-      serializers.serialize(object.repository,
-          specifiedType: const FullType(
-              GPullRequestsData_viewer_pullRequests_edges_node_repository)),
+      serializers.serialize(
+        object.repository,
+        specifiedType: const FullType(
+          GPullRequestsData_viewer_pullRequests_edges_node_repository,
+        ),
+      ),
       'number',
       serializers.serialize(object.number, specifiedType: const FullType(int)),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.title,
+        specifiedType: const FullType(String),
+      ),
       'updatedAt',
-      serializers.serialize(object.updatedAt,
-          specifiedType: const FullType(_i2.GDateTime)),
+      serializers.serialize(
+        object.updatedAt,
+        specifiedType: const FullType(_i2.GDateTime),
+      ),
       'state',
-      serializers.serialize(object.state,
-          specifiedType: const FullType(_i2.GPullRequestState)),
+      serializers.serialize(
+        object.state,
+        specifiedType: const FullType(_i2.GPullRequestState),
+      ),
       'isDraft',
-      serializers.serialize(object.isDraft,
-          specifiedType: const FullType(bool)),
+      serializers.serialize(
+        object.isDraft,
+        specifiedType: const FullType(bool),
+      ),
       'comments',
-      serializers.serialize(object.comments,
-          specifiedType: const FullType(
-              GPullRequestsData_viewer_pullRequests_edges_node_comments)),
+      serializers.serialize(
+        object.comments,
+        specifiedType: const FullType(
+          GPullRequestsData_viewer_pullRequests_edges_node_comments,
+        ),
+      ),
     ];
     Object? value;
     value = object.author;
     if (value != null) {
       result
         ..add('author')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(
-                GPullRequestsData_viewer_pullRequests_edges_node_author)));
+              GPullRequestsData_viewer_pullRequests_edges_node_author,
+            ),
+          ),
+        );
     }
     value = object.files;
     if (value != null) {
       result
         ..add('files')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(
-                GPullRequestsData_viewer_pullRequests_edges_node_files)));
+              GPullRequestsData_viewer_pullRequests_edges_node_files,
+            ),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GPullRequestsData_viewer_pullRequests_edges_nodeBuilder();
 
     final iterator = serialized.iterator;
@@ -515,57 +665,106 @@ class _$GPullRequestsData_viewer_pullRequests_edges_nodeSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'repository':
-          result.repository.replace(serializers.deserialize(value,
+          result.repository.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GPullRequestsData_viewer_pullRequests_edges_node_repository))!
-              as GPullRequestsData_viewer_pullRequests_edges_node_repository);
+                    GPullRequestsData_viewer_pullRequests_edges_node_repository,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests_edges_node_repository,
+          );
           break;
         case 'author':
-          result.author.replace(serializers.deserialize(value,
+          result.author.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GPullRequestsData_viewer_pullRequests_edges_node_author))!
-              as GPullRequestsData_viewer_pullRequests_edges_node_author);
+                    GPullRequestsData_viewer_pullRequests_edges_node_author,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests_edges_node_author,
+          );
           break;
         case 'number':
-          result.number = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.number =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'updatedAt':
-          result.updatedAt.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GDateTime))! as _i2.GDateTime);
+          result.updatedAt.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GDateTime),
+                )!
+                as _i2.GDateTime,
+          );
           break;
         case 'state':
-          result.state = serializers.deserialize(value,
-                  specifiedType: const FullType(_i2.GPullRequestState))!
-              as _i2.GPullRequestState;
+          result.state =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(_i2.GPullRequestState),
+                  )!
+                  as _i2.GPullRequestState;
           break;
         case 'isDraft':
-          result.isDraft = serializers.deserialize(value,
-              specifiedType: const FullType(bool))! as bool;
+          result.isDraft =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )!
+                  as bool;
           break;
         case 'comments':
-          result.comments.replace(serializers.deserialize(value,
+          result.comments.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GPullRequestsData_viewer_pullRequests_edges_node_comments))!
-              as GPullRequestsData_viewer_pullRequests_edges_node_comments);
+                    GPullRequestsData_viewer_pullRequests_edges_node_comments,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests_edges_node_comments,
+          );
           break;
         case 'files':
-          result.files.replace(serializers.deserialize(value,
+          result.files.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GPullRequestsData_viewer_pullRequests_edges_node_files))!
-              as GPullRequestsData_viewer_pullRequests_edges_node_files);
+                    GPullRequestsData_viewer_pullRequests_edges_node_files,
+                  ),
+                )!
+                as GPullRequestsData_viewer_pullRequests_edges_node_files,
+          );
           break;
       }
     }
@@ -577,30 +776,39 @@ class _$GPullRequestsData_viewer_pullRequests_edges_nodeSerializer
 class _$GPullRequestsData_viewer_pullRequests_edges_node_repositorySerializer
     implements
         StructuredSerializer<
-            GPullRequestsData_viewer_pullRequests_edges_node_repository> {
+          GPullRequestsData_viewer_pullRequests_edges_node_repository
+        > {
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges_node_repository,
-    _$GPullRequestsData_viewer_pullRequests_edges_node_repository
+    _$GPullRequestsData_viewer_pullRequests_edges_node_repository,
   ];
   @override
   final String wireName =
       'GPullRequestsData_viewer_pullRequests_edges_node_repository';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges_node_repository object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges_node_repository object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'nameWithOwner',
-      serializers.serialize(object.nameWithOwner,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.nameWithOwner,
+        specifiedType: const FullType(String),
+      ),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
     ];
 
     return result;
@@ -608,8 +816,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repositorySerializer
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_repository deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder();
 
@@ -620,16 +830,29 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repositorySerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'nameWithOwner':
-          result.nameWithOwner = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.nameWithOwner =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
       }
     }
@@ -641,30 +864,39 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repositorySerializer
 class _$GPullRequestsData_viewer_pullRequests_edges_node_authorSerializer
     implements
         StructuredSerializer<
-            GPullRequestsData_viewer_pullRequests_edges_node_author> {
+          GPullRequestsData_viewer_pullRequests_edges_node_author
+        > {
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges_node_author,
-    _$GPullRequestsData_viewer_pullRequests_edges_node_author
+    _$GPullRequestsData_viewer_pullRequests_edges_node_author,
   ];
   @override
   final String wireName =
       'GPullRequestsData_viewer_pullRequests_edges_node_author';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges_node_author object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges_node_author object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'login',
-      serializers.serialize(object.login,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.login,
+        specifiedType: const FullType(String),
+      ),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
     ];
 
     return result;
@@ -672,8 +904,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_authorSerializer
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_author deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder();
 
@@ -684,16 +918,29 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_authorSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'login':
-          result.login = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.login =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
       }
     }
@@ -705,27 +952,34 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_authorSerializer
 class _$GPullRequestsData_viewer_pullRequests_edges_node_commentsSerializer
     implements
         StructuredSerializer<
-            GPullRequestsData_viewer_pullRequests_edges_node_comments> {
+          GPullRequestsData_viewer_pullRequests_edges_node_comments
+        > {
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges_node_comments,
-    _$GPullRequestsData_viewer_pullRequests_edges_node_comments
+    _$GPullRequestsData_viewer_pullRequests_edges_node_comments,
   ];
   @override
   final String wireName =
       'GPullRequestsData_viewer_pullRequests_edges_node_comments';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges_node_comments object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges_node_comments object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'totalCount',
-      serializers.serialize(object.totalCount,
-          specifiedType: const FullType(int)),
+      serializers.serialize(
+        object.totalCount,
+        specifiedType: const FullType(int),
+      ),
     ];
 
     return result;
@@ -733,8 +987,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_commentsSerializer
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_comments deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder();
 
@@ -745,12 +1001,20 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_commentsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'totalCount':
-          result.totalCount = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.totalCount =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -762,27 +1026,34 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_commentsSerializer
 class _$GPullRequestsData_viewer_pullRequests_edges_node_filesSerializer
     implements
         StructuredSerializer<
-            GPullRequestsData_viewer_pullRequests_edges_node_files> {
+          GPullRequestsData_viewer_pullRequests_edges_node_files
+        > {
   @override
   final Iterable<Type> types = const [
     GPullRequestsData_viewer_pullRequests_edges_node_files,
-    _$GPullRequestsData_viewer_pullRequests_edges_node_files
+    _$GPullRequestsData_viewer_pullRequests_edges_node_files,
   ];
   @override
   final String wireName =
       'GPullRequestsData_viewer_pullRequests_edges_node_files';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GPullRequestsData_viewer_pullRequests_edges_node_files object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GPullRequestsData_viewer_pullRequests_edges_node_files object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'totalCount',
-      serializers.serialize(object.totalCount,
-          specifiedType: const FullType(int)),
+      serializers.serialize(
+        object.totalCount,
+        specifiedType: const FullType(int),
+      ),
     ];
 
     return result;
@@ -790,8 +1061,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_filesSerializer
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_files deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder();
 
@@ -802,12 +1075,20 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_filesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'totalCount':
-          result.totalCount = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.totalCount =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -821,22 +1102,28 @@ class _$GAssignedIssuesDataSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData,
-    _$GAssignedIssuesData
+    _$GAssignedIssuesData,
   ];
   @override
   final String wireName = 'GAssignedIssuesData';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAssignedIssuesData object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAssignedIssuesData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'search',
-      serializers.serialize(object.search,
-          specifiedType: const FullType(GAssignedIssuesData_search)),
+      serializers.serialize(
+        object.search,
+        specifiedType: const FullType(GAssignedIssuesData_search),
+      ),
     ];
 
     return result;
@@ -844,8 +1131,10 @@ class _$GAssignedIssuesDataSerializer
 
   @override
   GAssignedIssuesData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesDataBuilder();
 
     final iterator = serialized.iterator;
@@ -855,13 +1144,21 @@ class _$GAssignedIssuesDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'search':
-          result.search.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GAssignedIssuesData_search))!
-              as GAssignedIssuesData_search);
+          result.search.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GAssignedIssuesData_search),
+                )!
+                as GAssignedIssuesData_search,
+          );
           break;
       }
     }
@@ -875,37 +1172,47 @@ class _$GAssignedIssuesData_searchSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search,
-    _$GAssignedIssuesData_search
+    _$GAssignedIssuesData_search,
   ];
   @override
   final String wireName = 'GAssignedIssuesData_search';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAssignedIssuesData_search object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAssignedIssuesData_search object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.edges;
     if (value != null) {
       result
         ..add('edges')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(BuiltList, const [
-              const FullType.nullable(GAssignedIssuesData_search_edges)
-            ])));
+              const FullType.nullable(GAssignedIssuesData_search_edges),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAssignedIssuesData_search deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesData_searchBuilder();
 
     final iterator = serialized.iterator;
@@ -915,14 +1222,23 @@ class _$GAssignedIssuesData_searchSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'edges':
-          result.edges.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(GAssignedIssuesData_search_edges)
-              ]))! as BuiltList<Object?>);
+          result.edges.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(GAssignedIssuesData_search_edges),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -936,36 +1252,47 @@ class _$GAssignedIssuesData_search_edgesSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges,
-    _$GAssignedIssuesData_search_edges
+    _$GAssignedIssuesData_search_edges,
   ];
   @override
   final String wireName = 'GAssignedIssuesData_search_edges';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GAssignedIssuesData_search_edges object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GAssignedIssuesData_search_edges object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.node;
     if (value != null) {
       result
         ..add('node')
-        ..add(serializers.serialize(value,
-            specifiedType:
-                const FullType(GAssignedIssuesData_search_edges_node)));
+        ..add(
+          serializers.serialize(
+            value,
+            specifiedType: const FullType(
+              GAssignedIssuesData_search_edges_node,
+            ),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAssignedIssuesData_search_edges deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesData_search_edgesBuilder();
 
     final iterator = serialized.iterator;
@@ -975,14 +1302,22 @@ class _$GAssignedIssuesData_search_edgesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'node':
-          result.node = serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GAssignedIssuesData_search_edges_node))
-              as GAssignedIssuesData_search_edges_node?;
+          result.node =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(
+                      GAssignedIssuesData_search_edges_node,
+                    ),
+                  )
+                  as GAssignedIssuesData_search_edges_node?;
           break;
       }
     }
@@ -997,19 +1332,23 @@ class _$GAssignedIssuesData_search_edges_node__baseSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__base,
-    _$GAssignedIssuesData_search_edges_node__base
+    _$GAssignedIssuesData_search_edges_node__base,
   ];
   @override
   final String wireName = 'GAssignedIssuesData_search_edges_node__base';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__base object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__base object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
 
     return result;
@@ -1017,8 +1356,10 @@ class _$GAssignedIssuesData_search_edges_node__baseSerializer
 
   @override
   GAssignedIssuesData_search_edges_node__base deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesData_search_edges_node__baseBuilder();
 
     final iterator = serialized.iterator;
@@ -1028,8 +1369,12 @@ class _$GAssignedIssuesData_search_edges_node__baseSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -1044,60 +1389,86 @@ class _$GAssignedIssuesData_search_edges_node__asIssueSerializer
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue,
-    _$GAssignedIssuesData_search_edges_node__asIssue
+    _$GAssignedIssuesData_search_edges_node__asIssue,
   ];
   @override
   final String wireName = 'GAssignedIssuesData_search_edges_node__asIssue';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'repository',
-      serializers.serialize(object.repository,
-          specifiedType: const FullType(
-              GAssignedIssuesData_search_edges_node__asIssue_repository)),
+      serializers.serialize(
+        object.repository,
+        specifiedType: const FullType(
+          GAssignedIssuesData_search_edges_node__asIssue_repository,
+        ),
+      ),
       'number',
       serializers.serialize(object.number, specifiedType: const FullType(int)),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
       'title',
-      serializers.serialize(object.title,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.title,
+        specifiedType: const FullType(String),
+      ),
       'comments',
-      serializers.serialize(object.comments,
-          specifiedType: const FullType(
-              GAssignedIssuesData_search_edges_node__asIssue_comments)),
+      serializers.serialize(
+        object.comments,
+        specifiedType: const FullType(
+          GAssignedIssuesData_search_edges_node__asIssue_comments,
+        ),
+      ),
     ];
     Object? value;
     value = object.author;
     if (value != null) {
       result
         ..add('author')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(
-                GAssignedIssuesData_search_edges_node__asIssue_author)));
+              GAssignedIssuesData_search_edges_node__asIssue_author,
+            ),
+          ),
+        );
     }
     value = object.labels;
     if (value != null) {
       result
         ..add('labels')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(
-                GAssignedIssuesData_search_edges_node__asIssue_labels)));
+              GAssignedIssuesData_search_edges_node__asIssue_labels,
+            ),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GAssignedIssuesData_search_edges_node__asIssueBuilder();
 
     final iterator = serialized.iterator;
@@ -1107,44 +1478,81 @@ class _$GAssignedIssuesData_search_edges_node__asIssueSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'repository':
-          result.repository.replace(serializers.deserialize(value,
+          result.repository.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GAssignedIssuesData_search_edges_node__asIssue_repository))!
-              as GAssignedIssuesData_search_edges_node__asIssue_repository);
+                    GAssignedIssuesData_search_edges_node__asIssue_repository,
+                  ),
+                )!
+                as GAssignedIssuesData_search_edges_node__asIssue_repository,
+          );
           break;
         case 'number':
-          result.number = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.number =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
         case 'title':
-          result.title = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.title =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'author':
-          result.author.replace(serializers.deserialize(value,
+          result.author.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GAssignedIssuesData_search_edges_node__asIssue_author))!
-              as GAssignedIssuesData_search_edges_node__asIssue_author);
+                    GAssignedIssuesData_search_edges_node__asIssue_author,
+                  ),
+                )!
+                as GAssignedIssuesData_search_edges_node__asIssue_author,
+          );
           break;
         case 'labels':
-          result.labels.replace(serializers.deserialize(value,
+          result.labels.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GAssignedIssuesData_search_edges_node__asIssue_labels))!
-              as GAssignedIssuesData_search_edges_node__asIssue_labels);
+                    GAssignedIssuesData_search_edges_node__asIssue_labels,
+                  ),
+                )!
+                as GAssignedIssuesData_search_edges_node__asIssue_labels,
+          );
           break;
         case 'comments':
-          result.comments.replace(serializers.deserialize(value,
+          result.comments.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GAssignedIssuesData_search_edges_node__asIssue_comments))!
-              as GAssignedIssuesData_search_edges_node__asIssue_comments);
+                    GAssignedIssuesData_search_edges_node__asIssue_comments,
+                  ),
+                )!
+                as GAssignedIssuesData_search_edges_node__asIssue_comments,
+          );
           break;
       }
     }
@@ -1156,30 +1564,39 @@ class _$GAssignedIssuesData_search_edges_node__asIssueSerializer
 class _$GAssignedIssuesData_search_edges_node__asIssue_repositorySerializer
     implements
         StructuredSerializer<
-            GAssignedIssuesData_search_edges_node__asIssue_repository> {
+          GAssignedIssuesData_search_edges_node__asIssue_repository
+        > {
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue_repository,
-    _$GAssignedIssuesData_search_edges_node__asIssue_repository
+    _$GAssignedIssuesData_search_edges_node__asIssue_repository,
   ];
   @override
   final String wireName =
       'GAssignedIssuesData_search_edges_node__asIssue_repository';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue_repository object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue_repository object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'nameWithOwner',
-      serializers.serialize(object.nameWithOwner,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.nameWithOwner,
+        specifiedType: const FullType(String),
+      ),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
     ];
 
     return result;
@@ -1187,8 +1604,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repositorySerializer
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_repository deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder();
 
@@ -1199,16 +1618,29 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repositorySerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'nameWithOwner':
-          result.nameWithOwner = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.nameWithOwner =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
       }
     }
@@ -1220,30 +1652,39 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repositorySerializer
 class _$GAssignedIssuesData_search_edges_node__asIssue_authorSerializer
     implements
         StructuredSerializer<
-            GAssignedIssuesData_search_edges_node__asIssue_author> {
+          GAssignedIssuesData_search_edges_node__asIssue_author
+        > {
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue_author,
-    _$GAssignedIssuesData_search_edges_node__asIssue_author
+    _$GAssignedIssuesData_search_edges_node__asIssue_author,
   ];
   @override
   final String wireName =
       'GAssignedIssuesData_search_edges_node__asIssue_author';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue_author object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue_author object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'login',
-      serializers.serialize(object.login,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.login,
+        specifiedType: const FullType(String),
+      ),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
     ];
 
     return result;
@@ -1251,8 +1692,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_authorSerializer
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_author deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GAssignedIssuesData_search_edges_node__asIssue_authorBuilder();
 
@@ -1263,16 +1706,29 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_authorSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'login':
-          result.login = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.login =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
       }
     }
@@ -1284,43 +1740,55 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_authorSerializer
 class _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer
     implements
         StructuredSerializer<
-            GAssignedIssuesData_search_edges_node__asIssue_labels> {
+          GAssignedIssuesData_search_edges_node__asIssue_labels
+        > {
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue_labels,
-    _$GAssignedIssuesData_search_edges_node__asIssue_labels
+    _$GAssignedIssuesData_search_edges_node__asIssue_labels,
   ];
   @override
   final String wireName =
       'GAssignedIssuesData_search_edges_node__asIssue_labels';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue_labels object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue_labels object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.nodes;
     if (value != null) {
       result
         ..add('nodes')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
-            ])));
+                GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
+              ),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labels deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder();
 
@@ -1331,15 +1799,25 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'nodes':
-          result.nodes.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(
-                    GAssignedIssuesData_search_edges_node__asIssue_labels_nodes)
-              ]))! as BuiltList<Object?>);
+          result.nodes.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(
+                      GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
+                    ),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -1351,29 +1829,36 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labelsSerializer
 class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodesSerializer
     implements
         StructuredSerializer<
-            GAssignedIssuesData_search_edges_node__asIssue_labels_nodes> {
+          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
+        > {
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
-    _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
+    _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
   ];
   @override
   final String wireName =
       'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue_labels_nodes object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue_labels_nodes object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'name',
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'color',
-      serializers.serialize(object.color,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.color,
+        specifiedType: const FullType(String),
+      ),
     ];
 
     return result;
@@ -1381,8 +1866,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodesSerializer
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labels_nodes deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder();
 
@@ -1393,16 +1880,28 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'color':
-          result.color = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.color =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
       }
     }
@@ -1414,27 +1913,34 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodesSerializer
 class _$GAssignedIssuesData_search_edges_node__asIssue_commentsSerializer
     implements
         StructuredSerializer<
-            GAssignedIssuesData_search_edges_node__asIssue_comments> {
+          GAssignedIssuesData_search_edges_node__asIssue_comments
+        > {
   @override
   final Iterable<Type> types = const [
     GAssignedIssuesData_search_edges_node__asIssue_comments,
-    _$GAssignedIssuesData_search_edges_node__asIssue_comments
+    _$GAssignedIssuesData_search_edges_node__asIssue_comments,
   ];
   @override
   final String wireName =
       'GAssignedIssuesData_search_edges_node__asIssue_comments';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GAssignedIssuesData_search_edges_node__asIssue_comments object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GAssignedIssuesData_search_edges_node__asIssue_comments object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'totalCount',
-      serializers.serialize(object.totalCount,
-          specifiedType: const FullType(int)),
+      serializers.serialize(
+        object.totalCount,
+        specifiedType: const FullType(int),
+      ),
     ];
 
     return result;
@@ -1442,8 +1948,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_commentsSerializer
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_comments deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder();
 
@@ -1454,12 +1962,20 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_commentsSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'totalCount':
-          result.totalCount = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.totalCount =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -1476,15 +1992,22 @@ class _$GRepositoriesDataSerializer
   final String wireName = 'GRepositoriesData';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers, GRepositoriesData object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesData object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'viewer',
-      serializers.serialize(object.viewer,
-          specifiedType: const FullType(GRepositoriesData_viewer)),
+      serializers.serialize(
+        object.viewer,
+        specifiedType: const FullType(GRepositoriesData_viewer),
+      ),
     ];
 
     return result;
@@ -1492,8 +2015,10 @@ class _$GRepositoriesDataSerializer
 
   @override
   GRepositoriesData deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesDataBuilder();
 
     final iterator = serialized.iterator;
@@ -1503,13 +2028,21 @@ class _$GRepositoriesDataSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'viewer':
-          result.viewer.replace(serializers.deserialize(value,
-                  specifiedType: const FullType(GRepositoriesData_viewer))!
-              as GRepositoriesData_viewer);
+          result.viewer.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(GRepositoriesData_viewer),
+                )!
+                as GRepositoriesData_viewer,
+          );
           break;
       }
     }
@@ -1523,22 +2056,28 @@ class _$GRepositoriesData_viewerSerializer
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer,
-    _$GRepositoriesData_viewer
+    _$GRepositoriesData_viewer,
   ];
   @override
   final String wireName = 'GRepositoriesData_viewer';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GRepositoriesData_viewer object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GRepositoriesData_viewer object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'repositories',
-      serializers.serialize(object.repositories,
-          specifiedType: const FullType(GRepositoriesData_viewer_repositories)),
+      serializers.serialize(
+        object.repositories,
+        specifiedType: const FullType(GRepositoriesData_viewer_repositories),
+      ),
     ];
 
     return result;
@@ -1546,8 +2085,10 @@ class _$GRepositoriesData_viewerSerializer
 
   @override
   GRepositoriesData_viewer deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesData_viewerBuilder();
 
     final iterator = serialized.iterator;
@@ -1557,14 +2098,23 @@ class _$GRepositoriesData_viewerSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'repositories':
-          result.repositories.replace(serializers.deserialize(value,
-                  specifiedType:
-                      const FullType(GRepositoriesData_viewer_repositories))!
-              as GRepositoriesData_viewer_repositories);
+          result.repositories.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(
+                    GRepositoriesData_viewer_repositories,
+                  ),
+                )!
+                as GRepositoriesData_viewer_repositories,
+          );
           break;
       }
     }
@@ -1578,38 +2128,49 @@ class _$GRepositoriesData_viewer_repositoriesSerializer
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer_repositories,
-    _$GRepositoriesData_viewer_repositories
+    _$GRepositoriesData_viewer_repositories,
   ];
   @override
   final String wireName = 'GRepositoriesData_viewer_repositories';
 
   @override
   Iterable<Object?> serialize(
-      Serializers serializers, GRepositoriesData_viewer_repositories object,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    GRepositoriesData_viewer_repositories object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
     ];
     Object? value;
     value = object.nodes;
     if (value != null) {
       result
         ..add('nodes')
-        ..add(serializers.serialize(value,
+        ..add(
+          serializers.serialize(
+            value,
             specifiedType: const FullType(BuiltList, const [
               const FullType.nullable(
-                  GRepositoriesData_viewer_repositories_nodes)
-            ])));
+                GRepositoriesData_viewer_repositories_nodes,
+              ),
+            ]),
+          ),
+        );
     }
     return result;
   }
 
   @override
   GRepositoriesData_viewer_repositories deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesData_viewer_repositoriesBuilder();
 
     final iterator = serialized.iterator;
@@ -1619,15 +2180,25 @@ class _$GRepositoriesData_viewer_repositoriesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'nodes':
-          result.nodes.replace(serializers.deserialize(value,
-              specifiedType: const FullType(BuiltList, const [
-                const FullType.nullable(
-                    GRepositoriesData_viewer_repositories_nodes)
-              ]))! as BuiltList<Object?>);
+          result.nodes.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(BuiltList, const [
+                    const FullType.nullable(
+                      GRepositoriesData_viewer_repositories_nodes,
+                    ),
+                  ]),
+                )!
+                as BuiltList<Object?>,
+          );
           break;
       }
     }
@@ -1642,57 +2213,77 @@ class _$GRepositoriesData_viewer_repositories_nodesSerializer
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer_repositories_nodes,
-    _$GRepositoriesData_viewer_repositories_nodes
+    _$GRepositoriesData_viewer_repositories_nodes,
   ];
   @override
   final String wireName = 'GRepositoriesData_viewer_repositories_nodes';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GRepositoriesData_viewer_repositories_nodes object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesData_viewer_repositories_nodes object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'name',
       serializers.serialize(object.name, specifiedType: const FullType(String)),
       'isFork',
       serializers.serialize(object.isFork, specifiedType: const FullType(bool)),
       'isPrivate',
-      serializers.serialize(object.isPrivate,
-          specifiedType: const FullType(bool)),
+      serializers.serialize(
+        object.isPrivate,
+        specifiedType: const FullType(bool),
+      ),
       'stargazers',
-      serializers.serialize(object.stargazers,
-          specifiedType: const FullType(
-              GRepositoriesData_viewer_repositories_nodes_stargazers)),
+      serializers.serialize(
+        object.stargazers,
+        specifiedType: const FullType(
+          GRepositoriesData_viewer_repositories_nodes_stargazers,
+        ),
+      ),
       'url',
-      serializers.serialize(object.url,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.url,
+        specifiedType: const FullType(_i2.GURI),
+      ),
       'issues',
-      serializers.serialize(object.issues,
-          specifiedType: const FullType(
-              GRepositoriesData_viewer_repositories_nodes_issues)),
+      serializers.serialize(
+        object.issues,
+        specifiedType: const FullType(
+          GRepositoriesData_viewer_repositories_nodes_issues,
+        ),
+      ),
       'owner',
-      serializers.serialize(object.owner,
-          specifiedType: const FullType(
-              GRepositoriesData_viewer_repositories_nodes_owner)),
+      serializers.serialize(
+        object.owner,
+        specifiedType: const FullType(
+          GRepositoriesData_viewer_repositories_nodes_owner,
+        ),
+      ),
     ];
     Object? value;
     value = object.description;
     if (value != null) {
       result
         ..add('description')
-        ..add(serializers.serialize(value,
-            specifiedType: const FullType(String)));
+        ..add(
+          serializers.serialize(value, specifiedType: const FullType(String)),
+        );
     }
     return result;
   }
 
   @override
   GRepositoriesData_viewer_repositories_nodes deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesData_viewer_repositories_nodesBuilder();
 
     final iterator = serialized.iterator;
@@ -1702,46 +2293,86 @@ class _$GRepositoriesData_viewer_repositories_nodesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'name':
-          result.name = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.name =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'description':
-          result.description = serializers.deserialize(value,
-              specifiedType: const FullType(String)) as String?;
+          result.description =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )
+                  as String?;
           break;
         case 'isFork':
-          result.isFork = serializers.deserialize(value,
-              specifiedType: const FullType(bool))! as bool;
+          result.isFork =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )!
+                  as bool;
           break;
         case 'isPrivate':
-          result.isPrivate = serializers.deserialize(value,
-              specifiedType: const FullType(bool))! as bool;
+          result.isPrivate =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(bool),
+                  )!
+                  as bool;
           break;
         case 'stargazers':
-          result.stargazers.replace(serializers.deserialize(value,
+          result.stargazers.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GRepositoriesData_viewer_repositories_nodes_stargazers))!
-              as GRepositoriesData_viewer_repositories_nodes_stargazers);
+                    GRepositoriesData_viewer_repositories_nodes_stargazers,
+                  ),
+                )!
+                as GRepositoriesData_viewer_repositories_nodes_stargazers,
+          );
           break;
         case 'url':
-          result.url.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.url.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
         case 'issues':
-          result.issues.replace(serializers.deserialize(value,
+          result.issues.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GRepositoriesData_viewer_repositories_nodes_issues))!
-              as GRepositoriesData_viewer_repositories_nodes_issues);
+                    GRepositoriesData_viewer_repositories_nodes_issues,
+                  ),
+                )!
+                as GRepositoriesData_viewer_repositories_nodes_issues,
+          );
           break;
         case 'owner':
-          result.owner.replace(serializers.deserialize(value,
+          result.owner.replace(
+            serializers.deserialize(
+                  value,
                   specifiedType: const FullType(
-                      GRepositoriesData_viewer_repositories_nodes_owner))!
-              as GRepositoriesData_viewer_repositories_nodes_owner);
+                    GRepositoriesData_viewer_repositories_nodes_owner,
+                  ),
+                )!
+                as GRepositoriesData_viewer_repositories_nodes_owner,
+          );
           break;
       }
     }
@@ -1753,27 +2384,34 @@ class _$GRepositoriesData_viewer_repositories_nodesSerializer
 class _$GRepositoriesData_viewer_repositories_nodes_stargazersSerializer
     implements
         StructuredSerializer<
-            GRepositoriesData_viewer_repositories_nodes_stargazers> {
+          GRepositoriesData_viewer_repositories_nodes_stargazers
+        > {
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer_repositories_nodes_stargazers,
-    _$GRepositoriesData_viewer_repositories_nodes_stargazers
+    _$GRepositoriesData_viewer_repositories_nodes_stargazers,
   ];
   @override
   final String wireName =
       'GRepositoriesData_viewer_repositories_nodes_stargazers';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GRepositoriesData_viewer_repositories_nodes_stargazers object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesData_viewer_repositories_nodes_stargazers object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'totalCount',
-      serializers.serialize(object.totalCount,
-          specifiedType: const FullType(int)),
+      serializers.serialize(
+        object.totalCount,
+        specifiedType: const FullType(int),
+      ),
     ];
 
     return result;
@@ -1781,8 +2419,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazersSerializer
 
   @override
   GRepositoriesData_viewer_repositories_nodes_stargazers deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result =
         GRepositoriesData_viewer_repositories_nodes_stargazersBuilder();
 
@@ -1793,12 +2433,20 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazersSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'totalCount':
-          result.totalCount = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.totalCount =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -1810,26 +2458,33 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazersSerializer
 class _$GRepositoriesData_viewer_repositories_nodes_issuesSerializer
     implements
         StructuredSerializer<
-            GRepositoriesData_viewer_repositories_nodes_issues> {
+          GRepositoriesData_viewer_repositories_nodes_issues
+        > {
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer_repositories_nodes_issues,
-    _$GRepositoriesData_viewer_repositories_nodes_issues
+    _$GRepositoriesData_viewer_repositories_nodes_issues,
   ];
   @override
   final String wireName = 'GRepositoriesData_viewer_repositories_nodes_issues';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GRepositoriesData_viewer_repositories_nodes_issues object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesData_viewer_repositories_nodes_issues object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'totalCount',
-      serializers.serialize(object.totalCount,
-          specifiedType: const FullType(int)),
+      serializers.serialize(
+        object.totalCount,
+        specifiedType: const FullType(int),
+      ),
     ];
 
     return result;
@@ -1837,8 +2492,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_issuesSerializer
 
   @override
   GRepositoriesData_viewer_repositories_nodes_issues deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesData_viewer_repositories_nodes_issuesBuilder();
 
     final iterator = serialized.iterator;
@@ -1848,12 +2505,20 @@ class _$GRepositoriesData_viewer_repositories_nodes_issuesSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'totalCount':
-          result.totalCount = serializers.deserialize(value,
-              specifiedType: const FullType(int))! as int;
+          result.totalCount =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(int),
+                  )!
+                  as int;
           break;
       }
     }
@@ -1865,29 +2530,38 @@ class _$GRepositoriesData_viewer_repositories_nodes_issuesSerializer
 class _$GRepositoriesData_viewer_repositories_nodes_ownerSerializer
     implements
         StructuredSerializer<
-            GRepositoriesData_viewer_repositories_nodes_owner> {
+          GRepositoriesData_viewer_repositories_nodes_owner
+        > {
   @override
   final Iterable<Type> types = const [
     GRepositoriesData_viewer_repositories_nodes_owner,
-    _$GRepositoriesData_viewer_repositories_nodes_owner
+    _$GRepositoriesData_viewer_repositories_nodes_owner,
   ];
   @override
   final String wireName = 'GRepositoriesData_viewer_repositories_nodes_owner';
 
   @override
-  Iterable<Object?> serialize(Serializers serializers,
-      GRepositoriesData_viewer_repositories_nodes_owner object,
-      {FullType specifiedType = FullType.unspecified}) {
+  Iterable<Object?> serialize(
+    Serializers serializers,
+    GRepositoriesData_viewer_repositories_nodes_owner object, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = <Object?>[
       '__typename',
-      serializers.serialize(object.G__typename,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.G__typename,
+        specifiedType: const FullType(String),
+      ),
       'login',
-      serializers.serialize(object.login,
-          specifiedType: const FullType(String)),
+      serializers.serialize(
+        object.login,
+        specifiedType: const FullType(String),
+      ),
       'avatarUrl',
-      serializers.serialize(object.avatarUrl,
-          specifiedType: const FullType(_i2.GURI)),
+      serializers.serialize(
+        object.avatarUrl,
+        specifiedType: const FullType(_i2.GURI),
+      ),
     ];
 
     return result;
@@ -1895,8 +2569,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_ownerSerializer
 
   @override
   GRepositoriesData_viewer_repositories_nodes_owner deserialize(
-      Serializers serializers, Iterable<Object?> serialized,
-      {FullType specifiedType = FullType.unspecified}) {
+    Serializers serializers,
+    Iterable<Object?> serialized, {
+    FullType specifiedType = FullType.unspecified,
+  }) {
     final result = GRepositoriesData_viewer_repositories_nodes_ownerBuilder();
 
     final iterator = serialized.iterator;
@@ -1906,16 +2582,29 @@ class _$GRepositoriesData_viewer_repositories_nodes_ownerSerializer
       final Object? value = iterator.current;
       switch (key) {
         case '__typename':
-          result.G__typename = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.G__typename =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'login':
-          result.login = serializers.deserialize(value,
-              specifiedType: const FullType(String))! as String;
+          result.login =
+              serializers.deserialize(
+                    value,
+                    specifiedType: const FullType(String),
+                  )!
+                  as String;
           break;
         case 'avatarUrl':
-          result.avatarUrl.replace(serializers.deserialize(value,
-              specifiedType: const FullType(_i2.GURI))! as _i2.GURI);
+          result.avatarUrl.replace(
+            serializers.deserialize(
+                  value,
+                  specifiedType: const FullType(_i2.GURI),
+                )!
+                as _i2.GURI,
+          );
           break;
       }
     }
@@ -1930,12 +2619,12 @@ class _$GViewerDetailData extends GViewerDetailData {
   @override
   final GViewerDetailData_viewer viewer;
 
-  factory _$GViewerDetailData(
-          [void Function(GViewerDetailDataBuilder)? updates]) =>
-      (GViewerDetailDataBuilder()..update(updates))._build();
+  factory _$GViewerDetailData([
+    void Function(GViewerDetailDataBuilder)? updates,
+  ]) => (GViewerDetailDataBuilder()..update(updates))._build();
 
   _$GViewerDetailData._({required this.G__typename, required this.viewer})
-      : super._();
+    : super._();
   @override
   GViewerDetailData rebuild(void Function(GViewerDetailDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -2014,10 +2703,14 @@ class GViewerDetailDataBuilder
   _$GViewerDetailData _build() {
     _$GViewerDetailData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GViewerDetailData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GViewerDetailData', 'G__typename'),
+              G__typename,
+              r'GViewerDetailData',
+              'G__typename',
+            ),
             viewer: viewer.build(),
           );
     } catch (_) {
@@ -2027,7 +2720,10 @@ class GViewerDetailDataBuilder
         viewer.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GViewerDetailData', _$failedField, e.toString());
+          r'GViewerDetailData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2046,17 +2742,20 @@ class _$GViewerDetailData_viewer extends GViewerDetailData_viewer {
   @override
   final String? bio;
 
-  factory _$GViewerDetailData_viewer(
-          [void Function(GViewerDetailData_viewerBuilder)? updates]) =>
-      (GViewerDetailData_viewerBuilder()..update(updates))._build();
+  factory _$GViewerDetailData_viewer([
+    void Function(GViewerDetailData_viewerBuilder)? updates,
+  ]) => (GViewerDetailData_viewerBuilder()..update(updates))._build();
 
-  _$GViewerDetailData_viewer._(
-      {required this.G__typename, required this.login, this.name, this.bio})
-      : super._();
+  _$GViewerDetailData_viewer._({
+    required this.G__typename,
+    required this.login,
+    this.name,
+    this.bio,
+  }) : super._();
   @override
   GViewerDetailData_viewer rebuild(
-          void Function(GViewerDetailData_viewerBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GViewerDetailData_viewerBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GViewerDetailData_viewerBuilder toBuilder() =>
@@ -2145,12 +2844,19 @@ class GViewerDetailData_viewerBuilder
   GViewerDetailData_viewer build() => _build();
 
   _$GViewerDetailData_viewer _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GViewerDetailData_viewer._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename, r'GViewerDetailData_viewer', 'G__typename'),
+            G__typename,
+            r'GViewerDetailData_viewer',
+            'G__typename',
+          ),
           login: BuiltValueNullFieldError.checkNotNull(
-              login, r'GViewerDetailData_viewer', 'login'),
+            login,
+            r'GViewerDetailData_viewer',
+            'login',
+          ),
           name: name,
           bio: bio,
         );
@@ -2165,12 +2871,12 @@ class _$GPullRequestsData extends GPullRequestsData {
   @override
   final GPullRequestsData_viewer viewer;
 
-  factory _$GPullRequestsData(
-          [void Function(GPullRequestsDataBuilder)? updates]) =>
-      (GPullRequestsDataBuilder()..update(updates))._build();
+  factory _$GPullRequestsData([
+    void Function(GPullRequestsDataBuilder)? updates,
+  ]) => (GPullRequestsDataBuilder()..update(updates))._build();
 
   _$GPullRequestsData._({required this.G__typename, required this.viewer})
-      : super._();
+    : super._();
   @override
   GPullRequestsData rebuild(void Function(GPullRequestsDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -2249,10 +2955,14 @@ class GPullRequestsDataBuilder
   _$GPullRequestsData _build() {
     _$GPullRequestsData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GPullRequestsData', 'G__typename'),
+              G__typename,
+              r'GPullRequestsData',
+              'G__typename',
+            ),
             viewer: viewer.build(),
           );
     } catch (_) {
@@ -2262,7 +2972,10 @@ class GPullRequestsDataBuilder
         viewer.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData', _$failedField, e.toString());
+          r'GPullRequestsData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2277,17 +2990,18 @@ class _$GPullRequestsData_viewer extends GPullRequestsData_viewer {
   @override
   final GPullRequestsData_viewer_pullRequests pullRequests;
 
-  factory _$GPullRequestsData_viewer(
-          [void Function(GPullRequestsData_viewerBuilder)? updates]) =>
-      (GPullRequestsData_viewerBuilder()..update(updates))._build();
+  factory _$GPullRequestsData_viewer([
+    void Function(GPullRequestsData_viewerBuilder)? updates,
+  ]) => (GPullRequestsData_viewerBuilder()..update(updates))._build();
 
-  _$GPullRequestsData_viewer._(
-      {required this.G__typename, required this.pullRequests})
-      : super._();
+  _$GPullRequestsData_viewer._({
+    required this.G__typename,
+    required this.pullRequests,
+  }) : super._();
   @override
   GPullRequestsData_viewer rebuild(
-          void Function(GPullRequestsData_viewerBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GPullRequestsData_viewerBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewerBuilder toBuilder() =>
@@ -2332,8 +3046,8 @@ class GPullRequestsData_viewerBuilder
   GPullRequestsData_viewer_pullRequestsBuilder get pullRequests =>
       _$this._pullRequests ??= GPullRequestsData_viewer_pullRequestsBuilder();
   set pullRequests(
-          GPullRequestsData_viewer_pullRequestsBuilder? pullRequests) =>
-      _$this._pullRequests = pullRequests;
+    GPullRequestsData_viewer_pullRequestsBuilder? pullRequests,
+  ) => _$this._pullRequests = pullRequests;
 
   GPullRequestsData_viewerBuilder() {
     GPullRequestsData_viewer._initializeBuilder(this);
@@ -2365,10 +3079,14 @@ class GPullRequestsData_viewerBuilder
   _$GPullRequestsData_viewer _build() {
     _$GPullRequestsData_viewer _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GPullRequestsData_viewer', 'G__typename'),
+              G__typename,
+              r'GPullRequestsData_viewer',
+              'G__typename',
+            ),
             pullRequests: pullRequests.build(),
           );
     } catch (_) {
@@ -2378,7 +3096,10 @@ class GPullRequestsData_viewerBuilder
         pullRequests.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer', _$failedField, e.toString());
+          r'GPullRequestsData_viewer',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2394,20 +3115,19 @@ class _$GPullRequestsData_viewer_pullRequests
   @override
   final BuiltList<GPullRequestsData_viewer_pullRequests_edges?>? edges;
 
-  factory _$GPullRequestsData_viewer_pullRequests(
-          [void Function(GPullRequestsData_viewer_pullRequestsBuilder)?
-              updates]) =>
-      (GPullRequestsData_viewer_pullRequestsBuilder()..update(updates))
-          ._build();
+  factory _$GPullRequestsData_viewer_pullRequests([
+    void Function(GPullRequestsData_viewer_pullRequestsBuilder)? updates,
+  ]) => (GPullRequestsData_viewer_pullRequestsBuilder()..update(updates))
+      ._build();
 
-  _$GPullRequestsData_viewer_pullRequests._(
-      {required this.G__typename, this.edges})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests._({
+    required this.G__typename,
+    this.edges,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests rebuild(
-          void Function(GPullRequestsData_viewer_pullRequestsBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GPullRequestsData_viewer_pullRequestsBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequestsBuilder toBuilder() =>
@@ -2433,7 +3153,8 @@ class _$GPullRequestsData_viewer_pullRequests
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests')
+            r'GPullRequestsData_viewer_pullRequests',
+          )
           ..add('G__typename', G__typename)
           ..add('edges', edges))
         .toString();
@@ -2442,8 +3163,10 @@ class _$GPullRequestsData_viewer_pullRequests
 
 class GPullRequestsData_viewer_pullRequestsBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests,
-            GPullRequestsData_viewer_pullRequestsBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests,
+          GPullRequestsData_viewer_pullRequestsBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests? _$v;
 
   String? _G__typename;
@@ -2478,7 +3201,8 @@ class GPullRequestsData_viewer_pullRequestsBuilder
 
   @override
   void update(
-      void Function(GPullRequestsData_viewer_pullRequestsBuilder)? updates) {
+    void Function(GPullRequestsData_viewer_pullRequestsBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -2488,10 +3212,14 @@ class GPullRequestsData_viewer_pullRequestsBuilder
   _$GPullRequestsData_viewer_pullRequests _build() {
     _$GPullRequestsData_viewer_pullRequests _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer_pullRequests._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GPullRequestsData_viewer_pullRequests', 'G__typename'),
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename,
+              r'GPullRequestsData_viewer_pullRequests',
+              'G__typename',
+            ),
             edges: _edges?.build(),
           );
     } catch (_) {
@@ -2501,9 +3229,10 @@ class GPullRequestsData_viewer_pullRequestsBuilder
         _edges?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer_pullRequests',
-            _$failedField,
-            e.toString());
+          r'GPullRequestsData_viewer_pullRequests',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2519,20 +3248,19 @@ class _$GPullRequestsData_viewer_pullRequests_edges
   @override
   final GPullRequestsData_viewer_pullRequests_edges_node? node;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges(
-          [void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder)?
-              updates]) =>
-      (GPullRequestsData_viewer_pullRequests_edgesBuilder()..update(updates))
-          ._build();
+  factory _$GPullRequestsData_viewer_pullRequests_edges([
+    void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder)? updates,
+  ]) => (GPullRequestsData_viewer_pullRequests_edgesBuilder()..update(updates))
+      ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges._(
-      {required this.G__typename, this.node})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges._({
+    required this.G__typename,
+    this.node,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges rebuild(
-          void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edgesBuilder toBuilder() =>
@@ -2558,7 +3286,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges')
+            r'GPullRequestsData_viewer_pullRequests_edges',
+          )
           ..add('G__typename', G__typename)
           ..add('node', node))
         .toString();
@@ -2567,8 +3296,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges
 
 class GPullRequestsData_viewer_pullRequests_edgesBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges,
-            GPullRequestsData_viewer_pullRequests_edgesBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges,
+          GPullRequestsData_viewer_pullRequests_edgesBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges? _$v;
 
   String? _G__typename;
@@ -2603,8 +3334,8 @@ class GPullRequestsData_viewer_pullRequests_edgesBuilder
 
   @override
   void update(
-      void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder)?
-          updates) {
+    void Function(GPullRequestsData_viewer_pullRequests_edgesBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -2614,10 +3345,14 @@ class GPullRequestsData_viewer_pullRequests_edgesBuilder
   _$GPullRequestsData_viewer_pullRequests_edges _build() {
     _$GPullRequestsData_viewer_pullRequests_edges _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer_pullRequests_edges._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GPullRequestsData_viewer_pullRequests_edges', 'G__typename'),
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename,
+              r'GPullRequestsData_viewer_pullRequests_edges',
+              'G__typename',
+            ),
             node: _node?.build(),
           );
     } catch (_) {
@@ -2627,9 +3362,10 @@ class GPullRequestsData_viewer_pullRequests_edgesBuilder
         _node?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer_pullRequests_edges',
-            _$failedField,
-            e.toString());
+          r'GPullRequestsData_viewer_pullRequests_edges',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2663,32 +3399,32 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node
   @override
   final GPullRequestsData_viewer_pullRequests_edges_node_files? files;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges_node(
-          [void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)?
-              updates]) =>
+  factory _$GPullRequestsData_viewer_pullRequests_edges_node([
+    void Function(GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)?
+    updates,
+  ]) =>
       (GPullRequestsData_viewer_pullRequests_edges_nodeBuilder()
             ..update(updates))
           ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges_node._(
-      {required this.G__typename,
-      required this.repository,
-      this.author,
-      required this.number,
-      required this.url,
-      required this.title,
-      required this.updatedAt,
-      required this.state,
-      required this.isDraft,
-      required this.comments,
-      this.files})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges_node._({
+    required this.G__typename,
+    required this.repository,
+    this.author,
+    required this.number,
+    required this.url,
+    required this.title,
+    required this.updatedAt,
+    required this.state,
+    required this.isDraft,
+    required this.comments,
+    this.files,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges_node rebuild(
-          void Function(GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_nodeBuilder toBuilder() =>
@@ -2732,7 +3468,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges_node')
+            r'GPullRequestsData_viewer_pullRequests_edges_node',
+          )
           ..add('G__typename', G__typename)
           ..add('repository', repository)
           ..add('author', author)
@@ -2750,8 +3487,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node
 
 class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges_node,
-            GPullRequestsData_viewer_pullRequests_edges_nodeBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges_node,
+          GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges_node? _$v;
 
   String? _G__typename;
@@ -2759,23 +3498,22 @@ class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
   GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder?
-      _repository;
+  _repository;
   GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
-      get repository => _$this._repository ??=
-          GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder();
+  get repository => _$this._repository ??=
+      GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder();
   set repository(
-          GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder?
-              repository) =>
-      _$this._repository = repository;
+    GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder?
+    repository,
+  ) => _$this._repository = repository;
 
   GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder? _author;
   GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder get author =>
       _$this._author ??=
           GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder();
   set author(
-          GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder?
-              author) =>
-      _$this._author = author;
+    GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder? author,
+  ) => _$this._author = author;
 
   int? _number;
   int? get number => _$this._number;
@@ -2805,21 +3543,19 @@ class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
 
   GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder? _comments;
   GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
-      get comments => _$this._comments ??=
-          GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder();
+  get comments => _$this._comments ??=
+      GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder();
   set comments(
-          GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder?
-              comments) =>
-      _$this._comments = comments;
+    GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder? comments,
+  ) => _$this._comments = comments;
 
   GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder? _files;
   GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder get files =>
       _$this._files ??=
           GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder();
   set files(
-          GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder?
-              files) =>
-      _$this._files = files;
+    GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder? files,
+  ) => _$this._files = files;
 
   GPullRequestsData_viewer_pullRequests_edges_nodeBuilder() {
     GPullRequestsData_viewer_pullRequests_edges_node._initializeBuilder(this);
@@ -2851,8 +3587,9 @@ class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
 
   @override
   void update(
-      void Function(GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)?
-          updates) {
+    void Function(GPullRequestsData_viewer_pullRequests_edges_nodeBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -2862,24 +3599,38 @@ class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
   _$GPullRequestsData_viewer_pullRequests_edges_node _build() {
     _$GPullRequestsData_viewer_pullRequests_edges_node _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer_pullRequests_edges_node._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GPullRequestsData_viewer_pullRequests_edges_node',
-                'G__typename'),
+              G__typename,
+              r'GPullRequestsData_viewer_pullRequests_edges_node',
+              'G__typename',
+            ),
             repository: repository.build(),
             author: _author?.build(),
-            number: BuiltValueNullFieldError.checkNotNull(number,
-                r'GPullRequestsData_viewer_pullRequests_edges_node', 'number'),
+            number: BuiltValueNullFieldError.checkNotNull(
+              number,
+              r'GPullRequestsData_viewer_pullRequests_edges_node',
+              'number',
+            ),
             url: url.build(),
-            title: BuiltValueNullFieldError.checkNotNull(title,
-                r'GPullRequestsData_viewer_pullRequests_edges_node', 'title'),
+            title: BuiltValueNullFieldError.checkNotNull(
+              title,
+              r'GPullRequestsData_viewer_pullRequests_edges_node',
+              'title',
+            ),
             updatedAt: updatedAt.build(),
-            state: BuiltValueNullFieldError.checkNotNull(state,
-                r'GPullRequestsData_viewer_pullRequests_edges_node', 'state'),
-            isDraft: BuiltValueNullFieldError.checkNotNull(isDraft,
-                r'GPullRequestsData_viewer_pullRequests_edges_node', 'isDraft'),
+            state: BuiltValueNullFieldError.checkNotNull(
+              state,
+              r'GPullRequestsData_viewer_pullRequests_edges_node',
+              'state',
+            ),
+            isDraft: BuiltValueNullFieldError.checkNotNull(
+              isDraft,
+              r'GPullRequestsData_viewer_pullRequests_edges_node',
+              'isDraft',
+            ),
             comments: comments.build(),
             files: _files?.build(),
           );
@@ -2903,9 +3654,10 @@ class GPullRequestsData_viewer_pullRequests_edges_nodeBuilder
         _files?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer_pullRequests_edges_node',
-            _$failedField,
-            e.toString());
+          r'GPullRequestsData_viewer_pullRequests_edges_node',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -2923,31 +3675,34 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repository
   @override
   final _i2.GURI url;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges_node_repository(
-          [void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder)?
-              updates]) =>
+  factory _$GPullRequestsData_viewer_pullRequests_edges_node_repository([
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder,
+    )?
+    updates,
+  ]) =>
       (GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder()
             ..update(updates))
           ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges_node_repository._(
-      {required this.G__typename,
-      required this.nameWithOwner,
-      required this.url})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges_node_repository._({
+    required this.G__typename,
+    required this.nameWithOwner,
+    required this.url,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_repository rebuild(
-          void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
-      toBuilder() =>
-          GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder()
-            ..replace(this);
+  toBuilder() =>
+      GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder()
+        ..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -2972,7 +3727,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repository
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_repository')
+            r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
+          )
           ..add('G__typename', G__typename)
           ..add('nameWithOwner', nameWithOwner)
           ..add('url', url))
@@ -2982,8 +3738,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_repository
 
 class GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges_node_repository,
-            GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges_node_repository,
+          GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges_node_repository? _$v;
 
   String? _G__typename;
@@ -3000,12 +3758,13 @@ class GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
   set url(_i2.GURIBuilder? url) => _$this._url = url;
 
   GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder() {
-    GPullRequestsData_viewer_pullRequests_edges_node_repository
-        ._initializeBuilder(this);
+    GPullRequestsData_viewer_pullRequests_edges_node_repository._initializeBuilder(
+      this,
+    );
   }
 
   GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
-      get _$this {
+  get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -3018,16 +3777,19 @@ class GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
 
   @override
   void replace(
-      GPullRequestsData_viewer_pullRequests_edges_node_repository other) {
+    GPullRequestsData_viewer_pullRequests_edges_node_repository other,
+  ) {
     _$v =
         other as _$GPullRequestsData_viewer_pullRequests_edges_node_repository;
   }
 
   @override
   void update(
-      void Function(
-              GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder)?
-          updates) {
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -3038,16 +3800,19 @@ class GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
   _$GPullRequestsData_viewer_pullRequests_edges_node_repository _build() {
     _$GPullRequestsData_viewer_pullRequests_edges_node_repository _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer_pullRequests_edges_node_repository._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
-                'G__typename'),
+              G__typename,
+              r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
+              'G__typename',
+            ),
             nameWithOwner: BuiltValueNullFieldError.checkNotNull(
-                nameWithOwner,
-                r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
-                'nameWithOwner'),
+              nameWithOwner,
+              r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
+              'nameWithOwner',
+            ),
             url: url.build(),
           );
     } catch (_) {
@@ -3057,9 +3822,10 @@ class GPullRequestsData_viewer_pullRequests_edges_node_repositoryBuilder
         url.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
-            _$failedField,
-            e.toString());
+          r'GPullRequestsData_viewer_pullRequests_edges_node_repository',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -3077,23 +3843,28 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_author
   @override
   final _i2.GURI url;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges_node_author(
-          [void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder)?
-              updates]) =>
+  factory _$GPullRequestsData_viewer_pullRequests_edges_node_author([
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder,
+    )?
+    updates,
+  ]) =>
       (GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder()
             ..update(updates))
           ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges_node_author._(
-      {required this.G__typename, required this.login, required this.url})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges_node_author._({
+    required this.G__typename,
+    required this.login,
+    required this.url,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_author rebuild(
-          void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder toBuilder() =>
@@ -3122,7 +3893,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_author
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_author')
+            r'GPullRequestsData_viewer_pullRequests_edges_node_author',
+          )
           ..add('G__typename', G__typename)
           ..add('login', login)
           ..add('url', url))
@@ -3132,8 +3904,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_author
 
 class GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges_node_author,
-            GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges_node_author,
+          GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges_node_author? _$v;
 
   String? _G__typename;
@@ -3150,7 +3924,8 @@ class GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
 
   GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder() {
     GPullRequestsData_viewer_pullRequests_edges_node_author._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder get _$this {
@@ -3171,9 +3946,11 @@ class GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
 
   @override
   void update(
-      void Function(
-              GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder)?
-          updates) {
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -3183,16 +3960,19 @@ class GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
   _$GPullRequestsData_viewer_pullRequests_edges_node_author _build() {
     _$GPullRequestsData_viewer_pullRequests_edges_node_author _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GPullRequestsData_viewer_pullRequests_edges_node_author._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GPullRequestsData_viewer_pullRequests_edges_node_author',
-                'G__typename'),
+              G__typename,
+              r'GPullRequestsData_viewer_pullRequests_edges_node_author',
+              'G__typename',
+            ),
             login: BuiltValueNullFieldError.checkNotNull(
-                login,
-                r'GPullRequestsData_viewer_pullRequests_edges_node_author',
-                'login'),
+              login,
+              r'GPullRequestsData_viewer_pullRequests_edges_node_author',
+              'login',
+            ),
             url: url.build(),
           );
     } catch (_) {
@@ -3202,9 +3982,10 @@ class GPullRequestsData_viewer_pullRequests_edges_node_authorBuilder
         url.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_author',
-            _$failedField,
-            e.toString());
+          r'GPullRequestsData_viewer_pullRequests_edges_node_author',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -3220,29 +4001,33 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_comments
   @override
   final int totalCount;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges_node_comments(
-          [void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder)?
-              updates]) =>
+  factory _$GPullRequestsData_viewer_pullRequests_edges_node_comments([
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder,
+    )?
+    updates,
+  ]) =>
       (GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder()
             ..update(updates))
           ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges_node_comments._(
-      {required this.G__typename, required this.totalCount})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges_node_comments._({
+    required this.G__typename,
+    required this.totalCount,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_comments rebuild(
-          void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
-      toBuilder() =>
-          GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder()
-            ..replace(this);
+  toBuilder() =>
+      GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder()
+        ..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -3264,7 +4049,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_comments
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_comments')
+            r'GPullRequestsData_viewer_pullRequests_edges_node_comments',
+          )
           ..add('G__typename', G__typename)
           ..add('totalCount', totalCount))
         .toString();
@@ -3273,8 +4059,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_comments
 
 class GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges_node_comments,
-            GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges_node_comments,
+          GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges_node_comments? _$v;
 
   String? _G__typename;
@@ -3286,8 +4074,9 @@ class GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
   set totalCount(int? totalCount) => _$this._totalCount = totalCount;
 
   GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder() {
-    GPullRequestsData_viewer_pullRequests_edges_node_comments
-        ._initializeBuilder(this);
+    GPullRequestsData_viewer_pullRequests_edges_node_comments._initializeBuilder(
+      this,
+    );
   }
 
   GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder get _$this {
@@ -3302,15 +4091,18 @@ class GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
 
   @override
   void replace(
-      GPullRequestsData_viewer_pullRequests_edges_node_comments other) {
+    GPullRequestsData_viewer_pullRequests_edges_node_comments other,
+  ) {
     _$v = other as _$GPullRequestsData_viewer_pullRequests_edges_node_comments;
   }
 
   @override
   void update(
-      void Function(
-              GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder)?
-          updates) {
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -3318,16 +4110,19 @@ class GPullRequestsData_viewer_pullRequests_edges_node_commentsBuilder
   GPullRequestsData_viewer_pullRequests_edges_node_comments build() => _build();
 
   _$GPullRequestsData_viewer_pullRequests_edges_node_comments _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GPullRequestsData_viewer_pullRequests_edges_node_comments._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GPullRequestsData_viewer_pullRequests_edges_node_comments',
-              'G__typename'),
+            G__typename,
+            r'GPullRequestsData_viewer_pullRequests_edges_node_comments',
+            'G__typename',
+          ),
           totalCount: BuiltValueNullFieldError.checkNotNull(
-              totalCount,
-              r'GPullRequestsData_viewer_pullRequests_edges_node_comments',
-              'totalCount'),
+            totalCount,
+            r'GPullRequestsData_viewer_pullRequests_edges_node_comments',
+            'totalCount',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -3341,23 +4136,25 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_files
   @override
   final int totalCount;
 
-  factory _$GPullRequestsData_viewer_pullRequests_edges_node_files(
-          [void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder)?
-              updates]) =>
+  factory _$GPullRequestsData_viewer_pullRequests_edges_node_files([
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder,
+    )?
+    updates,
+  ]) =>
       (GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder()
             ..update(updates))
           ._build();
 
-  _$GPullRequestsData_viewer_pullRequests_edges_node_files._(
-      {required this.G__typename, required this.totalCount})
-      : super._();
+  _$GPullRequestsData_viewer_pullRequests_edges_node_files._({
+    required this.G__typename,
+    required this.totalCount,
+  }) : super._();
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_files rebuild(
-          void Function(
-                  GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder toBuilder() =>
@@ -3384,7 +4181,8 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_files
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GPullRequestsData_viewer_pullRequests_edges_node_files')
+            r'GPullRequestsData_viewer_pullRequests_edges_node_files',
+          )
           ..add('G__typename', G__typename)
           ..add('totalCount', totalCount))
         .toString();
@@ -3393,8 +4191,10 @@ class _$GPullRequestsData_viewer_pullRequests_edges_node_files
 
 class GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder
     implements
-        Builder<GPullRequestsData_viewer_pullRequests_edges_node_files,
-            GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder> {
+        Builder<
+          GPullRequestsData_viewer_pullRequests_edges_node_files,
+          GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder
+        > {
   _$GPullRequestsData_viewer_pullRequests_edges_node_files? _$v;
 
   String? _G__typename;
@@ -3407,7 +4207,8 @@ class GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder
 
   GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder() {
     GPullRequestsData_viewer_pullRequests_edges_node_files._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder get _$this {
@@ -3427,9 +4228,11 @@ class GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder
 
   @override
   void update(
-      void Function(
-              GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder)?
-          updates) {
+    void Function(
+      GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -3437,16 +4240,19 @@ class GPullRequestsData_viewer_pullRequests_edges_node_filesBuilder
   GPullRequestsData_viewer_pullRequests_edges_node_files build() => _build();
 
   _$GPullRequestsData_viewer_pullRequests_edges_node_files _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GPullRequestsData_viewer_pullRequests_edges_node_files._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GPullRequestsData_viewer_pullRequests_edges_node_files',
-              'G__typename'),
+            G__typename,
+            r'GPullRequestsData_viewer_pullRequests_edges_node_files',
+            'G__typename',
+          ),
           totalCount: BuiltValueNullFieldError.checkNotNull(
-              totalCount,
-              r'GPullRequestsData_viewer_pullRequests_edges_node_files',
-              'totalCount'),
+            totalCount,
+            r'GPullRequestsData_viewer_pullRequests_edges_node_files',
+            'totalCount',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -3459,16 +4265,16 @@ class _$GAssignedIssuesData extends GAssignedIssuesData {
   @override
   final GAssignedIssuesData_search search;
 
-  factory _$GAssignedIssuesData(
-          [void Function(GAssignedIssuesDataBuilder)? updates]) =>
-      (GAssignedIssuesDataBuilder()..update(updates))._build();
+  factory _$GAssignedIssuesData([
+    void Function(GAssignedIssuesDataBuilder)? updates,
+  ]) => (GAssignedIssuesDataBuilder()..update(updates))._build();
 
   _$GAssignedIssuesData._({required this.G__typename, required this.search})
-      : super._();
+    : super._();
   @override
   GAssignedIssuesData rebuild(
-          void Function(GAssignedIssuesDataBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesDataBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesDataBuilder toBuilder() =>
@@ -3544,10 +4350,14 @@ class GAssignedIssuesDataBuilder
   _$GAssignedIssuesData _build() {
     _$GAssignedIssuesData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GAssignedIssuesData', 'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData',
+              'G__typename',
+            ),
             search: search.build(),
           );
     } catch (_) {
@@ -3557,7 +4367,10 @@ class GAssignedIssuesDataBuilder
         search.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData', _$failedField, e.toString());
+          r'GAssignedIssuesData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -3572,16 +4385,16 @@ class _$GAssignedIssuesData_search extends GAssignedIssuesData_search {
   @override
   final BuiltList<GAssignedIssuesData_search_edges?>? edges;
 
-  factory _$GAssignedIssuesData_search(
-          [void Function(GAssignedIssuesData_searchBuilder)? updates]) =>
-      (GAssignedIssuesData_searchBuilder()..update(updates))._build();
+  factory _$GAssignedIssuesData_search([
+    void Function(GAssignedIssuesData_searchBuilder)? updates,
+  ]) => (GAssignedIssuesData_searchBuilder()..update(updates))._build();
 
   _$GAssignedIssuesData_search._({required this.G__typename, this.edges})
-      : super._();
+    : super._();
   @override
   GAssignedIssuesData_search rebuild(
-          void Function(GAssignedIssuesData_searchBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_searchBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_searchBuilder toBuilder() =>
@@ -3658,10 +4471,14 @@ class GAssignedIssuesData_searchBuilder
   _$GAssignedIssuesData_search _build() {
     _$GAssignedIssuesData_search _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData_search._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GAssignedIssuesData_search', 'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData_search',
+              'G__typename',
+            ),
             edges: _edges?.build(),
           );
     } catch (_) {
@@ -3671,7 +4488,10 @@ class GAssignedIssuesData_searchBuilder
         _edges?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData_search', _$failedField, e.toString());
+          r'GAssignedIssuesData_search',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -3687,16 +4507,16 @@ class _$GAssignedIssuesData_search_edges
   @override
   final GAssignedIssuesData_search_edges_node? node;
 
-  factory _$GAssignedIssuesData_search_edges(
-          [void Function(GAssignedIssuesData_search_edgesBuilder)? updates]) =>
-      (GAssignedIssuesData_search_edgesBuilder()..update(updates))._build();
+  factory _$GAssignedIssuesData_search_edges([
+    void Function(GAssignedIssuesData_search_edgesBuilder)? updates,
+  ]) => (GAssignedIssuesData_search_edgesBuilder()..update(updates))._build();
 
   _$GAssignedIssuesData_search_edges._({required this.G__typename, this.node})
-      : super._();
+    : super._();
   @override
   GAssignedIssuesData_search_edges rebuild(
-          void Function(GAssignedIssuesData_search_edgesBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_search_edgesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edgesBuilder toBuilder() =>
@@ -3730,8 +4550,10 @@ class _$GAssignedIssuesData_search_edges
 
 class GAssignedIssuesData_search_edgesBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges,
-            GAssignedIssuesData_search_edgesBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges,
+          GAssignedIssuesData_search_edgesBuilder
+        > {
   _$GAssignedIssuesData_search_edges? _$v;
 
   String? _G__typename;
@@ -3770,10 +4592,14 @@ class GAssignedIssuesData_search_edgesBuilder
   GAssignedIssuesData_search_edges build() => _build();
 
   _$GAssignedIssuesData_search_edges _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GAssignedIssuesData_search_edges._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename, r'GAssignedIssuesData_search_edges', 'G__typename'),
+            G__typename,
+            r'GAssignedIssuesData_search_edges',
+            'G__typename',
+          ),
           node: node,
         );
     replace(_$result);
@@ -3786,19 +4612,17 @@ class _$GAssignedIssuesData_search_edges_node__base
   @override
   final String G__typename;
 
-  factory _$GAssignedIssuesData_search_edges_node__base(
-          [void Function(GAssignedIssuesData_search_edges_node__baseBuilder)?
-              updates]) =>
-      (GAssignedIssuesData_search_edges_node__baseBuilder()..update(updates))
-          ._build();
+  factory _$GAssignedIssuesData_search_edges_node__base([
+    void Function(GAssignedIssuesData_search_edges_node__baseBuilder)? updates,
+  ]) => (GAssignedIssuesData_search_edges_node__baseBuilder()..update(updates))
+      ._build();
 
   _$GAssignedIssuesData_search_edges_node__base._({required this.G__typename})
-      : super._();
+    : super._();
   @override
   GAssignedIssuesData_search_edges_node__base rebuild(
-          void Function(GAssignedIssuesData_search_edges_node__baseBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_search_edges_node__baseBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__baseBuilder toBuilder() =>
@@ -3822,16 +4646,17 @@ class _$GAssignedIssuesData_search_edges_node__base
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__base')
-          ..add('G__typename', G__typename))
-        .toString();
+      r'GAssignedIssuesData_search_edges_node__base',
+    )..add('G__typename', G__typename)).toString();
   }
 }
 
 class GAssignedIssuesData_search_edges_node__baseBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__base,
-            GAssignedIssuesData_search_edges_node__baseBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__base,
+          GAssignedIssuesData_search_edges_node__baseBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__base? _$v;
 
   String? _G__typename;
@@ -3858,8 +4683,8 @@ class GAssignedIssuesData_search_edges_node__baseBuilder
 
   @override
   void update(
-      void Function(GAssignedIssuesData_search_edges_node__baseBuilder)?
-          updates) {
+    void Function(GAssignedIssuesData_search_edges_node__baseBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -3867,10 +4692,14 @@ class GAssignedIssuesData_search_edges_node__baseBuilder
   GAssignedIssuesData_search_edges_node__base build() => _build();
 
   _$GAssignedIssuesData_search_edges_node__base _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GAssignedIssuesData_search_edges_node__base._(
-          G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-              r'GAssignedIssuesData_search_edges_node__base', 'G__typename'),
+          G__typename: BuiltValueNullFieldError.checkNotNull(
+            G__typename,
+            r'GAssignedIssuesData_search_edges_node__base',
+            'G__typename',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -3896,27 +4725,28 @@ class _$GAssignedIssuesData_search_edges_node__asIssue
   @override
   final GAssignedIssuesData_search_edges_node__asIssue_comments comments;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue(
-          [void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue([
+    void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssueBuilder()..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue._(
-      {required this.G__typename,
-      required this.repository,
-      required this.number,
-      required this.url,
-      required this.title,
-      this.author,
-      this.labels,
-      required this.comments})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue._({
+    required this.G__typename,
+    required this.repository,
+    required this.number,
+    required this.url,
+    required this.title,
+    this.author,
+    this.labels,
+    required this.comments,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue rebuild(
-          void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssueBuilder toBuilder() =>
@@ -3954,7 +4784,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue')
+            r'GAssignedIssuesData_search_edges_node__asIssue',
+          )
           ..add('G__typename', G__typename)
           ..add('repository', repository)
           ..add('number', number)
@@ -3969,8 +4800,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue
 
 class GAssignedIssuesData_search_edges_node__asIssueBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue,
-            GAssignedIssuesData_search_edges_node__asIssueBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue,
+          GAssignedIssuesData_search_edges_node__asIssueBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue? _$v;
 
   String? _G__typename;
@@ -3979,12 +4812,12 @@ class GAssignedIssuesData_search_edges_node__asIssueBuilder
 
   GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder? _repository;
   GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
-      get repository => _$this._repository ??=
-          GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder();
+  get repository => _$this._repository ??=
+      GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder();
   set repository(
-          GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder?
-              repository) =>
-      _$this._repository = repository;
+    GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder?
+    repository,
+  ) => _$this._repository = repository;
 
   int? _number;
   int? get number => _$this._number;
@@ -4003,27 +4836,24 @@ class GAssignedIssuesData_search_edges_node__asIssueBuilder
       _$this._author ??=
           GAssignedIssuesData_search_edges_node__asIssue_authorBuilder();
   set author(
-          GAssignedIssuesData_search_edges_node__asIssue_authorBuilder?
-              author) =>
-      _$this._author = author;
+    GAssignedIssuesData_search_edges_node__asIssue_authorBuilder? author,
+  ) => _$this._author = author;
 
   GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder? _labels;
   GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder get labels =>
       _$this._labels ??=
           GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder();
   set labels(
-          GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder?
-              labels) =>
-      _$this._labels = labels;
+    GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder? labels,
+  ) => _$this._labels = labels;
 
   GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder? _comments;
   GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder get comments =>
       _$this._comments ??=
           GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder();
   set comments(
-          GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder?
-              comments) =>
-      _$this._comments = comments;
+    GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder? comments,
+  ) => _$this._comments = comments;
 
   GAssignedIssuesData_search_edges_node__asIssueBuilder() {
     GAssignedIssuesData_search_edges_node__asIssue._initializeBuilder(this);
@@ -4052,8 +4882,9 @@ class GAssignedIssuesData_search_edges_node__asIssueBuilder
 
   @override
   void update(
-      void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)?
-          updates) {
+    void Function(GAssignedIssuesData_search_edges_node__asIssueBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4063,18 +4894,26 @@ class GAssignedIssuesData_search_edges_node__asIssueBuilder
   _$GAssignedIssuesData_search_edges_node__asIssue _build() {
     _$GAssignedIssuesData_search_edges_node__asIssue _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData_search_edges_node__asIssue._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GAssignedIssuesData_search_edges_node__asIssue',
-                'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData_search_edges_node__asIssue',
+              'G__typename',
+            ),
             repository: repository.build(),
-            number: BuiltValueNullFieldError.checkNotNull(number,
-                r'GAssignedIssuesData_search_edges_node__asIssue', 'number'),
+            number: BuiltValueNullFieldError.checkNotNull(
+              number,
+              r'GAssignedIssuesData_search_edges_node__asIssue',
+              'number',
+            ),
             url: url.build(),
-            title: BuiltValueNullFieldError.checkNotNull(title,
-                r'GAssignedIssuesData_search_edges_node__asIssue', 'title'),
+            title: BuiltValueNullFieldError.checkNotNull(
+              title,
+              r'GAssignedIssuesData_search_edges_node__asIssue',
+              'title',
+            ),
             author: _author?.build(),
             labels: _labels?.build(),
             comments: comments.build(),
@@ -4096,9 +4935,10 @@ class GAssignedIssuesData_search_edges_node__asIssueBuilder
         comments.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData_search_edges_node__asIssue',
-            _$failedField,
-            e.toString());
+          r'GAssignedIssuesData_search_edges_node__asIssue',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -4116,31 +4956,34 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repository
   @override
   final _i2.GURI url;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue_repository(
-          [void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue_repository([
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder,
+    )?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder()
             ..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue_repository._(
-      {required this.G__typename,
-      required this.nameWithOwner,
-      required this.url})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue_repository._({
+    required this.G__typename,
+    required this.nameWithOwner,
+    required this.url,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue_repository rebuild(
-          void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
-      toBuilder() =>
-          GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder()
-            ..replace(this);
+  toBuilder() =>
+      GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder()
+        ..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -4164,7 +5007,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repository
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue_repository')
+            r'GAssignedIssuesData_search_edges_node__asIssue_repository',
+          )
           ..add('G__typename', G__typename)
           ..add('nameWithOwner', nameWithOwner)
           ..add('url', url))
@@ -4174,8 +5018,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_repository
 
 class GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue_repository,
-            GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue_repository,
+          GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue_repository? _$v;
 
   String? _G__typename;
@@ -4192,8 +5038,9 @@ class GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
   set url(_i2.GURIBuilder? url) => _$this._url = url;
 
   GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder() {
-    GAssignedIssuesData_search_edges_node__asIssue_repository
-        ._initializeBuilder(this);
+    GAssignedIssuesData_search_edges_node__asIssue_repository._initializeBuilder(
+      this,
+    );
   }
 
   GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder get _$this {
@@ -4209,15 +5056,18 @@ class GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
 
   @override
   void replace(
-      GAssignedIssuesData_search_edges_node__asIssue_repository other) {
+    GAssignedIssuesData_search_edges_node__asIssue_repository other,
+  ) {
     _$v = other as _$GAssignedIssuesData_search_edges_node__asIssue_repository;
   }
 
   @override
   void update(
-      void Function(
-              GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder)?
-          updates) {
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4227,16 +5077,19 @@ class GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
   _$GAssignedIssuesData_search_edges_node__asIssue_repository _build() {
     _$GAssignedIssuesData_search_edges_node__asIssue_repository _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData_search_edges_node__asIssue_repository._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GAssignedIssuesData_search_edges_node__asIssue_repository',
-                'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData_search_edges_node__asIssue_repository',
+              'G__typename',
+            ),
             nameWithOwner: BuiltValueNullFieldError.checkNotNull(
-                nameWithOwner,
-                r'GAssignedIssuesData_search_edges_node__asIssue_repository',
-                'nameWithOwner'),
+              nameWithOwner,
+              r'GAssignedIssuesData_search_edges_node__asIssue_repository',
+              'nameWithOwner',
+            ),
             url: url.build(),
           );
     } catch (_) {
@@ -4246,9 +5099,10 @@ class GAssignedIssuesData_search_edges_node__asIssue_repositoryBuilder
         url.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData_search_edges_node__asIssue_repository',
-            _$failedField,
-            e.toString());
+          r'GAssignedIssuesData_search_edges_node__asIssue_repository',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -4266,23 +5120,24 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_author
   @override
   final _i2.GURI url;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue_author(
-          [void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue_author([
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssue_authorBuilder()
             ..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue_author._(
-      {required this.G__typename, required this.login, required this.url})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue_author._({
+    required this.G__typename,
+    required this.login,
+    required this.url,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue_author rebuild(
-          void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_authorBuilder toBuilder() =>
@@ -4311,7 +5166,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_author
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue_author')
+            r'GAssignedIssuesData_search_edges_node__asIssue_author',
+          )
           ..add('G__typename', G__typename)
           ..add('login', login)
           ..add('url', url))
@@ -4321,8 +5177,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_author
 
 class GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue_author,
-            GAssignedIssuesData_search_edges_node__asIssue_authorBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue_author,
+          GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue_author? _$v;
 
   String? _G__typename;
@@ -4339,7 +5197,8 @@ class GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
 
   GAssignedIssuesData_search_edges_node__asIssue_authorBuilder() {
     GAssignedIssuesData_search_edges_node__asIssue_author._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GAssignedIssuesData_search_edges_node__asIssue_authorBuilder get _$this {
@@ -4360,9 +5219,9 @@ class GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
 
   @override
   void update(
-      void Function(
-              GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)?
-          updates) {
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_authorBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4372,16 +5231,19 @@ class GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
   _$GAssignedIssuesData_search_edges_node__asIssue_author _build() {
     _$GAssignedIssuesData_search_edges_node__asIssue_author _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData_search_edges_node__asIssue_author._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GAssignedIssuesData_search_edges_node__asIssue_author',
-                'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData_search_edges_node__asIssue_author',
+              'G__typename',
+            ),
             login: BuiltValueNullFieldError.checkNotNull(
-                login,
-                r'GAssignedIssuesData_search_edges_node__asIssue_author',
-                'login'),
+              login,
+              r'GAssignedIssuesData_search_edges_node__asIssue_author',
+              'login',
+            ),
             url: url.build(),
           );
     } catch (_) {
@@ -4391,9 +5253,10 @@ class GAssignedIssuesData_search_edges_node__asIssue_authorBuilder
         url.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData_search_edges_node__asIssue_author',
-            _$failedField,
-            e.toString());
+          r'GAssignedIssuesData_search_edges_node__asIssue_author',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -4408,25 +5271,25 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels
   final String G__typename;
   @override
   final BuiltList<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
-      nodes;
+  nodes;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue_labels(
-          [void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue_labels([
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder()
             ..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue_labels._(
-      {required this.G__typename, this.nodes})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue_labels._({
+    required this.G__typename,
+    this.nodes,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labels rebuild(
-          void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder toBuilder() =>
@@ -4453,7 +5316,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue_labels')
+            r'GAssignedIssuesData_search_edges_node__asIssue_labels',
+          )
           ..add('G__typename', G__typename)
           ..add('nodes', nodes))
         .toString();
@@ -4462,8 +5326,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels
 
 class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue_labels,
-            GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue_labels,
+          GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue_labels? _$v;
 
   String? _G__typename;
@@ -4471,19 +5337,21 @@ class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
   set G__typename(String? G__typename) => _$this._G__typename = G__typename;
 
   ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
-      _nodes;
+  _nodes;
   ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>
-      get nodes => _$this._nodes ??= ListBuilder<
-          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>();
+  get nodes => _$this._nodes ??=
+      ListBuilder<
+        GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?
+      >();
   set nodes(
-          ListBuilder<
-                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
-              nodes) =>
-      _$this._nodes = nodes;
+    ListBuilder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes?>?
+    nodes,
+  ) => _$this._nodes = nodes;
 
   GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder() {
     GAssignedIssuesData_search_edges_node__asIssue_labels._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder get _$this {
@@ -4503,9 +5371,9 @@ class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
 
   @override
   void update(
-      void Function(
-              GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)?
-          updates) {
+    void Function(GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4515,12 +5383,14 @@ class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
   _$GAssignedIssuesData_search_edges_node__asIssue_labels _build() {
     _$GAssignedIssuesData_search_edges_node__asIssue_labels _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GAssignedIssuesData_search_edges_node__asIssue_labels._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GAssignedIssuesData_search_edges_node__asIssue_labels',
-                'G__typename'),
+              G__typename,
+              r'GAssignedIssuesData_search_edges_node__asIssue_labels',
+              'G__typename',
+            ),
             nodes: _nodes?.build(),
           );
     } catch (_) {
@@ -4530,9 +5400,10 @@ class GAssignedIssuesData_search_edges_node__asIssue_labelsBuilder
         _nodes?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GAssignedIssuesData_search_edges_node__asIssue_labels',
-            _$failedField,
-            e.toString());
+          r'GAssignedIssuesData_search_edges_node__asIssue_labels',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -4550,29 +5421,34 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
   @override
   final String color;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes(
-          [void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes([
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder,
+    )?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder()
             ..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes._(
-      {required this.G__typename, required this.name, required this.color})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes._({
+    required this.G__typename,
+    required this.name,
+    required this.color,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labels_nodes rebuild(
-          void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
-      toBuilder() =>
-          GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder()
-            ..replace(this);
+  toBuilder() =>
+      GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder()
+        ..replace(this);
 
   @override
   bool operator ==(Object other) {
@@ -4597,7 +5473,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes')
+            r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
+          )
           ..add('G__typename', G__typename)
           ..add('name', name)
           ..add('color', color))
@@ -4607,8 +5484,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
 
 class GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
-            GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue_labels_nodes,
+          GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes? _$v;
 
   String? _G__typename;
@@ -4624,12 +5503,13 @@ class GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
   set color(String? color) => _$this._color = color;
 
   GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder() {
-    GAssignedIssuesData_search_edges_node__asIssue_labels_nodes
-        ._initializeBuilder(this);
+    GAssignedIssuesData_search_edges_node__asIssue_labels_nodes._initializeBuilder(
+      this,
+    );
   }
 
   GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
-      get _$this {
+  get _$this {
     final $v = _$v;
     if ($v != null) {
       _G__typename = $v.G__typename;
@@ -4642,16 +5522,19 @@ class GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
 
   @override
   void replace(
-      GAssignedIssuesData_search_edges_node__asIssue_labels_nodes other) {
+    GAssignedIssuesData_search_edges_node__asIssue_labels_nodes other,
+  ) {
     _$v =
         other as _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes;
   }
 
   @override
   void update(
-      void Function(
-              GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder)?
-          updates) {
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4660,20 +5543,24 @@ class GAssignedIssuesData_search_edges_node__asIssue_labels_nodesBuilder
       _build();
 
   _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GAssignedIssuesData_search_edges_node__asIssue_labels_nodes._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
-              'G__typename'),
+            G__typename,
+            r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
+            'G__typename',
+          ),
           name: BuiltValueNullFieldError.checkNotNull(
-              name,
-              r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
-              'name'),
+            name,
+            r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
+            'name',
+          ),
           color: BuiltValueNullFieldError.checkNotNull(
-              color,
-              r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
-              'color'),
+            color,
+            r'GAssignedIssuesData_search_edges_node__asIssue_labels_nodes',
+            'color',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -4687,23 +5574,27 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_comments
   @override
   final int totalCount;
 
-  factory _$GAssignedIssuesData_search_edges_node__asIssue_comments(
-          [void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder)?
-              updates]) =>
+  factory _$GAssignedIssuesData_search_edges_node__asIssue_comments([
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder,
+    )?
+    updates,
+  ]) =>
       (GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder()
             ..update(updates))
           ._build();
 
-  _$GAssignedIssuesData_search_edges_node__asIssue_comments._(
-      {required this.G__typename, required this.totalCount})
-      : super._();
+  _$GAssignedIssuesData_search_edges_node__asIssue_comments._({
+    required this.G__typename,
+    required this.totalCount,
+  }) : super._();
   @override
   GAssignedIssuesData_search_edges_node__asIssue_comments rebuild(
-          void Function(
-                  GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder,
+    )
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder toBuilder() =>
@@ -4730,7 +5621,8 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_comments
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GAssignedIssuesData_search_edges_node__asIssue_comments')
+            r'GAssignedIssuesData_search_edges_node__asIssue_comments',
+          )
           ..add('G__typename', G__typename)
           ..add('totalCount', totalCount))
         .toString();
@@ -4739,8 +5631,10 @@ class _$GAssignedIssuesData_search_edges_node__asIssue_comments
 
 class GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder
     implements
-        Builder<GAssignedIssuesData_search_edges_node__asIssue_comments,
-            GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder> {
+        Builder<
+          GAssignedIssuesData_search_edges_node__asIssue_comments,
+          GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder
+        > {
   _$GAssignedIssuesData_search_edges_node__asIssue_comments? _$v;
 
   String? _G__typename;
@@ -4753,7 +5647,8 @@ class GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder
 
   GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder() {
     GAssignedIssuesData_search_edges_node__asIssue_comments._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder get _$this {
@@ -4773,9 +5668,11 @@ class GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder
 
   @override
   void update(
-      void Function(
-              GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder)?
-          updates) {
+    void Function(
+      GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -4783,16 +5680,19 @@ class GAssignedIssuesData_search_edges_node__asIssue_commentsBuilder
   GAssignedIssuesData_search_edges_node__asIssue_comments build() => _build();
 
   _$GAssignedIssuesData_search_edges_node__asIssue_comments _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GAssignedIssuesData_search_edges_node__asIssue_comments._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GAssignedIssuesData_search_edges_node__asIssue_comments',
-              'G__typename'),
+            G__typename,
+            r'GAssignedIssuesData_search_edges_node__asIssue_comments',
+            'G__typename',
+          ),
           totalCount: BuiltValueNullFieldError.checkNotNull(
-              totalCount,
-              r'GAssignedIssuesData_search_edges_node__asIssue_comments',
-              'totalCount'),
+            totalCount,
+            r'GAssignedIssuesData_search_edges_node__asIssue_comments',
+            'totalCount',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -4805,12 +5705,12 @@ class _$GRepositoriesData extends GRepositoriesData {
   @override
   final GRepositoriesData_viewer viewer;
 
-  factory _$GRepositoriesData(
-          [void Function(GRepositoriesDataBuilder)? updates]) =>
-      (GRepositoriesDataBuilder()..update(updates))._build();
+  factory _$GRepositoriesData([
+    void Function(GRepositoriesDataBuilder)? updates,
+  ]) => (GRepositoriesDataBuilder()..update(updates))._build();
 
   _$GRepositoriesData._({required this.G__typename, required this.viewer})
-      : super._();
+    : super._();
   @override
   GRepositoriesData rebuild(void Function(GRepositoriesDataBuilder) updates) =>
       (toBuilder()..update(updates)).build();
@@ -4889,10 +5789,14 @@ class GRepositoriesDataBuilder
   _$GRepositoriesData _build() {
     _$GRepositoriesData _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositoriesData._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GRepositoriesData', 'G__typename'),
+              G__typename,
+              r'GRepositoriesData',
+              'G__typename',
+            ),
             viewer: viewer.build(),
           );
     } catch (_) {
@@ -4902,7 +5806,10 @@ class GRepositoriesDataBuilder
         viewer.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositoriesData', _$failedField, e.toString());
+          r'GRepositoriesData',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -4917,17 +5824,18 @@ class _$GRepositoriesData_viewer extends GRepositoriesData_viewer {
   @override
   final GRepositoriesData_viewer_repositories repositories;
 
-  factory _$GRepositoriesData_viewer(
-          [void Function(GRepositoriesData_viewerBuilder)? updates]) =>
-      (GRepositoriesData_viewerBuilder()..update(updates))._build();
+  factory _$GRepositoriesData_viewer([
+    void Function(GRepositoriesData_viewerBuilder)? updates,
+  ]) => (GRepositoriesData_viewerBuilder()..update(updates))._build();
 
-  _$GRepositoriesData_viewer._(
-      {required this.G__typename, required this.repositories})
-      : super._();
+  _$GRepositoriesData_viewer._({
+    required this.G__typename,
+    required this.repositories,
+  }) : super._();
   @override
   GRepositoriesData_viewer rebuild(
-          void Function(GRepositoriesData_viewerBuilder) updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewerBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewerBuilder toBuilder() =>
@@ -4972,8 +5880,8 @@ class GRepositoriesData_viewerBuilder
   GRepositoriesData_viewer_repositoriesBuilder get repositories =>
       _$this._repositories ??= GRepositoriesData_viewer_repositoriesBuilder();
   set repositories(
-          GRepositoriesData_viewer_repositoriesBuilder? repositories) =>
-      _$this._repositories = repositories;
+    GRepositoriesData_viewer_repositoriesBuilder? repositories,
+  ) => _$this._repositories = repositories;
 
   GRepositoriesData_viewerBuilder() {
     GRepositoriesData_viewer._initializeBuilder(this);
@@ -5005,10 +5913,14 @@ class GRepositoriesData_viewerBuilder
   _$GRepositoriesData_viewer _build() {
     _$GRepositoriesData_viewer _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositoriesData_viewer._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename, r'GRepositoriesData_viewer', 'G__typename'),
+              G__typename,
+              r'GRepositoriesData_viewer',
+              'G__typename',
+            ),
             repositories: repositories.build(),
           );
     } catch (_) {
@@ -5018,7 +5930,10 @@ class GRepositoriesData_viewerBuilder
         repositories.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositoriesData_viewer', _$failedField, e.toString());
+          r'GRepositoriesData_viewer',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -5034,20 +5949,19 @@ class _$GRepositoriesData_viewer_repositories
   @override
   final BuiltList<GRepositoriesData_viewer_repositories_nodes?>? nodes;
 
-  factory _$GRepositoriesData_viewer_repositories(
-          [void Function(GRepositoriesData_viewer_repositoriesBuilder)?
-              updates]) =>
-      (GRepositoriesData_viewer_repositoriesBuilder()..update(updates))
-          ._build();
+  factory _$GRepositoriesData_viewer_repositories([
+    void Function(GRepositoriesData_viewer_repositoriesBuilder)? updates,
+  ]) => (GRepositoriesData_viewer_repositoriesBuilder()..update(updates))
+      ._build();
 
-  _$GRepositoriesData_viewer_repositories._(
-      {required this.G__typename, this.nodes})
-      : super._();
+  _$GRepositoriesData_viewer_repositories._({
+    required this.G__typename,
+    this.nodes,
+  }) : super._();
   @override
   GRepositoriesData_viewer_repositories rebuild(
-          void Function(GRepositoriesData_viewer_repositoriesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewer_repositoriesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewer_repositoriesBuilder toBuilder() =>
@@ -5073,7 +5987,8 @@ class _$GRepositoriesData_viewer_repositories
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GRepositoriesData_viewer_repositories')
+            r'GRepositoriesData_viewer_repositories',
+          )
           ..add('G__typename', G__typename)
           ..add('nodes', nodes))
         .toString();
@@ -5082,8 +5997,10 @@ class _$GRepositoriesData_viewer_repositories
 
 class GRepositoriesData_viewer_repositoriesBuilder
     implements
-        Builder<GRepositoriesData_viewer_repositories,
-            GRepositoriesData_viewer_repositoriesBuilder> {
+        Builder<
+          GRepositoriesData_viewer_repositories,
+          GRepositoriesData_viewer_repositoriesBuilder
+        > {
   _$GRepositoriesData_viewer_repositories? _$v;
 
   String? _G__typename;
@@ -5118,7 +6035,8 @@ class GRepositoriesData_viewer_repositoriesBuilder
 
   @override
   void update(
-      void Function(GRepositoriesData_viewer_repositoriesBuilder)? updates) {
+    void Function(GRepositoriesData_viewer_repositoriesBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -5128,10 +6046,14 @@ class GRepositoriesData_viewer_repositoriesBuilder
   _$GRepositoriesData_viewer_repositories _build() {
     _$GRepositoriesData_viewer_repositories _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositoriesData_viewer_repositories._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GRepositoriesData_viewer_repositories', 'G__typename'),
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename,
+              r'GRepositoriesData_viewer_repositories',
+              'G__typename',
+            ),
             nodes: _nodes?.build(),
           );
     } catch (_) {
@@ -5141,9 +6063,10 @@ class GRepositoriesData_viewer_repositoriesBuilder
         _nodes?.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositoriesData_viewer_repositories',
-            _$failedField,
-            e.toString());
+          r'GRepositoriesData_viewer_repositories',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -5173,28 +6096,26 @@ class _$GRepositoriesData_viewer_repositories_nodes
   @override
   final GRepositoriesData_viewer_repositories_nodes_owner owner;
 
-  factory _$GRepositoriesData_viewer_repositories_nodes(
-          [void Function(GRepositoriesData_viewer_repositories_nodesBuilder)?
-              updates]) =>
-      (GRepositoriesData_viewer_repositories_nodesBuilder()..update(updates))
-          ._build();
+  factory _$GRepositoriesData_viewer_repositories_nodes([
+    void Function(GRepositoriesData_viewer_repositories_nodesBuilder)? updates,
+  ]) => (GRepositoriesData_viewer_repositories_nodesBuilder()..update(updates))
+      ._build();
 
-  _$GRepositoriesData_viewer_repositories_nodes._(
-      {required this.G__typename,
-      required this.name,
-      this.description,
-      required this.isFork,
-      required this.isPrivate,
-      required this.stargazers,
-      required this.url,
-      required this.issues,
-      required this.owner})
-      : super._();
+  _$GRepositoriesData_viewer_repositories_nodes._({
+    required this.G__typename,
+    required this.name,
+    this.description,
+    required this.isFork,
+    required this.isPrivate,
+    required this.stargazers,
+    required this.url,
+    required this.issues,
+    required this.owner,
+  }) : super._();
   @override
   GRepositoriesData_viewer_repositories_nodes rebuild(
-          void Function(GRepositoriesData_viewer_repositories_nodesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewer_repositories_nodesBuilder) updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewer_repositories_nodesBuilder toBuilder() =>
@@ -5234,7 +6155,8 @@ class _$GRepositoriesData_viewer_repositories_nodes
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GRepositoriesData_viewer_repositories_nodes')
+            r'GRepositoriesData_viewer_repositories_nodes',
+          )
           ..add('G__typename', G__typename)
           ..add('name', name)
           ..add('description', description)
@@ -5250,8 +6172,10 @@ class _$GRepositoriesData_viewer_repositories_nodes
 
 class GRepositoriesData_viewer_repositories_nodesBuilder
     implements
-        Builder<GRepositoriesData_viewer_repositories_nodes,
-            GRepositoriesData_viewer_repositories_nodesBuilder> {
+        Builder<
+          GRepositoriesData_viewer_repositories_nodes,
+          GRepositoriesData_viewer_repositories_nodesBuilder
+        > {
   _$GRepositoriesData_viewer_repositories_nodes? _$v;
 
   String? _G__typename;
@@ -5276,12 +6200,11 @@ class GRepositoriesData_viewer_repositories_nodesBuilder
 
   GRepositoriesData_viewer_repositories_nodes_stargazersBuilder? _stargazers;
   GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
-      get stargazers => _$this._stargazers ??=
-          GRepositoriesData_viewer_repositories_nodes_stargazersBuilder();
+  get stargazers => _$this._stargazers ??=
+      GRepositoriesData_viewer_repositories_nodes_stargazersBuilder();
   set stargazers(
-          GRepositoriesData_viewer_repositories_nodes_stargazersBuilder?
-              stargazers) =>
-      _$this._stargazers = stargazers;
+    GRepositoriesData_viewer_repositories_nodes_stargazersBuilder? stargazers,
+  ) => _$this._stargazers = stargazers;
 
   _i2.GURIBuilder? _url;
   _i2.GURIBuilder get url => _$this._url ??= _i2.GURIBuilder();
@@ -5292,8 +6215,8 @@ class GRepositoriesData_viewer_repositories_nodesBuilder
       _$this._issues ??=
           GRepositoriesData_viewer_repositories_nodes_issuesBuilder();
   set issues(
-          GRepositoriesData_viewer_repositories_nodes_issuesBuilder? issues) =>
-      _$this._issues = issues;
+    GRepositoriesData_viewer_repositories_nodes_issuesBuilder? issues,
+  ) => _$this._issues = issues;
 
   GRepositoriesData_viewer_repositories_nodes_ownerBuilder? _owner;
   GRepositoriesData_viewer_repositories_nodes_ownerBuilder get owner =>
@@ -5330,8 +6253,8 @@ class GRepositoriesData_viewer_repositories_nodesBuilder
 
   @override
   void update(
-      void Function(GRepositoriesData_viewer_repositories_nodesBuilder)?
-          updates) {
+    void Function(GRepositoriesData_viewer_repositories_nodesBuilder)? updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -5341,17 +6264,30 @@ class GRepositoriesData_viewer_repositories_nodesBuilder
   _$GRepositoriesData_viewer_repositories_nodes _build() {
     _$GRepositoriesData_viewer_repositories_nodes _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositoriesData_viewer_repositories_nodes._(
-            G__typename: BuiltValueNullFieldError.checkNotNull(G__typename,
-                r'GRepositoriesData_viewer_repositories_nodes', 'G__typename'),
+            G__typename: BuiltValueNullFieldError.checkNotNull(
+              G__typename,
+              r'GRepositoriesData_viewer_repositories_nodes',
+              'G__typename',
+            ),
             name: BuiltValueNullFieldError.checkNotNull(
-                name, r'GRepositoriesData_viewer_repositories_nodes', 'name'),
+              name,
+              r'GRepositoriesData_viewer_repositories_nodes',
+              'name',
+            ),
             description: description,
-            isFork: BuiltValueNullFieldError.checkNotNull(isFork,
-                r'GRepositoriesData_viewer_repositories_nodes', 'isFork'),
-            isPrivate: BuiltValueNullFieldError.checkNotNull(isPrivate,
-                r'GRepositoriesData_viewer_repositories_nodes', 'isPrivate'),
+            isFork: BuiltValueNullFieldError.checkNotNull(
+              isFork,
+              r'GRepositoriesData_viewer_repositories_nodes',
+              'isFork',
+            ),
+            isPrivate: BuiltValueNullFieldError.checkNotNull(
+              isPrivate,
+              r'GRepositoriesData_viewer_repositories_nodes',
+              'isPrivate',
+            ),
             stargazers: stargazers.build(),
             url: url.build(),
             issues: issues.build(),
@@ -5370,9 +6306,10 @@ class GRepositoriesData_viewer_repositories_nodesBuilder
         owner.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositoriesData_viewer_repositories_nodes',
-            _$failedField,
-            e.toString());
+          r'GRepositoriesData_viewer_repositories_nodes',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
@@ -5388,23 +6325,25 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazers
   @override
   final int totalCount;
 
-  factory _$GRepositoriesData_viewer_repositories_nodes_stargazers(
-          [void Function(
-                  GRepositoriesData_viewer_repositories_nodes_stargazersBuilder)?
-              updates]) =>
+  factory _$GRepositoriesData_viewer_repositories_nodes_stargazers([
+    void Function(
+      GRepositoriesData_viewer_repositories_nodes_stargazersBuilder,
+    )?
+    updates,
+  ]) =>
       (GRepositoriesData_viewer_repositories_nodes_stargazersBuilder()
             ..update(updates))
           ._build();
 
-  _$GRepositoriesData_viewer_repositories_nodes_stargazers._(
-      {required this.G__typename, required this.totalCount})
-      : super._();
+  _$GRepositoriesData_viewer_repositories_nodes_stargazers._({
+    required this.G__typename,
+    required this.totalCount,
+  }) : super._();
   @override
   GRepositoriesData_viewer_repositories_nodes_stargazers rebuild(
-          void Function(
-                  GRepositoriesData_viewer_repositories_nodes_stargazersBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewer_repositories_nodes_stargazersBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewer_repositories_nodes_stargazersBuilder toBuilder() =>
@@ -5431,7 +6370,8 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazers
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GRepositoriesData_viewer_repositories_nodes_stargazers')
+            r'GRepositoriesData_viewer_repositories_nodes_stargazers',
+          )
           ..add('G__typename', G__typename)
           ..add('totalCount', totalCount))
         .toString();
@@ -5440,8 +6380,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_stargazers
 
 class GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
     implements
-        Builder<GRepositoriesData_viewer_repositories_nodes_stargazers,
-            GRepositoriesData_viewer_repositories_nodes_stargazersBuilder> {
+        Builder<
+          GRepositoriesData_viewer_repositories_nodes_stargazers,
+          GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
+        > {
   _$GRepositoriesData_viewer_repositories_nodes_stargazers? _$v;
 
   String? _G__typename;
@@ -5454,7 +6396,8 @@ class GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
 
   GRepositoriesData_viewer_repositories_nodes_stargazersBuilder() {
     GRepositoriesData_viewer_repositories_nodes_stargazers._initializeBuilder(
-        this);
+      this,
+    );
   }
 
   GRepositoriesData_viewer_repositories_nodes_stargazersBuilder get _$this {
@@ -5474,9 +6417,11 @@ class GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
 
   @override
   void update(
-      void Function(
-              GRepositoriesData_viewer_repositories_nodes_stargazersBuilder)?
-          updates) {
+    void Function(
+      GRepositoriesData_viewer_repositories_nodes_stargazersBuilder,
+    )?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -5484,16 +6429,19 @@ class GRepositoriesData_viewer_repositories_nodes_stargazersBuilder
   GRepositoriesData_viewer_repositories_nodes_stargazers build() => _build();
 
   _$GRepositoriesData_viewer_repositories_nodes_stargazers _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GRepositoriesData_viewer_repositories_nodes_stargazers._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GRepositoriesData_viewer_repositories_nodes_stargazers',
-              'G__typename'),
+            G__typename,
+            r'GRepositoriesData_viewer_repositories_nodes_stargazers',
+            'G__typename',
+          ),
           totalCount: BuiltValueNullFieldError.checkNotNull(
-              totalCount,
-              r'GRepositoriesData_viewer_repositories_nodes_stargazers',
-              'totalCount'),
+            totalCount,
+            r'GRepositoriesData_viewer_repositories_nodes_stargazers',
+            'totalCount',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -5507,23 +6455,23 @@ class _$GRepositoriesData_viewer_repositories_nodes_issues
   @override
   final int totalCount;
 
-  factory _$GRepositoriesData_viewer_repositories_nodes_issues(
-          [void Function(
-                  GRepositoriesData_viewer_repositories_nodes_issuesBuilder)?
-              updates]) =>
+  factory _$GRepositoriesData_viewer_repositories_nodes_issues([
+    void Function(GRepositoriesData_viewer_repositories_nodes_issuesBuilder)?
+    updates,
+  ]) =>
       (GRepositoriesData_viewer_repositories_nodes_issuesBuilder()
             ..update(updates))
           ._build();
 
-  _$GRepositoriesData_viewer_repositories_nodes_issues._(
-      {required this.G__typename, required this.totalCount})
-      : super._();
+  _$GRepositoriesData_viewer_repositories_nodes_issues._({
+    required this.G__typename,
+    required this.totalCount,
+  }) : super._();
   @override
   GRepositoriesData_viewer_repositories_nodes_issues rebuild(
-          void Function(
-                  GRepositoriesData_viewer_repositories_nodes_issuesBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewer_repositories_nodes_issuesBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewer_repositories_nodes_issuesBuilder toBuilder() =>
@@ -5550,7 +6498,8 @@ class _$GRepositoriesData_viewer_repositories_nodes_issues
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GRepositoriesData_viewer_repositories_nodes_issues')
+            r'GRepositoriesData_viewer_repositories_nodes_issues',
+          )
           ..add('G__typename', G__typename)
           ..add('totalCount', totalCount))
         .toString();
@@ -5559,8 +6508,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_issues
 
 class GRepositoriesData_viewer_repositories_nodes_issuesBuilder
     implements
-        Builder<GRepositoriesData_viewer_repositories_nodes_issues,
-            GRepositoriesData_viewer_repositories_nodes_issuesBuilder> {
+        Builder<
+          GRepositoriesData_viewer_repositories_nodes_issues,
+          GRepositoriesData_viewer_repositories_nodes_issuesBuilder
+        > {
   _$GRepositoriesData_viewer_repositories_nodes_issues? _$v;
 
   String? _G__typename;
@@ -5592,8 +6543,9 @@ class GRepositoriesData_viewer_repositories_nodes_issuesBuilder
 
   @override
   void update(
-      void Function(GRepositoriesData_viewer_repositories_nodes_issuesBuilder)?
-          updates) {
+    void Function(GRepositoriesData_viewer_repositories_nodes_issuesBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -5601,16 +6553,19 @@ class GRepositoriesData_viewer_repositories_nodes_issuesBuilder
   GRepositoriesData_viewer_repositories_nodes_issues build() => _build();
 
   _$GRepositoriesData_viewer_repositories_nodes_issues _build() {
-    final _$result = _$v ??
+    final _$result =
+        _$v ??
         _$GRepositoriesData_viewer_repositories_nodes_issues._(
           G__typename: BuiltValueNullFieldError.checkNotNull(
-              G__typename,
-              r'GRepositoriesData_viewer_repositories_nodes_issues',
-              'G__typename'),
+            G__typename,
+            r'GRepositoriesData_viewer_repositories_nodes_issues',
+            'G__typename',
+          ),
           totalCount: BuiltValueNullFieldError.checkNotNull(
-              totalCount,
-              r'GRepositoriesData_viewer_repositories_nodes_issues',
-              'totalCount'),
+            totalCount,
+            r'GRepositoriesData_viewer_repositories_nodes_issues',
+            'totalCount',
+          ),
         );
     replace(_$result);
     return _$result;
@@ -5626,23 +6581,24 @@ class _$GRepositoriesData_viewer_repositories_nodes_owner
   @override
   final _i2.GURI avatarUrl;
 
-  factory _$GRepositoriesData_viewer_repositories_nodes_owner(
-          [void Function(
-                  GRepositoriesData_viewer_repositories_nodes_ownerBuilder)?
-              updates]) =>
+  factory _$GRepositoriesData_viewer_repositories_nodes_owner([
+    void Function(GRepositoriesData_viewer_repositories_nodes_ownerBuilder)?
+    updates,
+  ]) =>
       (GRepositoriesData_viewer_repositories_nodes_ownerBuilder()
             ..update(updates))
           ._build();
 
-  _$GRepositoriesData_viewer_repositories_nodes_owner._(
-      {required this.G__typename, required this.login, required this.avatarUrl})
-      : super._();
+  _$GRepositoriesData_viewer_repositories_nodes_owner._({
+    required this.G__typename,
+    required this.login,
+    required this.avatarUrl,
+  }) : super._();
   @override
   GRepositoriesData_viewer_repositories_nodes_owner rebuild(
-          void Function(
-                  GRepositoriesData_viewer_repositories_nodes_ownerBuilder)
-              updates) =>
-      (toBuilder()..update(updates)).build();
+    void Function(GRepositoriesData_viewer_repositories_nodes_ownerBuilder)
+    updates,
+  ) => (toBuilder()..update(updates)).build();
 
   @override
   GRepositoriesData_viewer_repositories_nodes_ownerBuilder toBuilder() =>
@@ -5670,7 +6626,8 @@ class _$GRepositoriesData_viewer_repositories_nodes_owner
   @override
   String toString() {
     return (newBuiltValueToStringHelper(
-            r'GRepositoriesData_viewer_repositories_nodes_owner')
+            r'GRepositoriesData_viewer_repositories_nodes_owner',
+          )
           ..add('G__typename', G__typename)
           ..add('login', login)
           ..add('avatarUrl', avatarUrl))
@@ -5680,8 +6637,10 @@ class _$GRepositoriesData_viewer_repositories_nodes_owner
 
 class GRepositoriesData_viewer_repositories_nodes_ownerBuilder
     implements
-        Builder<GRepositoriesData_viewer_repositories_nodes_owner,
-            GRepositoriesData_viewer_repositories_nodes_ownerBuilder> {
+        Builder<
+          GRepositoriesData_viewer_repositories_nodes_owner,
+          GRepositoriesData_viewer_repositories_nodes_ownerBuilder
+        > {
   _$GRepositoriesData_viewer_repositories_nodes_owner? _$v;
 
   String? _G__typename;
@@ -5718,8 +6677,9 @@ class GRepositoriesData_viewer_repositories_nodes_ownerBuilder
 
   @override
   void update(
-      void Function(GRepositoriesData_viewer_repositories_nodes_ownerBuilder)?
-          updates) {
+    void Function(GRepositoriesData_viewer_repositories_nodes_ownerBuilder)?
+    updates,
+  ) {
     if (updates != null) updates(this);
   }
 
@@ -5729,14 +6689,19 @@ class GRepositoriesData_viewer_repositories_nodes_ownerBuilder
   _$GRepositoriesData_viewer_repositories_nodes_owner _build() {
     _$GRepositoriesData_viewer_repositories_nodes_owner _$result;
     try {
-      _$result = _$v ??
+      _$result =
+          _$v ??
           _$GRepositoriesData_viewer_repositories_nodes_owner._(
             G__typename: BuiltValueNullFieldError.checkNotNull(
-                G__typename,
-                r'GRepositoriesData_viewer_repositories_nodes_owner',
-                'G__typename'),
-            login: BuiltValueNullFieldError.checkNotNull(login,
-                r'GRepositoriesData_viewer_repositories_nodes_owner', 'login'),
+              G__typename,
+              r'GRepositoriesData_viewer_repositories_nodes_owner',
+              'G__typename',
+            ),
+            login: BuiltValueNullFieldError.checkNotNull(
+              login,
+              r'GRepositoriesData_viewer_repositories_nodes_owner',
+              'login',
+            ),
             avatarUrl: avatarUrl.build(),
           );
     } catch (_) {
@@ -5746,9 +6711,10 @@ class GRepositoriesData_viewer_repositories_nodes_ownerBuilder
         avatarUrl.build();
       } catch (e) {
         throw BuiltValueNestedFieldError(
-            r'GRepositoriesData_viewer_repositories_nodes_owner',
-            _$failedField,
-            e.toString());
+          r'GRepositoriesData_viewer_repositories_nodes_owner',
+          _$failedField,
+          e.toString(),
+        );
       }
       rethrow;
     }
